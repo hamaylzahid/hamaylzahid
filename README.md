@@ -1,5 +1,5 @@
 
-<h1 align="center">👨‍💻 Hamayl Zahid – AI Engineer Portfolio</h1>
+<h1 align="center">👩‍💻 Hamayl Zahid – AI Engineer Portfolio</h1>
 <br>
 
 <p align="center">
@@ -98,6 +98,15 @@
 `ecommerce-frontend-design`  
 > A clean, responsive frontend layout for an ecommerce site designed using modern HTML & CSS practices.  
 **Tech Used:** HTML, CSS, JavaScript
+
+---
+
+<details>
+  <summary>📊 GitHub Stats</summary>
+  <br/>
+  <img src="https://github-readme-stats.vercel.app/api?username=hamaylzahid&show_icons=true&theme=default&hide_border=true" width="400"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamaylzahid&layout=compact&hide_border=true" width="330"/>
+</details>
 
 ---
 
