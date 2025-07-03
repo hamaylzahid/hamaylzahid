@@ -1,11 +1,12 @@
-## Hi! 👋,
-<br>
+
 <h1 align="center">👨‍💻 Hamayl Zahid – AI Engineer Portfolio</h1>
+<br>
 
 <p align="center">
   Hi, I'm <strong>Hamayl Zahid</strong> — AI Engineer | DeepLearning.AI + Stanford + Harvard Certified<br>
-  Building Intelligent Systems in ML, NLP, Reinforcement Learning, and more.<br>
-  Always Learning. Always Building. Always Improving. 🚀
+  I bring creative solutions in ML, NLP, and Reinforcement Learning.  
+  Driven by curiosity. Fueled by code. Focused on impact. 🚀
+
 </p>
 
 <p align="center">
@@ -34,7 +35,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-D00000?style=flat&logo=keras&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-D00000?style=flat&logo=keras&logoColor=white)<br>
 ![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/Numpy-013243?style=flat&logo=numpy&logoColor=white)
@@ -48,13 +49,13 @@
 
 ## 🏅 Certifications & Badges
 
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-blue?style=for-the-badge)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-blue?style=for-the-badge)<br>
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-orange?style=for-the-badge)
 
 
 <table>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/124545485/266667845-b71a5111-6550-4c6f-b073-bc2906c13ae5.png" width="100"/></td>
+    <td><img src="https://raw.githubusercontent.com/hamaylzahid/hamaylzahid/refs/heads/main/cs50.png" width="100"/></td>
     <td><strong>CS50x – Introduction to Computer Science</strong><br>Harvard University (edX)</td>
   </tr>
   <tr>
@@ -62,8 +63,8 @@
     <td><strong>Machine Learning Specialization (3/3)</strong><br>DeepLearning.AI & Stanford University</td>
   </tr>
   <tr>
-    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Sololearn_logo.png/240px-Sololearn_logo.png" width="100"/></td>
-    <td><strong>Python Developer Certificate</strong><br>SoloLearn</td>
+    <td><img src="https://raw.githubusercontent.com/hamaylzahid/hamaylzahid/refs/heads/main/sololearn.png" width="100"/></td>
+    <td><strong>Python Developer </strong><br>SoloLearn</td>
   </tr>
 </table>
 
