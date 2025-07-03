@@ -1,8 +1,8 @@
 <h1 align="center">👩‍🎓 Hamayl Zahid – AI Engineer Portfolio</h1>
 
 <p align="center">
-  hi! I am <strong>Hamayl Zahid</strong> AI Engineer| DeepLearning.AI + Stanford + Harvard Certified  
-  <br>Creative mind solving real-world problems with Machine Learning, NLP, and Reinforcement Learning.
+ Hi! I'm <strong>Hamayl Zahid</strong> — AI Engineer | DeepLearning.AI, Stanford & Harvard Certified.
+  <br>Passionate about building intelligent systems that solve real-world problems using Machine Learning, NLP, and Reinforcement Learning.
   <br><em>Driven by curiosity. Fueled by code. Focused on meaningful impact. 🚀</em>
 </p>
 
@@ -55,7 +55,7 @@
   <img src="https://img.shields.io/badge/Deep%20Learning-orange?style=for-the-badge"/>
 </p>
 
-<p align="center"><strong>Selected Certifications:</strong></p>
+<p><strong>Selected Certifications:</strong></p>
 
 <table>
   <tr>
@@ -78,86 +78,82 @@
 
 <details>
   <summary><strong>🕹️ Gridworld Agent – Reinforcement Learning</strong></summary>
-  <p>
-    <code>InternIntelligence_ReinforcementLearningExperiment</code><br><br>
-    Designed and implemented an intelligent agent using the Q-learning algorithm to navigate a 2D grid-based environment.  
-    The agent learns through trial-and-error to make optimal decisions by maximizing cumulative rewards while exploring and exploiting efficiently.<br><br>
-    
-    This project demonstrates the practical application of Reinforcement Learning concepts such as:
-    <ul>
-      <li>Markov Decision Processes (MDPs)</li>
-      <li>Reward shaping and policy improvement</li>
-      <li>Convergence behavior over episodes</li>
-    </ul>
 
-    📌 <em>Outcome:</em> The trained agent consistently finds optimal paths, adapts to environmental changes, and serves as a foundational component for more advanced RL simulations.<br><br>
+**Project:** `InternIntelligence_ReinforcementLearningExperiment`  
+Designed and implemented an intelligent agent using the Q-learning algorithm to navigate a 2D grid-based environment.  
+The agent learns through trial-and-error to make optimal decisions by maximizing cumulative rewards while efficiently balancing exploration and exploitation.
 
-    <strong>Tech Used:</strong> Python, NumPy, Matplotlib
-  </p>
+**Key concepts demonstrated:**
+- Markov Decision Processes (MDPs)  
+- Reward shaping and policy improvement  
+- Convergence behavior over training episodes
+
+**📌 Outcome:**  
+The trained agent consistently finds optimal paths, adapts to environmental changes, and serves as a foundational component for more advanced reinforcement learning simulations.
+
+**Tech Used:** Python, NumPy, Matplotlib
+
 </details>
+
 
 
 <details>
   <summary><strong>🧠 Text Classification – NLP Pipeline</strong></summary>
-  <p>
-    <code>InternIntelligence_NaturalLanguageUnderstanding</code><br><br>
-    Developed an end-to-end Natural Language Processing (NLP) pipeline for automated text classification tasks.  
-    The system processes raw text data through multiple stages—cleaning, tokenization, and feature extraction—to predict categories with high accuracy.<br><br>
 
-    Key components of the pipeline include:
-    <ul>
-      <li>Text preprocessing (stopword removal, stemming)</li>
-      <li>Vectorization using TF-IDF</li>
-      <li>Training and evaluation of ML models (Logistic Regression, Naive Bayes)</li>
-    </ul>
+**Project:** `InternIntelligence_NaturalLanguageUnderstanding`  
+Developed an end-to-end Natural Language Processing (NLP) pipeline for automated text classification tasks.  
+The system processes raw text data through multiple stages—cleaning, tokenization, and feature extraction—to predict categories with high accuracy.
 
-    📌 <em>Outcome:</em> The pipeline successfully classifies diverse textual inputs and can be adapted for sentiment analysis, spam detection, and topic modeling.<br><br>
+**Key components of the pipeline include:**
+- Text preprocessing (stopword removal, stemming)
+- Vectorization using TF-IDF
+- Training and evaluation of ML models (Logistic Regression, Naive Bayes)
 
-    <strong>Tech Used:</strong> Python, Scikit-learn, NLTK, Pandas
-  </p>
+**📌 Outcome:** The pipeline successfully classifies diverse textual inputs and can be adapted for sentiment analysis, spam detection, and topic modeling.
+
+**Tech Used:** Python, Scikit-learn, NLTK, Pandas
+
 </details>
+
 
 
 <details>
   <summary><strong>⚖️ Bias Evaluation in AI Models</strong></summary>
-  <p>
-    <code>InternIntelligence_AIEthicsandBiasEvaluation</code><br><br>
-    Investigated and quantified algorithmic bias in machine learning systems using real-world datasets.  
-    Applied fairness metrics to evaluate model decisions across demographic groups, identifying disparities and proposing mitigation strategies.<br><br>
 
-    Key highlights of the project:
-    <ul>
-      <li>Explored data imbalance and representation issues</li>
-      <li>Applied fairness metrics (Demographic Parity, Equalized Odds)</li>
-      <li>Visualized bias through group-wise performance comparisons</li>
-    </ul>
+**Project:** `InternIntelligence_AIEthicsandBiasEvaluation`  
+Investigated and quantified algorithmic bias in machine learning systems using real-world datasets.  
+Applied fairness metrics to evaluate model decisions across demographic groups, identifying disparities and proposing mitigation strategies.
 
-    📌 <em>Outcome:</em> Enabled fairer model development by uncovering hidden biases and making recommendations to improve ethical AI practices.<br><br>
+**Key highlights of the project:**
+- Explored data imbalance and representation issues  
+- Applied fairness metrics (Demographic Parity, Equalized Odds)  
+- Visualized bias through group-wise performance comparisons
 
-    <strong>Tech Used:</strong> Python, Matplotlib/Seaborn, Fairness Metrics
-  </p>
+**📌 Outcome:** Enabled fairer model development by uncovering hidden biases and offering actionable insights to improve ethical AI practices.
+
+**Tech Used:** Python, Matplotlib, Seaborn, Fairness Metrics
+
 </details>
 
 
 <details>
   <summary><strong>🛍️ E-commerce Frontend Design</strong></summary>
-  <p>
-    <code>ecommerce-frontend-design</code><br><br>
-    Built a clean, responsive, and user-friendly frontend layout for an e-commerce platform.  
-    The design includes structured product sections, modern UI elements, and interactive components using vanilla JavaScript.<br><br>
 
-    Project highlights:
-    <ul>
-      <li>Fully responsive layout (mobile-first)</li>
-      <li>Product grid, navigation bar, and CTA components</li>
-      <li>Interactive features (dropdowns, hover effects, simple cart logic)</li>
-    </ul>
+**Project:** `ecommerce-frontend-design`  
+Built a clean, responsive, and user-friendly frontend layout for an e-commerce platform.  
+The design includes structured product sections, modern UI elements, and interactive components using vanilla JavaScript.
 
-    📌 <em>Outcome:</em> Delivered a scalable and visually engaging UI ready for integration with backend systems or APIs.<br><br>
+**Project highlights:**
+- Fully responsive layout (mobile-first)  
+- Product grid, navigation bar, and CTA components  
+- Interactive features (dropdowns, hover effects, simple cart logic)
 
-    <strong>Tech Used:</strong> HTML, CSS, JavaScript
-  </p>
+**📌 Outcome:** Delivered a scalable and visually engaging UI ready for integration with backend systems or APIs.
+
+**Tech Used:** HTML, CSS, JavaScript
+
 </details>
+
 
 
 ---
@@ -165,8 +161,11 @@
 <h2 align="center">📈 GitHub Stats</h2>
 
 <p>
-  <img src="https://github-readme-stats.vercel.app/api?username=hamaylzahid&show_icons=true&theme=default&hide_border=true" width="400"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamaylzahid&layout=compact&hide_border=true" width="330"/>
+  <p">
+  <img src="https://github-readme-stats.vercel.app/api?username=hamaylzahid&show_icons=true&theme=radical&hide_border=true" width="400"/><br><br>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamaylzahid&layout=compact&hide_border=true&theme=radical" width="330"/>
+</p>
+
 </p>
 
 ---
