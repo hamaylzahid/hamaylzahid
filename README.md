@@ -161,7 +161,7 @@ The design includes structured product sections, modern UI elements, and interac
 <h2 align="center">📈 GitHub Stats</h2>
 
 <p>
-  <p">
+  <p>
   <img src="https://github-readme-stats.vercel.app/api?username=hamaylzahid&show_icons=true&theme=radical&hide_border=true" width="400"/><br><br>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamaylzahid&layout=compact&hide_border=true&theme=radical" width="330"/>
 </p>
@@ -180,3 +180,9 @@ The design includes structured product sections, modern UI elements, and interac
     <img src="https://img.shields.io/badge/Gmail-Email-red?style=flat-square&logo=gmail" />
   </a>
 </p>
+
+---
+
+<p align="center"><sub> Fueled by curiosity, built with code — <strong>Hamayl Zahid</strong> ❤️</sub></p>
+
+
