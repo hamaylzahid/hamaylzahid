@@ -1,10 +1,10 @@
 <h1 align="center">👩‍🎓 Hamayl Zahid – AI Engineer Portfolio</h1>
-
 <p align="center">
- Hi! I'm <strong>Hamayl Zahid</strong> — AI Engineer | IBM ,DeepLearning.AI, Stanford & Harvard Certified.
-  <br>Passionate about building intelligent systems that solve real-world problems using Machine Learning, NLP, and Reinforcement Learning.
-  <br><em>Driven by curiosity. Fueled by code. Focused on meaningful impact. 🚀</em>
+  Hey there! I'm <strong>Hamayl Zahid</strong> — an aspiring <strong>AI Engineer</strong> | certified by <strong>IBM</strong>, <strong>DeepLearning.AI</strong>, <strong>Stanford</strong>, and <strong>Harvard</strong>.
+  <br>I specialize in building intelligent systems using <strong>Machine Learning</strong>, <strong>Natural Language Processing</strong>, and <strong>Reinforcement Learning</strong> to solve real-world challenges.
+  <br><em>Curious by nature. Obsessed with learning. Committed to meaningful innovation. 🚀</em>
 </p>
+
 
 <p align="center">
   <a href="https://www.linkedin.com/in/hamaylzahid">
@@ -59,98 +59,136 @@
 
 <table>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/hamaylzahid/hamaylzahid/main/cs50.png" width="100"/></td>
-    <td><strong>CS50x – Introduction to Computer Science</strong><br>Harvard University (edX)</td>
-  </tr>
-  <tr>
     <td><img src="https://avatars.githubusercontent.com/u/67927826?s=200&v=4" width="100"/></td>
     <td><strong>Machine Learning Specialization</strong><br>DeepLearning.AI & Stanford University</td>
   </tr>
   <tr>
+    <td><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" width="100"/></td>
+    <td><strong>Machine Learning with Python</strong><br>IBM (Coursera)</td>
+  </tr>
+ <tr>
     <td><img src="https://raw.githubusercontent.com/hamaylzahid/hamaylzahid/main/sololearn.png" width="100"/></td>
     <td><strong>Python Developer Certificate</strong><br>SoloLearn</td>
   </tr>
+  <tr>
+    <td><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" width="100"/></td>
+    <td><strong>Data Analysis with Python</strong><br>IBM (Coursera)</td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/hamaylzahid/hamaylzahid/main/cs50.png" width="100"/></td>
+    <td><strong>CS50x – Introduction to Computer Science</strong><br>Harvard University (edX)</td>
+  </tr>
 </table>
+
 
 ---
 
-<h2 align="center">🚀 Projects</h2>
-
 <details>
-  <summary><strong>🕹️ Gridworld Agent – Reinforcement Learning</strong></summary>
+  <summary><strong>⚖️ <a href="https://github.com/hamaylzahid/ResponsibleAI_BiasCheck" target="_blank">Bias Evaluation in AI Models</a></strong></summary>
 
-**Project:** `InternIntelligence_ReinforcementLearningExperiment`  
-Designed and implemented an intelligent agent using the Q-learning algorithm to navigate a 2D grid-based environment.  
-The agent learns through trial-and-error to make optimal decisions by maximizing cumulative rewards while efficiently balancing exploration and exploitation.
+**Repo:** [`ResponsibleAI_BiasCheck`](https://github.com/hamaylzahid/ResponsibleAI_BiasCheck)  
+Developed a responsible AI evaluation tool to detect, quantify, and visualize algorithmic bias across demographic groups in machine learning models.
+Implemented core fairness metrics like Demographic Parity and Equalized Odds, with clear visual insights into disparities.
+Also proposed actionable bias mitigation strategies, supporting more ethical and inclusive AI development.
 
-**Key concepts demonstrated:**
-- Markov Decision Processes (MDPs)  
-- Reward shaping and policy improvement  
-- Convergence behavior over training episodes
+
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-blue?style=for-the-badge&logo=streamlit)](https://responsibleaibiascheck-h6p9vyyjmsmyemycpsidaz.streamlit.app/)
+
+**Key Features:**
+- Bias metrics: Demographic Parity, Equalized Odds  
+- Group-wise accuracy/performance breakdown  
+- Visualizations of disparity and fairness violations  
+- Insights and suggestions for bias reduction
 
 **📌 Outcome:**  
-The trained agent consistently finds optimal paths, adapts to environmental changes, and serves as a foundational component for more advanced reinforcement learning simulations.
+Highlighted hidden model biases and supported better decision-making in AI system deployment.
 
-**Tech Used:** Python, NumPy, Matplotlib
+**Tech Used:**  
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-000000?style=for-the-badge&logo=matplotlib)
+![Seaborn](https://img.shields.io/badge/Seaborn-2E2E2E?style=for-the-badge&logo=python&logoColor=white)
+![Fairlearn](https://img.shields.io/badge/Fairlearn-blue?style=for-the-badge)
 
-</details>
-
-
-
-<details>
-  <summary><strong>🧠 Text Classification – NLP Pipeline</strong></summary>
-
-**Project:** `InternIntelligence_NaturalLanguageUnderstanding`  
-Developed an end-to-end Natural Language Processing (NLP) pipeline for automated text classification tasks.  
-The system processes raw text data through multiple stages—cleaning, tokenization, and feature extraction—to predict categories with high accuracy.
-
-**Key components of the pipeline include:**
-- Text preprocessing (stopword removal, stemming)
-- Vectorization using TF-IDF
-- Training and evaluation of ML models (Logistic Regression, Naive Bayes)
-
-**📌 Outcome:** The pipeline successfully classifies diverse textual inputs and can be adapted for sentiment analysis, spam detection, and topic modeling.
-
-**Tech Used:** Python, Scikit-learn, NLTK, Pandas
-
-</details>
-
-
-
-<details>
-  <summary><strong>⚖️ Bias Evaluation in AI Models</strong></summary>
-
-**Project:** `InternIntelligence_AIEthicsandBiasEvaluation`  
-Investigated and quantified algorithmic bias in machine learning systems using real-world datasets.  
-Applied fairness metrics to evaluate model decisions across demographic groups, identifying disparities and proposing mitigation strategies.
-
-**Key highlights of the project:**
-- Explored data imbalance and representation issues  
-- Applied fairness metrics (Demographic Parity, Equalized Odds)  
-- Visualized bias through group-wise performance comparisons
-
-**📌 Outcome:** Enabled fairer model development by uncovering hidden biases and offering actionable insights to improve ethical AI practices.
-
-**Tech Used:** Python, Matplotlib, Seaborn, Fairness Metrics
 
 </details>
 
 
 <details>
-  <summary><strong>🛍️ E-commerce Frontend Design</strong></summary>
+  <summary><strong>🌌 <a href="https://github.com/hamaylzahid/exoplanet-discovery-habitability-predictor" target="_blank">Exoplanet Discovery & Habitability Predictor</a></strong></summary>
 
-**Project:** `ecommerce-frontend-design`  
-Built a clean, responsive, and user-friendly frontend layout for an e-commerce platform.  
-The design includes structured product sections, modern UI elements, and interactive components using vanilla JavaScript.
+**Repo:** [`exoplanet-discovery-habitability-predictor`](https://github.com/hamaylzahid/exoplanet-discovery-habitability-predictor)  
+Performed EDA and built a custom machine learning model to classify potentially habitable exoplanets using real astrophysical data.
+Explored key features like orbital period, planet mass, and temperature to train predictive classifiers.
+The final model provides interpretable predictions and supports astrobiological research into Earth-like planet discovery.
 
-**Project highlights:**
-- Fully responsive layout (mobile-first)  
-- Product grid, navigation bar, and CTA components  
-- Interactive features (dropdowns, hover effects, simple cart logic)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-blue?style=for-the-badge&logo=streamlit)](https://exoplanet-discovery-habitability-predictor-7vaq2zm4ann8wycylyn.streamlit.app/)
 
-**📌 Outcome:** Delivered a scalable and visually engaging UI ready for integration with backend systems or APIs.
+**Key Features:**
+- NASA/Kaggle exoplanet dataset  
+- Random Forest, SVM classification  
+- Feature importance & habitability scoring  
+- Clean, interpretable model output
 
-**Tech Used:** HTML, CSS, JavaScript
+**📌 Outcome:**  
+Supported astrobiology research by modeling real habitability indicators.
+
+**Tech Used:**  
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-2E2E2E?style=for-the-badge&logo=python&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-000000?style=for-the-badge&logo=matplotlib)
+
+</details>
+
+
+<details>
+  <summary><strong>🧠 <a href="https://github.com/hamaylzahid/bert-ner-visualized" target="_blank">Named Entity Recognition (NER) – BERT</a></strong></summary>
+
+**Repo:** [`bert-ner-visualized`](https://github.com/hamaylzahid/bert-ner-visualized)  
+Built a CPU-optimized Named Entity Recognition (NER) system using BERT and HuggingFace Transformers.
+The model extracts entities from raw text with high accuracy and displays results using an intuitive, color-coded visualization.
+Includes complete preprocessing, token alignment, and evaluation metrics like precision, recall, and F1-score — all without requiring GPU acceleration.
+
+**Key Features:**
+- HuggingFace Transformers  
+- Visualized entity highlights  
+- F1, precision, recall evaluation  
+- Robust preprocessing and token mapping
+
+**📌 Outcome:**  
+Delivered an efficient, visual-friendly solution for named entity recognition without GPU dependency.
+
+**Tech Used:**  
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Transformers](https://img.shields.io/badge/Transformers-HuggingFace-yellow?style=for-the-badge&logo=huggingface&logoColor=black)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-000000?style=for-the-badge&logo=matplotlib)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+</details>
+
+
+<details>
+  <summary><strong>🛍️ <a href="https://github.com/hamaylzahid/ecommerce-frontend-design" target="_blank">E-commerce Frontend Design</a></strong></summary>
+
+**Repo:** [`ecommerce-frontend-design`](https://github.com/hamaylzahid/ecommerce-frontend-design)  
+Developed a **modern, responsive frontend UI** for an e-commerce platform using clean HTML/CSS/JS.  
+Focused on user experience, layout consistency, and smooth interactivity to emulate a real-world online shopping interface.
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit-green?style=for-the-badge&logo=githubpages)](https://hamaylzahid.github.io/ecommerce-frontend-design/)
+
+**Project Highlights:**
+- Mobile-first responsive layout  
+- Interactive product grid & navbar  
+- Hover effects & cart logic  
+
+**📌 Outcome:**  
+A visually polished UI, ready for integration with any backend or API.
+
+**Tech Used:**  
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 </details>
 
@@ -169,17 +207,23 @@ The design includes structured product sections, modern UI elements, and interac
 </p>
 
 ---
-
 <h2 align="center">📫 Let's Connect</h2>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/hamaylzahid">
-    <img src="https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat-square&logo=linkedin" />
+  Whether you want to talk about AI, collaborate on a project, or just say hi —  
+  I'm always open to meaningful conversations and new opportunities!  
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/hamaylzahid" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Hamayl%20Zahid-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
-  <a href="mailto:maylzahid588@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-Email-red?style=flat-square&logo=gmail" />
+  &nbsp;
+  <a href="mailto:maylzahid588@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Gmail-maylzahid588@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Badge"/>
   </a>
 </p>
+
 
 ---
 
