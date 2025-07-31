@@ -1,4 +1,4 @@
-<h1 align="center">👩‍🎓 Hamayl Zahid – AI Engineer Portfolio</h1>
+<h1 align="center">👩‍🎓 Hamayl Zahid _ AI Engineer /h1>
 <p align="center">
   Hey there! I'm <strong>Hamayl Zahid</strong> — an aspiring <strong>AI Engineer</strong> | certified by <strong>IBM</strong>, <strong>DeepLearning.AI</strong>, <strong>Stanford</strong>, and <strong>Harvard</strong>.
   <br>I specialize in building intelligent systems using <strong>Machine Learning</strong>, <strong>Natural Language Processing</strong>, and <strong>Reinforcement Learning</strong> to solve real-world challenges.
