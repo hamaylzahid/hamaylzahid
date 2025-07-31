@@ -1,24 +1,23 @@
-<h1 align="center">👩‍🎓 Hamayl Zahid _ AI Engineer /h1>
+<h1 align="center">👩‍🎓 Hamayl Zahid -AI Engineer </h1>
 <p align="center">
   Hey there! I'm <strong>Hamayl Zahid</strong> — an aspiring <strong>AI Engineer</strong> | certified by <strong>IBM</strong>, <strong>DeepLearning.AI</strong>, <strong>Stanford</strong>, and <strong>Harvard</strong>.
   <br>I specialize in building intelligent systems using <strong>Machine Learning</strong>, <strong>Natural Language Processing</strong>, and <strong>Reinforcement Learning</strong> to solve real-world challenges.
   <br><em>Curious by nature. Obsessed with learning. Committed to meaningful innovation. 🚀</em>
 </p>
 
-
-
 <p align="center">
-  <a href="https://www.linkedin.com/in/hamaylzahid">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  <a href="https://www.linkedin.com/in/hamaylzahid" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="mailto:maylzahid588@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
+  <a href="mailto:maylzahid588@gmail.com" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Email-Email%20Me-red?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
   </a>
-  <a href="https://www.coursera.org/user/52c2f5daaa1c77c78350939367aa4cf6">
-    <img src="https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=coursera&logoColor=white" alt="Coursera"/>
+  <a href="https://www.coursera.org/user/52c2f5daaa1c77c78350939367aa4cf6" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Coursera-0056D2?style=flat-square&logo=coursera&logoColor=white" alt="Coursera" />
   </a>
-  <img src="https://komarev.com/ghpvc/?username=hamaylzahid&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="hamaylzahid" />
+  <img src="https://komarev.com/ghpvc/?username=hamaylzahid&label=Profile%20Views&color=0e75b6&style=flat-square" alt="Profile Views" />
 </p>
+
 
 
 ---
