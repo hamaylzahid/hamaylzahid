@@ -52,50 +52,133 @@
 
 ---
 
-<h2 align="center">🏅 Certifications</h2>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Machine%20Learning-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Deep%20Learning-orange?style=for-the-badge"/>
-</p>
 
-<p><strong>Selected Certifications:</strong></p>
+<h2 align="center">📚 Certifications</h2>
 
-<table>
-  <tr>
-    <td><img src="https://avatars.githubusercontent.com/u/67927826?s=200&v=4" width="100"/></td>
-    <td><strong>Machine Learning Specialization</strong><br>DeepLearning.AI & Stanford University</td>
-  </tr>
-  <tr>
-    <td><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" width="100"/></td>
-    <td><strong>Machine Learning with Python</strong><br>IBM (Coursera)</td>
-  </tr>
- <tr>
-    <td><img src="https://raw.githubusercontent.com/hamaylzahid/hamaylzahid/main/sololearn.png" width="100"/></td>
-    <td><strong>Python Developer Certificate</strong><br>SoloLearn</td>
-  </tr>
-  <tr>
-    <td><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" width="100"/></td>
-    <td><strong>Data Analysis with Python</strong><br>IBM (Coursera)</td>
-  </tr>
-  <tr>
-    <td><img src="https://raw.githubusercontent.com/hamaylzahid/hamaylzahid/main/cs50.png" width="100"/></td>
-    <td><strong>CS50x – Introduction to Computer Science</strong><br>Harvard University (edX)</td>
-  </tr>
-</table>
+<details>
+  <summary><strong>🤖 Machine Learning Specialization – Stanford & DeepLearning.AI</strong></summary>
+  <p><strong>By:</strong> DeepLearning.AI & Stanford University<br/>
+  <a href="https://coursera.org/share/bfe5447bfbd523114b611dc1415a47cd" target="_blank">View Certificate</a></p>
+
+  <p>
+    <img src="https://img.shields.io/badge/Stanford%20%26%20DeepLearning.AI-Machine%20Learning%20Specialization-blue?style=flat-square&logo=coursera" alt="Coursera ML Specialization Badge"/>
+  </p>
+
+  <p>
+    A comprehensive specialization by Andrew Ng, covering core machine learning algorithms, model optimization, and real-world applications.
+  </p>
+
+  <ul>
+    <li><strong>Supervised ML: Regression & Classification</strong> – 99.83%</li>
+    <li><strong>Advanced Learning Algorithms</strong> – 100%</li>
+    <li><strong>Unsupervised Learning, Recommenders & RL</strong> – 98.80%</li>
+  </ul>
+</details>
+
+
+<hr>
+
+<details open>
+  <summary><strong>🧠 Deep Learning Specialization <small>(In Progress)</small></strong></summary>
+  <p><strong>By:</strong> DeepLearning.AI (via Coursera)</p>
+
+  <p>
+    <img src="https://img.shields.io/badge/DeepLearning.AI-Specialization-blue?style=flat-square&logo=coursera" alt="Coursera Deep Learning Specialization Badge"/>
+  </p>
+
+  <p>
+    A rigorous specialization led by Andrew Ng, focusing on foundational deep learning concepts and practical implementation using Python and TensorFlow.
+  </p>
+
+  <ul>
+    <li><strong>Neural Networks and Deep Learning</strong> – Introduction to forward/backpropagation, activation functions, and gradient descent.</li>
+    <li><strong>Improving Deep Neural Networks</strong> – Techniques for hyperparameter tuning, regularization, and batch normalization.</li>
+    <li><strong>Structuring ML Projects</strong> – Best practices for debugging, error analysis, and designing scalable ML systems.</li>
+    <li><strong>Convolutional Neural Networks</strong> – <em>(Upcoming)</em></li>
+    <li><strong>Sequence Models</strong> – <em>(Upcoming)</em></li>
+  </ul>
+</details>
+
+<hr>
+
+<details open>
+  <summary><strong>📊 IBM Data Science & ML Courses</strong></summary>
+  <p><strong>By:</strong> IBM (via Coursera)</p>
+
+  <p>
+    <img src="https://img.shields.io/badge/IBM-Data%20Science%20%26%20ML-blue?style=flat-square&logo=ibm" alt="IBM Data Science Badge"/>
+  </p>
+
+  <p>
+    A set of specialized courses focused on practical applications of Python in data science and machine learning, covering real-world datasets and industry practices.
+  </p>
+
+  <ul>
+    <li>
+      <strong>Data Analysis with Python</strong> – <code>Score: 91.70%</code><br>
+      <em>Explored NumPy, Pandas, and data wrangling techniques for structured datasets.</em>
+    </li>
+    <li>
+      <strong>Data Visualization with Python</strong> – <code>Score: 86%</code><br>
+      <em>Created compelling visuals using Matplotlib, Seaborn, and Folium for storytelling.</em>
+    </li>
+    <li>
+      <strong>Machine Learning with Python</strong> – <code>Score: 89.28%</code><br>
+      <em>Implemented classification, regression, and clustering using Scikit-learn and SciPy.</em>
+    </li>
+  </ul>
+</details>
+
+
+<hr>
+
+<details open>
+  <summary><strong>🐍 Python Developer Certificate</strong></summary>
+  <p><strong>By:</strong> Sololearn</p>
+
+  <p>
+    <img src="https://img.shields.io/badge/Sololearn-Python%20Developer-blue?style=flat-square&logo=python" alt="Sololearn Python Developer Badge"/>
+  </p>
+
+  <p>
+    Demonstrated proficiency in core Python programming, including control flow, data structures, functions, file handling, and object-oriented programming (OOP). Laid a solid foundation for backend development and automation workflows.
+  </p>
+</details>
+
+<hr>
+
+<details open>
+  <summary><strong>🎓 CS50x: Introduction to Computer Science</strong></summary>
+  <p><strong>By:</strong> Harvard University (via edX)</p>
+
+  <p>
+    <img src="https://img.shields.io/badge/edX-CS50x-blue?style=flat-square&logo=edx" alt="Harvard CS50x Badge"/>
+  </p>
+
+  <p>
+    A comprehensive introduction to computer science covering algorithms, data structures, memory management, software engineering, and web development using C, Python, SQL, and JavaScript.
+  </p>
+</details>
+
+
 
 
 ---
+
+<h2 align="center">🌟 My Projects</h2>
+<p align="center">
+  A curated showcase of my hands-on projects — featuring live demos, source code, and real-world applications across AI, data science, and web development.
+</p>
+
 
 <details>
   <summary><strong>⚖️ <a href="https://github.com/hamaylzahid/ResponsibleAI_BiasCheck" target="_blank">Bias Evaluation in AI Models</a></strong></summary>
 
 **Repo:** [`ResponsibleAI_BiasCheck`](https://github.com/hamaylzahid/ResponsibleAI_BiasCheck)  
-Developed a responsible AI evaluation tool to detect, quantify, and visualize algorithmic bias across demographic groups in machine learning models.
-Implemented core fairness metrics like Demographic Parity and Equalized Odds, with clear visual insights into disparities.
+Developed a responsible AI evaluation tool to detect, quantify, and visualize algorithmic bias across demographic groups in machine learning models.  
+Implemented core fairness metrics like Demographic Parity and Equalized Odds, with clear visual insights into disparities.  
 Also proposed actionable bias mitigation strategies, supporting more ethical and inclusive AI development.
-
-
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-blue?style=for-the-badge&logo=streamlit)](https://responsibleaibiascheck-h6p9vyyjmsmyemycpsidaz.streamlit.app/)
 
@@ -105,6 +188,8 @@ Also proposed actionable bias mitigation strategies, supporting more ethical and
 - Visualizations of disparity and fairness violations  
 - Insights and suggestions for bias reduction
 
+
+
 **📌 Outcome:**  
 Highlighted hidden model biases and supported better decision-making in AI system deployment.
 
@@ -113,9 +198,8 @@ Highlighted hidden model biases and supported better decision-making in AI syste
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-000000?style=for-the-badge&logo=matplotlib)
 ![Seaborn](https://img.shields.io/badge/Seaborn-2E2E2E?style=for-the-badge&logo=python&logoColor=white)
 ![Fairlearn](https://img.shields.io/badge/Fairlearn-blue?style=for-the-badge)
-
-
 </details>
+
 
 
 <details>
@@ -202,31 +286,32 @@ A visually polished UI, ready for integration with any backend or API.
 
 <h2 align="center">📈 GitHub Stats</h2>
 
-<p>
-  <p>
-  <img src="https://github-readme-stats.vercel.app/api?username=hamaylzahid&show_icons=true&theme=radical&hide_border=true" width="400"/><br><br>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamaylzahid&layout=compact&hide_border=true&theme=radical" width="330"/>
-</p>
-
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=hamaylzahid&show_icons=true&theme=default&hide_border=true" width="400"/>
+  <br><br>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamaylzahid&layout=compact&hide_border=true&theme=default" width="330"/>
 </p>
 
 ---
 <h2 align="center">📫 Let's Connect</h2>
 
 <p align="center">
-  Whether you want to talk about AI, collaborate on a project, or just say hi —  
-  I'm always open to meaningful conversations and new opportunities!  
+  Whether you want to talk about AI, collaborate on a project, or just say hi —<br>
+  I'm always open to meaningful conversations and new opportunities!
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/hamaylzahid" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Hamayl%20Zahid-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  <a href="mailto:maylzahid588@gmail.com">
+    <img src="https://img.shields.io/badge/Say%20Hi!-Email%20Me-red?style=flat-square&logo=gmail" alt="Email" />
   </a>
   &nbsp;
-  <a href="mailto:maylzahid588@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Gmail-maylzahid588@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Badge"/>
+  <a href="https://www.linkedin.com/in/hamaylzahid/" target="_blank">
+    <img src="https://img.shields.io/badge/Connect-LinkedIn-blue?style=flat-square&logo=linkedin" alt="LinkedIn" />
   </a>
 </p>
+
+
+
 
 
 ---
