@@ -13,7 +13,11 @@
   <a href="mailto:maylzahid588@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
   </a>
+  <a href="https://www.coursera.org/user/52c2f5daaa1c77c78350939367aa4cf6">
+    <img src="https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=coursera&logoColor=white" alt="Coursera"/>
+  </a>
 </p>
+
 
 ---
 
