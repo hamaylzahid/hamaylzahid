@@ -6,6 +6,7 @@
 </p>
 
 
+
 <p align="center">
   <a href="https://www.linkedin.com/in/hamaylzahid">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
@@ -16,6 +17,7 @@
   <a href="https://www.coursera.org/user/52c2f5daaa1c77c78350939367aa4cf6">
     <img src="https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=coursera&logoColor=white" alt="Coursera"/>
   </a>
+  <img src="https://komarev.com/ghpvc/?username=hamaylzahid&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="hamaylzahid" />
 </p>
 
 
