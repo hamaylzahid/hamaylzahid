@@ -241,58 +241,7 @@ body.dark h2 {
     align-items: stretch; /* Ensures all cards align vertically */
   }
   
-  /* Card Style */
-  .card {
-    background: var(--card-bg);
-    color: var(--card-text);
-    border: 1px solid rgba(100, 100, 100, 0.15); /* Subtle border */
-    border-radius: 20px;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* Hover Effects */
-  .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
-    border-color: rgba(0, 123, 255, 0.3); /* Glow-up effect */
-  }
-  
-  /* Image inside Card */
-  .card img {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 1rem;
-    object-fit: cover;
-    aspect-ratio: 16/9;
-  }
-  
-  /* Section Styling */
-  #projects {
-    background: var(--section-bg, #f9f9f9);
-    padding: 4rem 2rem;
-  }
-  
-  /* Dark Mode */
-  @media (prefers-color-scheme: dark) {
-    #projects {
-      --section-bg: #121212;
-    }
-  
-    .card {
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    }
-  
-    .card:hover {
-      border-color: rgba(0, 200, 255, 0.3);
-      box-shadow: 0 0 24px rgba(0, 200, 255, 0.08);
-    }
-  }
+ 
 /* Section Heading */
 #projects h2 {
     font-size: 2.2rem;
@@ -869,12 +818,19 @@ footer {
     margin-top: -10px;
     margin-bottom: 30px;
   }
-  #contact h2 {
-    text-align: center;
-    font-size: 2rem;
-    color: var(--accent-color); /* or white if no accent */
-    margin-bottom: 10px;
-  }
+ /* Default (Light Mode) */
+#contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #0a0a0a; /* Dark gray or near-black for light mode */
+  margin-bottom: 10px;
+}
+
+/* Dark Mode */
+body.dark-mode #contact h2 {
+  color: #f1f1f1; /* Light color for dark mode */
+}
+
   #contact .socials {
     margin-top: 40px;
     display: flex;
@@ -1416,3 +1372,4 @@ body.dark-mode .maylbot-tagline {
   justify-content: left;
   align-items: center;
 }
+

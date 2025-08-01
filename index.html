@@ -174,7 +174,8 @@
         </div>
         <div class="flip-card-back">
           <br><h3>Project Overview</h3><br>
-               <p>This project leverages <strong>machine learning</strong> to evaluate the <strong>habitability potential of exoplanets</strong> using real astronomical datasets. It analyzes key features like planetary mass, orbital period, host star type, and discovery methods to uncover life-supporting patterns in distant worlds.</p>
+               <p>This project uses <strong>machine learning</strong> to predict the <strong>habitability of exoplanets</strong> by analyzing features like mass, orbit, star type, and discovery method from real astronomical data.</p>
+
 
           <br><br><div class="tech-tags">
             <span class="badge">Scikit-learn</span>
@@ -320,7 +321,7 @@
 </div>
 
 <!-- Tagline Message -->
-<div class="maylbot-tagline"> 👋Hi, I’m MaylBot — Hamayl’s AI twin!</div>
+<div class="maylbot-tagline" data-aos="fade-up"> 👋Hi, I’m MaylBot — Hamayl’s AI twin!</div>
 
 <!-- Enhanced Glow -->
 <div class="maylbot-glow"></div>
@@ -328,15 +329,28 @@
 
      <!-- Contact Section -->
   <section id="contact" class="section-dark" data-aos="fade-up">
-    <h2>Contact Me</h2><br>
+    <h2>Contact Me</h2><br><br><br>
    <p class="contact-intro">Let's build something amazing together — reach out for collaborations, questions, or just to say hi!</p>
 
-    <form id="contactForm">
-      <div class="input-group"><i class="fas fa-user"></i><input type="text" placeholder="Your Name" required /></div>
-      <div class="input-group"><i class="fas fa-envelope"></i><input type="email" placeholder="Your Email" required /></div>
-      <div class="input-group"><i class="fas fa-comment"></i><textarea placeholder="Your Message" required></textarea></div>
-      <button type="submit">Send Message</button>
-    </form>
+    <form id="contactForm" action="https://formspree.io/f/xdkdlnyg" method="POST" class="contact-form">
+  <div class="input-group">
+    <i class="fas fa-user"></i>
+    <input type="text" name="name" placeholder="Your Name" required />
+  </div>
+  <div class="input-group">
+    <i class="fas fa-envelope"></i>
+    <input type="email" name="email" placeholder="Your Email" required 
+       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+       title="Enter a valid email (e.g. yourname@example.com)" />
+
+  </div>
+  <div class="input-group">
+    <i class="fas fa-comment"></i>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+  </div>
+  <button type="submit">Send Message</button>
+</form>
+
     <div id="formFeedback" class="form-feedback"></div>
 
     <div class="socials">

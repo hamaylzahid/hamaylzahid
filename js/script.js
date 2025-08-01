@@ -51,9 +51,13 @@ function setTheme(isDark) {
 
 window.addEventListener('DOMContentLoaded', () => {
   const savedTheme = localStorage.getItem('theme');
-  const isDark = savedTheme === 'dark';
+
+  // Default to dark mode if no preference is saved
+  const isDark = savedTheme ? savedTheme === 'dark' : true;
+
   setTheme(isDark);
 });
+
 
 toggleBtn.addEventListener('click', () => {
   const isDark = !body.classList.contains('dark-mode');
@@ -103,17 +107,16 @@ document.querySelector('#contactForm').addEventListener('submit', function (e) {
   // ==========================
   // AOS Initialization
   // ==========================
-  AOS.init({
-    duration: 1000,
-    easing: 'ease-in-out',
-    once: true,
-    mirror: false
-  });
+AOS.init({
+  duration: 800,
+  easing: 'ease-in-out',
+  once: false,
+  mirror: true
+});
+window.addEventListener('load', () => {
+  AOS.refresh();
+});
 
-  AOS.init({
-    duration: 800,
-    once: true
-  });
   document.querySelectorAll('.flip-card').forEach(card => {
   card.addEventListener('mouseenter', (e) => {
     // Only flip if not hovering over demo button
@@ -136,4 +139,42 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+  const form = document.getElementById("contactForm");
+  const thankYou = document.createElement("p");
+
+  thankYou.style.marginTop = "1rem";
+  thankYou.style.fontWeight = "500";
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        form.reset();
+        thankYou.textContent = "✅ Message sent! I'll get back to you soon.";
+        thankYou.style.color = "green";
+      } else {
+        thankYou.textContent = "❌ Oops! Something went wrong.";
+        thankYou.style.color = "red";
+      }
+    } catch (error) {
+      thankYou.textContent = "❌ Error sending message.";
+      thankYou.style.color = "red";
+    }
+
+    if (!form.contains(thankYou)) {
+      form.appendChild(thankYou);
+    }
+  });
+
 
