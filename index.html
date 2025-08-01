@@ -1,0 +1,387 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hamayl Zahid's AI/ML Portfolio Website">
+  <meta name="keywords" content="Hamayl Zahid, Portfolio, AI, ML, Deep Learning, Web Development">
+  <meta name="author" content="Hamayl Zahid">
+  
+  <title>Hamayl Zahid | AI Engineer Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Theme Toggle Button -->
+  <div class="theme-toggle" title="Toggle Light/Dark Mode">
+    <i class="fas fa-moon"></i>
+  </div>
+
+  <!-- Hero Section (Split Layout) -->
+  <section class="hero" id="home">
+    <div class="hero-text" data-aos="fade-right">
+      <h1>Hamayl Zahid</h1>
+      <h2>AI Engineer | ML Researcher | IBM, Harvard, Stanford Certified</h2>
+      <blockquote>
+        <em>"Building cognitive AI that thinks beyond code."</em><br>
+      </blockquote>
+      <div class="hero-cta">
+        <a href="#projects" class="cta-btn">View Projects</a>
+        <a href="#maylbot-info" class="cta-btn">Chat with MaylBot</a>
+        <a href="assets/Hamayl Zahid_Resume_CV.pdf" class="cta-btn" download>Download Résumé</a>
+      </div>
+
+    </div>
+    <div class="hero-image" data-aos="fade-left">
+      <img src="assets/Artificial intelligence-amico.svg" alt="AI Brain Robot Illustration" />
+     
+    </div>
+  </section>
+  
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+   <!-- SVG Divider with Gradient -->
+<svg class="divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="200%" y2="0%">
+        <stop offset="0%" stop-color="#00c6ff">
+          <animate attributeName="offset" values="0%;1" dur="3s" repeatCount="indefinite" />
+        </stop>
+        <stop offset="100%" stop-color="#0072ff">
+          <animate attributeName="offset" values="1;0%" dur="3s" repeatCount="indefinite" />
+        </stop>
+      </linearGradient>
+    </defs>
+    <path d="M0,96L1440,160L1440,320L0,320Z" fill="url(#gradient)"></path>
+  </svg>
+  
+  
+  
+ <!-- About Section -->
+<section id="about" class="section-light about-section" data-aos="fade-up">
+    <br><h2>About Me</h2><br>
+    <div class="about-content">
+      <p>
+        I'm <strong>Hamayl Zahid</strong> — an AI Engineer with a sharp mind for innovation and a grounded sense of purpose. Currently pursuing a Bachelor's in Artificial Intelligence from Pakistan, I’ve already built systems that demonstrate not only technical fluency but real-world impact.
+      </p>
+      <p>
+        My strengths lie in <strong>Machine Learning</strong>, <strong>Natural Language Processing</strong>, <strong>Reinforcement Learning</strong>, and <strong>intuitive AI dashboards</strong>. I don’t just follow the latest in AI. I create solutions that are explainable, ethical, and forward-looking.
+      </p>
+      <p>
+        From detecting algorithmic bias to predicting planetary habitability, I push boundaries while ensuring clarity and usability. If you're seeking someone who brings both engineering discipline and visionary problem-solving ,<br>I’m exactly who you’re looking for.
+      </p>
+    </div>
+  </section>
+  
+  
+
+  <!-- Skills Section -->
+  <section id="skills" class="section-dark" data-aos="fade-up">
+    <br><h2>Technical Skills</h2><br>
+    <div class="skills">
+      <span class="badge skill">Python</span><span class="badge skill">TensorFlow</span><span class="badge skill">Keras</span>
+      <span class="badge skill">Scikit-learn</span><span class="badge skill">NumPy</span><span class="badge skill">Pandas</span>
+      <span class="badge skill">Matplotlib</span><span class="badge skill">Seaborn</span><span class="badge skill">Jupyter</span>
+      <span class="badge skill">HTML5</span><span class="badge skill">CSS3</span><span class="badge skill">JavaScript</span>
+      <span class="badge skill">Git</span><span class="badge skill">Streamlit</span><span class="badge skill">Hugging Face</span>
+    </div>
+  </section>
+  <!-- Projects Section -->
+<section id="projects" class="section">
+  <h2 class="section-title" data-aos="fade-up">Projects</h2>
+
+  <!-- Correct project grid wrapper -->
+  <div class="project-grid">
+
+    <!-- Project 1 -->
+    <div class="flip-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/animacore banner.png" alt="AnimaCore HumanOS" />
+          <h3>AnimaCore – HumanOS</h3>
+          <p class="tagline">Neuro-symbolic AI OS simulating human cognition & emotion.</p>
+          <a class="demo-btn" href="https://your-live-demo-link.com" target="_blank">Live Demo</a>
+        </div>
+        <div class="flip-card-back">
+          <br><h3>Project Overview</h3><br>
+          <p>Simulates human-like decision-making using emotion-aware transformers. Integrates symbolic reasoning with adaptive neural processing for advanced cognition.</p>
+          <div class="tech-tags">
+            <span class="badge">PyTorch</span>
+            <span class="badge">Transformers</span>
+            <span class="badge">NLP</span>
+            <span class="badge">HuggingFace</span>
+          </div>
+          <a class="github-btn" href="https://github.com/hamaylzahid/AnimaCore-HumanOS" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="flip-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/AI ETHICS BANNER.png" alt="Bias Evaluation" />
+          <h3>Bias Evaluation in AI Models</h3>
+          <p class="tagline">Streamlit app to detect, visualize, and mitigate gender bias in NLP datasets.</p>
+          <a href="https://bias-check-demo.streamlit.app" class="demo-btn" target="_blank">Live Demo</a>
+        </div>
+        <div class="flip-card-back">
+         <br> <h3>Project Overview</h3><br>
+           <p>This project uses <strong>Fairlearn</strong> to detect and mitigate bias in a logistic regression model trained on the <strong>UCI Adult dataset</strong>. It demonstrates ethical trade-offs, explores demographic parity, and provides an interactive Streamlit dashboard.</p>
+
+          <br><br><br><div class="tech-tags">
+            <span class="badge">Python</span>
+            <span class="badge">Pandas</span>
+            <span class="badge">Streamlit</span>
+          </div>
+          <div class="card-links" style="margin-top: auto;">
+            <a  class="github-btn" href="https://github.com/hamaylzahid/ResponsibleAI_BiasCheck" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="flip-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/banner-exodiscovery.png" alt="Exoplanet Predictor" />
+          <h3>Exoplanet Habitability Predictor</h3>
+          <p class="tagline">ML-powered tool analyzing NASA datasets to classify and assess exoplanet habitability.</p>
+          <a href="https://exoplanet-habitability.streamlit.app/" class="demo-btn" target="_blank">Live Demo</a>
+        </div>
+        <div class="flip-card-back">
+          <br><h3>Project Overview</h3><br>
+               <p>This project leverages <strong>machine learning</strong> to evaluate the <strong>habitability potential of exoplanets</strong> using real astronomical datasets. It analyzes key features like planetary mass, orbital period, host star type, and discovery methods to uncover life-supporting patterns in distant worlds.</p>
+
+          <br><br><div class="tech-tags">
+            <span class="badge">Scikit-learn</span>
+            <span class="badge">Python</span>
+            <span class="badge">Matplotlib</span>
+            <span class="badge">Pandas</span>
+          </div><br>
+          <div class="card-links" style="margin-top: auto;">
+            <a href="https://github.com/hamaylzahid/exoplanet-discovery-habitability-predictor" class="github-btn" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="flip-card" data-aos="fade-up" data-aos-delay="400">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/banner_bert.png" alt="BERT NER Visualized" />
+          <h3>BERT NER Visualized</h3>
+          <p class="tagline">BERT-powered NER system with visualized predictions and real-time evaluation metrics.</p>
+          <a href="https://github.com/hamaylzahid/bert-ner-visualized" class="demo-btn" target="_blank">View GitHub</a>
+        </div>
+        <div class="flip-card-back">
+          <h3>Tech Stack</h3>
+          <div class="tech-tags">
+            <span class="badge">BERT</span>
+            <span class="badge">Transformers</span>
+            <span class="badge">Matplotlib</span>
+            <span class="badge">Seaborn</span>
+          </div>
+          <p class="back-desc">Focused on enhancing NLP interpretability using deep learning and visual insights.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="flip-card" data-aos="fade-up" data-aos-delay="500">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src=https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/08abae927aa28aa2aa696530d8cc882168aab5b0 alt="E-commerce Frontend" />
+          <h3>Modern E-commerce UI Design</h3>
+          <p class="tagline">Sleek, responsive UI template with advanced UX flows and interactivity.</p>
+          <a href="https://ecommerce-frontend-mayl.netlify.app/" class="demo-btn" target="_blank">Live Demo</a>
+        </div>
+        <div class="flip-card-back">
+          <h3>Tech Stack</h3>
+          <div class="tech-tags">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JavaScript</span>
+          </div>
+          <p class="back-desc">A fully responsive e-commerce layout designed for smooth customer experience and modern aesthetics.</p>
+          <a href="https://github.com/hamaylzahid/ecommerce-frontend-design" class="demo-btn" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- End of .project-grid -->
+</section>
+
+
+
+
+  <!-- GitHub Stats -->
+  <section class="section-dark"id="github" data-aos="zoom-in">
+    <h2 >GitHub Stats</h2>
+    <img id="github-stats-img"
+    src="https://github-readme-stats.vercel.app/api?username=hamaylzahid&show_icons=true&theme=radical"
+    alt="GitHub Stats" />
+
+  </section>
+
+  
+<!-- Certifications -->
+<section id="certifications" class="section-light" data-aos="fade-up">
+  <h2>Certifications</h2>
+  <ul class="cert-list">
+    <li class="cert-item">
+      <div class="cert-text">
+        <strong>Machine Learning Specialization</strong> – Stanford & DeepLearning.AI (Coursera)<br />
+        <em>By Andrew Ng | Supervised ML (99.83%), Advanced Algorithms (100%), Unsupervised & RL (98.80%)</em>
+      </div>
+      <div class="cert-badge">
+        <img src="https://img.shields.io/badge/Coursera-ML%20Specialization-blue?style=flat-square&logo=coursera" alt="ML Specialization Badge" />
+      </div>
+    </li>
+
+    <li class="cert-item">
+      <div class="cert-text">
+        <strong>Deep Learning Specialization</strong> – DeepLearning.AI (In Progress)<br />
+        <em>Neural Networks, Hyperparameter Tuning, CNNs, and Sequence Models with TensorFlow</em>
+      </div>
+      <div class="cert-badge">
+        <img src="https://img.shields.io/badge/DeepLearning.AI-In%20Progress-yellow?style=flat-square&logo=tensorflow" alt="Deep Learning Badge" />
+      </div>
+    </li>
+
+    <li class="cert-item">
+      <div class="cert-text">
+        <strong>IBM Data Science & Machine Learning</strong> – IBM (Coursera)<br />
+        <em>Python, Pandas, Matplotlib, Scikit-learn – Practical projects & real-world applications</em>
+      </div>
+      <div class="cert-badge">
+        <img src="https://img.shields.io/badge/IBM-Data%20Science%20%26%20ML-blue?style=flat-square&logo=ibm" alt="IBM Data Science Badge" />
+      </div>
+    </li>
+
+    <li class="cert-item">
+      <div class="cert-text">
+        <strong>Python Developer Certificate</strong> – Sololearn<br />
+        <em>Core Python, OOP, file handling, and backend development basics</em>
+      </div>
+      <div class="cert-badge">
+        <img src="https://img.shields.io/badge/Sololearn-Python%20Developer-brightgreen?style=flat-square&logo=python" alt="Python Badge" />
+      </div>
+    </li>
+
+    <li class="cert-item">
+      <div class="cert-text">
+        <strong>CS50x: Introduction to Computer Science</strong> – Harvard University (edX)<br />
+        <em>Algorithms, C, Python, SQL, Web Development – Project-based foundations in CS</em>
+      </div>
+      <div class="cert-badge">
+        <img src="https://img.shields.io/badge/Harvard-CS50x-red?style=flat-square&logo=edx" alt="CS50x Badge" />
+      </div>
+    </li>
+  </ul>
+</section>
+
+  
+
+  <section id="maylbot-info" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+   <div class="maylbot-container">
+    <h2>🤖 Meet MaylBot</h2>
+    <p>Your friendly AI assistant — here to guide you through my projects, skills, and more. Ask anything!</p>
+   </div>
+  </section>
+
+<!-- Typing Dots -->
+<div class="typing-indicator" id="typing-indicator">
+  <span></span><span></span><span></span>
+</div>
+
+<!-- Tagline Message -->
+<div class="maylbot-tagline"> 👋Hi, I’m MaylBot — Hamayl’s AI twin!</div>
+
+<!-- Enhanced Glow -->
+<div class="maylbot-glow"></div>
+
+
+     <!-- Contact Section -->
+  <section id="contact" class="section-dark" data-aos="fade-up">
+    <h2>Contact Me</h2><br>
+   <p class="contact-intro">Let's build something amazing together — reach out for collaborations, questions, or just to say hi!</p>
+
+    <form id="contactForm">
+      <div class="input-group"><i class="fas fa-user"></i><input type="text" placeholder="Your Name" required /></div>
+      <div class="input-group"><i class="fas fa-envelope"></i><input type="email" placeholder="Your Email" required /></div>
+      <div class="input-group"><i class="fas fa-comment"></i><textarea placeholder="Your Message" required></textarea></div>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="formFeedback" class="form-feedback"></div>
+
+    <div class="socials">
+  <a href="https://linkedin.com/in/hamaylzahid" target="_blank" aria-label="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+    <span>LinkedIn</span>
+  </a>
+  <a href="https://github.com/hamaylzahid" target="_blank" aria-label="GitHub">
+    <i class="fab fa-github"></i>
+    <span>GitHub</span>
+  </a>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=maylzahid588@gmail.com" target="_blank" aria-label="Email">
+  <i class="fas fa-envelope"></i>
+  <span>Email</span>
+</a>
+
+
+  <a href="https://www.coursera.org/user/hamaylzahid" target="_blank" aria-label="Certificates">
+    <i class="fas fa-certificate"></i>
+    <span>Certificates</span>
+  </a>
+</div>
+
+      
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Hamayl Zahid. All rights reserved.</p>
+    <!-- Optionally add visitor counter or analytics script here -->
+  </footer>
+
+ 
+
+
+  <!-- JavaScript & AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="js/script.js"></script>
+
+  <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="hLMyMtCtSUt9ZOxzy-AHC";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+<!-- Corner spacer to prevent overlap with chat bubble -->
+<div id="chatbot-corner-spacer"></div>
+
+</body>
+</html>
