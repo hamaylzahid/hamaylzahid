@@ -1373,3 +1373,72 @@ body.dark-mode .maylbot-tagline {
   align-items: center;
 }
 
+/* Flex container for wrapping skill boxes */
+.skill-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Individual skill category box */
+.skill-box-wrapper {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 20px;
+  width: 280px;
+  min-height: 230px; /* Ensures equal height */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+
+}
+
+.skill-box-wrapper:hover {
+  transform: translateY(-4px);
+}
+
+/* Box title */
+.box-title {
+  all: unset;
+  color: var(--text-color);
+  font-size: 1rem;
+  text-align: center;
+  margin: 0; /* ← remove all margin */
+  padding-bottom: 2px; /* ← optional small gap */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* Badge container */
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* ✅ Pill-style badge with hardcoded colors */
+.skill-pill {
+  background-color:  #0d6efd;   
+  color: #ffffff;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  border: 1px solid #2563eb;   /* Slightly darker border */
+  transition: background-color 0.2s ease;
+}
+
+.skill-pill:hover {
+  background-color: #0e3458;   /* Slightly darker on hover */
+  cursor: default;
+}
+
