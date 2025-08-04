@@ -1,25 +1,51 @@
-<h1 align="center">👩‍🎓 Hamayl Zahid -AI Engineer </h1>
+<h1 align="center">👩‍🎓 Hamayl Zahid - AI Engineer</h1>
+
 <p align="center">
-  Hey there! I'm <strong>Hamayl Zahid</strong> — an aspiring <strong>AI Engineer</strong> | certified by <strong>IBM</strong>, <strong>DeepLearning.AI</strong>, <strong>Stanford</strong>, and <strong>Harvard</strong>.
-  <br>I specialize in building intelligent systems using <strong>Machine Learning</strong>, <strong>Natural Language Processing</strong>, and <strong>Reinforcement Learning</strong> to solve real-world challenges.
-  <br><em>Curious by nature. Obsessed with learning. Committed to meaningful innovation. 🚀</em>
+  Hey there! I'm <strong>Hamayl Zahid</strong> — an aspiring <strong>AI Engineer</strong> certified by <strong>IBM</strong>, <strong>DeepLearning.AI</strong>, <strong>Stanford</strong>, and <strong>Harvard</strong>.<br>
 </p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/hamaylzahid" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/Let’s_Connect_on_LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
+
+  <a href="https://github.com/hamaylzahid" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Follow_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+
   <a href="mailto:maylzahid588@gmail.com" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Email-Email%20Me-red?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/Say_Hi_via_Email-EB4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
   </a>
-  <a href="https://www.coursera.org/user/52c2f5daaa1c77c78350939367aa4cf6" target="_blank" rel="noopener noreferrer">
+
+  <a href="https://www.coursera.org/learner/hamayl-zahid-7142" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Coursera-0056D2?style=flat-square&logo=coursera&logoColor=white" alt="Coursera" />
   </a>
+
   <img src="https://komarev.com/ghpvc/?username=hamaylzahid&label=Profile%20Views&color=0e75b6&style=flat-square" alt="Profile Views" />
 </p>
+<p align="center">
+ <em>Curious by nature. Obsessed with learning. Committed to meaningful innovation. 🚀</em></p>
+ 
+ ---
 
+<br><h2 align="center">🧠 Summary</h2><br>
+<p>
+  I'm a third-year AI student and passionate engineer, committed to building ethical, scalable AI solutions.
+  My work spans across <strong>ML research</strong>, <strong>AI system design</strong>, and <strong>problem-solving with data</strong>.
+  I specialize in building intelligent systems using <strong>Machine Learning</strong>, <strong>Natural Language Processing</strong>, and <strong>Reinforcement Learning</strong> to solve real-world challenges.
+  Looking ahead, I aim to contribute to responsible AI development by creating systems that are not only intelligent, but also interpretable, inclusive, and aligned with human needs.<br><br> </p>
+<p align="center">  
+  Explore my AI journey through real-world projects, earned credentials, and meaningful contributions.
+</p>
 
+<p align="center">
+  🔗 <strong>Explore my portfolio:</strong><br><br>
+<a href="https://hamaylzahid.github.io/hamaylzahid/" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/Visit_Portfolio-0A66C2?style=flat-square&logo=google-chrome&logoColor=white" alt="Portfolio" />
+</a>
 
+</p>
+ 
 ---
 
 <h2 align="center">📚 Areas of Expertise</h2>
@@ -38,18 +64,19 @@
 <h2 align="center">🛠 Tech Stack</h2>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Keras-D00000?style=flat&logo=keras&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white"/>
-  <img src="https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat"/>
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=Jupyter&logoColor=white"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=matplotlib&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=Jupyter&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
 </p>
+
 
 ---
 
@@ -57,7 +84,7 @@
 
 <h2 align="center">📚 Certifications</h2>
 
-<details>
+<details open>
   <summary><strong>🤖 Machine Learning Specialization – Stanford & DeepLearning.AI</strong></summary>
   <p><strong>By:</strong> DeepLearning.AI & Stanford University<br/>
   <a href="https://coursera.org/share/bfe5447bfbd523114b611dc1415a47cd" target="_blank">View Certificate</a></p>
@@ -78,9 +105,9 @@
 </details>
 
 
-<hr>
 
-<details open>
+
+<details>
   <summary><strong>🧠 Deep Learning Specialization <small>(In Progress)</small></strong></summary>
   <p><strong>By:</strong> DeepLearning.AI (via Coursera)</p>
 
@@ -101,9 +128,9 @@
   </ul>
 </details>
 
-<hr>
 
-<details open>
+
+<details>
   <summary><strong>📊 IBM Data Science & ML Courses</strong></summary>
   <p><strong>By:</strong> IBM (via Coursera)</p>
 
@@ -132,9 +159,7 @@
 </details>
 
 
-<hr>
-
-<details open>
+<details>
   <summary><strong>🐍 Python Developer Certificate</strong></summary>
   <p><strong>By:</strong> Sololearn</p>
 
@@ -147,9 +172,8 @@
   </p>
 </details>
 
-<hr>
 
-<details open>
+<details>
   <summary><strong>🎓 CS50x: Introduction to Computer Science</strong></summary>
   <p><strong>By:</strong> Harvard University (via edX)</p>
 
@@ -173,7 +197,7 @@
 </p>
 
 
-<details>
+<details open>
   <summary><strong>⚖️ <a href="https://github.com/hamaylzahid/ResponsibleAI_BiasCheck" target="_blank">Bias Evaluation in AI Models</a></strong></summary>
 
 **Repo:** [`ResponsibleAI_BiasCheck`](https://github.com/hamaylzahid/ResponsibleAI_BiasCheck)  
@@ -288,10 +312,11 @@ A visually polished UI, ready for integration with any backend or API.
 <h2 align="center">📈 GitHub Stats</h2>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=hamaylzahid&show_icons=true&theme=default&hide_border=true" width="400"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=hamaylzahid&show_icons=true&theme=default&hide_border=true" width="400" />
   <br><br>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamaylzahid&layout=compact&hide_border=true&theme=default" width="330"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamaylzahid&layout=compact&hide_border=true&theme=default" width="330" />
 </p>
+
 
 ---
 <h2 align="center">📫 Let's Connect</h2>
