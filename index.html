@@ -448,11 +448,30 @@
   <script>AOS.init();</script>
   <script src="js/script.js"></script>
 
-  <script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="hLMyMtCtSUt9ZOxzy-AHC";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+  <!-- FAKE BOT BUBBLE -->
+
+<div id="maylbot-fake-btn" title="MaylBot">
+  <img src="https://img.icons8.com/ios-filled/50/ffffff/chat--v1.png" alt="Chatbot" />
+</div>
+
+<div id="maylbot-popup">
+  ⚙️ MaylBot v2.0 is loading... Hang tight for a smarter, faster AI assistant!
+</div>
+
+
+<script>
+  const botBtn = document.getElementById("maylbot-fake-btn");
+  const popup = document.getElementById("maylbot-popup");
+
+  botBtn.addEventListener("click", () => {
+    popup.style.display = "block";
+    setTimeout(() => {
+      popup.style.display = "none";
+    }, 5000);
+  });
 </script>
-<!-- Corner spacer to prevent overlap with chat bubble -->
-<div id="chatbot-corner-spacer"></div>
+
+
 
 </body>
 </html>
