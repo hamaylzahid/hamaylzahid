@@ -7,6 +7,19 @@
 
 <br>
 
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/hamaylzahid?style=for-the-badge" />
+  <img src="https://img.shields.io/github/followers/hamaylzahid?style=for-the-badge" />
+  <img src="https://komarev.com/ghpvc/?username=hamaylzahid&label=Profile%20Views&color=0e75b6&style=for-the-badge" />
+</p>
+
+<br> 
+
+### Professional Profile
+
+AI/ML Engineer specializing in Computer Vision, Natural Language Processing (NLP), Retrieval-Augmented Generation (RAG), and Multimodal AI systems. I design and deploy end-to-end machine learning and LLM-powered pipelines, optimize models for production inference, and architect scalable solutions across domains including aerial defect detection, real-time analytics, and transformer-based document intelligence.
+
 <p align="center">
   <a href="https://github.com/hamaylzahid">
     <img src="https://img.shields.io/badge/GitHub-hamaylzahid-181717?style=for-the-badge&logo=github&logoColor=white"/>
@@ -25,17 +38,6 @@
   </a>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/github/stars/hamaylzahid?style=for-the-badge" />
-  <img src="https://img.shields.io/github/followers/hamaylzahid?style=for-the-badge" />
-  <img src="https://img.shields.io/github/commit-activity/m/hamaylzahid/hamaylzahid.github.io?style=for-the-badge" />
-</p>
-
-<br> 
-
-### Professional Profile
-
-AI/ML Engineer specializing in Computer Vision, Natural Language Processing (NLP), Retrieval-Augmented Generation (RAG), and Multimodal AI systems. I design and deploy end-to-end machine learning and LLM-powered pipelines, optimize models for production inference, and architect scalable solutions across domains including aerial defect detection, real-time analytics, and transformer-based document intelligence.
 <br>
 
 ##  Technical Stack
