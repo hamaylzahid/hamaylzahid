@@ -1,347 +1,283 @@
-<h1 align="center">👩‍🎓 Hamayl Zahid - AI Engineer</h1>
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=220&section=header&text=Hamayl%20Zahid&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35"
+     alt="header"/>
+
+</div>
+
+<br>
 
 <p align="center">
-  Hey there! I'm <strong>Hamayl Zahid</strong> — an aspiring <strong>AI Engineer</strong> certified by <strong>IBM</strong>, <strong>DeepLearning.AI</strong>, <strong>Stanford</strong>, and <strong>Harvard</strong>.<br>
-</p>
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/hamaylzahid" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Let’s_Connect_on_LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-
-  <a href="https://github.com/hamaylzahid" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Follow_on_GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-
-  <a href="mailto:maylzahid588@gmail.com" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Say_Hi_via_Email-EB4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-
-  <a href="https://www.coursera.org/learner/hamayl-zahid-7142" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/Coursera-0056D2?style=flat-square&logo=coursera&logoColor=white" alt="Coursera" />
-  </a>
-
-  <img src="https://komarev.com/ghpvc/?username=hamaylzahid&label=Profile%20Views&color=0e75b6&style=flat-square" alt="Profile Views" />
-</p>
-<p align="center">
- <em>Curious by nature. Obsessed with learning. Committed to meaningful innovation. 🚀</em></p>
- 
- ---
-
-<br><h2 align="center">🧠 Summary</h2><br>
-<p>
-  I'm a third-year AI student and passionate engineer, committed to building ethical, scalable AI solutions.
-  My work spans across <strong>ML research</strong>, <strong>AI system design</strong>, and <strong>problem-solving with data</strong>.
-  I specialize in building intelligent systems using <strong>Machine Learning</strong>, <strong>Natural Language Processing</strong>, and <strong>Reinforcement Learning</strong> to solve real-world challenges.
-  Looking ahead, I aim to contribute to responsible AI development by creating systems that are not only intelligent, but also interpretable, inclusive, and aligned with human needs.<br><br> </p>
-<p align="center">  
-  Explore my AI journey through real-world projects, earned credentials, and meaningful contributions.
-</p>
-
-<p align="center">
-  🔗 <strong>Explore my portfolio:</strong><br><br>
-<a href="https://hamaylzahid.github.io/hamaylzahid/" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Visit_Portfolio-0A66C2?style=flat-square&logo=google-chrome&logoColor=white" alt="Portfolio" />
-</a>
-
-</p>
- 
----
-
-<h2 align="center">📚 Areas of Expertise</h2>
-
-<ul>
-  <li>💡 Supervised & Unsupervised Learning</li>
-  <li>🧠 Deep Learning (CNNs, Transformers)</li>
-  <li>📄 Natural Language Processing</li>
-  <li>🕹️ Reinforcement Learning & Q-Learning</li>
-  <li>⚖️ AI Ethics & Bias Evaluation</li>
-  <li>🎨 Frontend UI Design</li>
-</ul>
-
----
-
-<h2 align="center">🛠 Tech Stack</h2>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
-  <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=matplotlib&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=Jupyter&logoColor=white"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
-</p>
-
-
----
-
-
-
-<h2 align="center">📚 Certifications</h2>
-
-<details open>
-  <summary><strong>🤖 Machine Learning Specialization – Stanford & DeepLearning.AI</strong></summary>
-  <p><strong>By:</strong> DeepLearning.AI & Stanford University<br/>
-  <a href="https://coursera.org/share/bfe5447bfbd523114b611dc1415a47cd" target="_blank">View Certificate</a></p>
-
-  <p>
-    <img src="https://img.shields.io/badge/Stanford%20%26%20DeepLearning.AI-Machine%20Learning%20Specialization-blue?style=flat-square&logo=coursera" alt="Coursera ML Specialization Badge"/>
-  </p>
-
-  <p>
-    A comprehensive specialization by Andrew Ng, covering core machine learning algorithms, model optimization, and real-world applications.
-  </p>
-
-  <ul>
-    <li><strong>Supervised ML: Regression & Classification</strong> – 99.83%</li>
-    <li><strong>Advanced Learning Algorithms</strong> – 100%</li>
-    <li><strong>Unsupervised Learning, Recommenders & RL</strong> – 98.80%</li>
-  </ul>
-</details>
-
-
-
-
-<details>
-  <summary><strong>🧠 Deep Learning Specialization <small>(In Progress)</small></strong></summary>
-  <p><strong>By:</strong> DeepLearning.AI (via Coursera)</p>
-
-  <p>
-    <img src="https://img.shields.io/badge/DeepLearning.AI-Specialization-blue?style=flat-square&logo=coursera" alt="Coursera Deep Learning Specialization Badge"/>
-  </p>
-
-  <p>
-    A rigorous specialization led by Andrew Ng, focusing on foundational deep learning concepts and practical implementation using Python and TensorFlow.
-  </p>
-
-  <ul>
-    <li><strong>Neural Networks and Deep Learning</strong> – Introduction to forward/backpropagation, activation functions, and gradient descent.</li>
-    <li><strong>Improving Deep Neural Networks</strong> – Techniques for hyperparameter tuning, regularization, and batch normalization.</li>
-    <li><strong>Structuring ML Projects</strong> – Best practices for debugging, error analysis, and designing scalable ML systems.</li>
-    <li><strong>Convolutional Neural Networks</strong> – <em>(Upcoming)</em></li>
-    <li><strong>Sequence Models</strong> – <em>(Upcoming)</em></li>
-  </ul>
-</details>
-
-
-
-<details>
-  <summary><strong>📊 IBM Data Science & ML Courses</strong></summary>
-  <p><strong>By:</strong> IBM (via Coursera)</p>
-
-  <p>
-    <img src="https://img.shields.io/badge/IBM-Data%20Science%20%26%20ML-blue?style=flat-square&logo=ibm" alt="IBM Data Science Badge"/>
-  </p>
-
-  <p>
-    A set of specialized courses focused on practical applications of Python in data science and machine learning, covering real-world datasets and industry practices.
-  </p>
-
-  <ul>
-    <li>
-      <strong>Data Analysis with Python</strong> – <code>Score: 91.70%</code><br>
-      <em>Explored NumPy, Pandas, and data wrangling techniques for structured datasets.</em>
-    </li>
-    <li>
-      <strong>Data Visualization with Python</strong> – <code>Score: 86%</code><br>
-      <em>Created compelling visuals using Matplotlib, Seaborn, and Folium for storytelling.</em>
-    </li>
-    <li>
-      <strong>Machine Learning with Python</strong> – <code>Score: 89.28%</code><br>
-      <em>Implemented classification, regression, and clustering using Scikit-learn and SciPy.</em>
-    </li>
-  </ul>
-</details>
-
-
-<details>
-  <summary><strong>🐍 Python Developer Certificate</strong></summary>
-  <p><strong>By:</strong> Sololearn</p>
-
-  <p>
-    <img src="https://img.shields.io/badge/Sololearn-Python%20Developer-blue?style=flat-square&logo=python" alt="Sololearn Python Developer Badge"/>
-  </p>
-
-  <p>
-    Demonstrated proficiency in core Python programming, including control flow, data structures, functions, file handling, and object-oriented programming (OOP). Laid a solid foundation for backend development and automation workflows.
-  </p>
-</details>
-
-
-<details>
-  <summary><strong>🎓 CS50x: Introduction to Computer Science</strong></summary>
-  <p><strong>By:</strong> Harvard University (via edX)</p>
-
-  <p>
-    <img src="https://img.shields.io/badge/edX-CS50x-blue?style=flat-square&logo=edx" alt="Harvard CS50x Badge"/>
-  </p>
-
-  <p>
-    A comprehensive introduction to computer science covering algorithms, data structures, memory management, software engineering, and web development using C, Python, SQL, and JavaScript.
-  </p>
-</details>
-
-
-
-
----
-
-<h2 align="center">🌟 My Projects</h2>
-<p align="center">
-  A curated showcase of my hands-on projects — featuring live demos, source code, and real-world applications across AI, data science, and web development.
-</p>
-
-
-<details open>
-  <summary><strong>⚖️ <a href="https://github.com/hamaylzahid/ResponsibleAI_BiasCheck" target="_blank">Bias Evaluation in AI Models</a></strong></summary>
-
-**Repo:** [`ResponsibleAI_BiasCheck`](https://github.com/hamaylzahid/ResponsibleAI_BiasCheck)  
-Developed a responsible AI evaluation tool to detect, quantify, and visualize algorithmic bias across demographic groups in machine learning models.  
-Implemented core fairness metrics like Demographic Parity and Equalized Odds, with clear visual insights into disparities.  
-Also proposed actionable bias mitigation strategies, supporting more ethical and inclusive AI development.
-
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-blue?style=for-the-badge&logo=streamlit)](https://responsibleaibiascheck-h6p9vyyjmsmyemycpsidaz.streamlit.app/)
-
-**Key Features:**
-- Bias metrics: Demographic Parity, Equalized Odds  
-- Group-wise accuracy/performance breakdown  
-- Visualizations of disparity and fairness violations  
-- Insights and suggestions for bias reduction
-
-
-
-**📌 Outcome:**  
-Highlighted hidden model biases and supported better decision-making in AI system deployment.
-
-**Tech Used:**  
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-000000?style=for-the-badge&logo=matplotlib)
-![Seaborn](https://img.shields.io/badge/Seaborn-2E2E2E?style=for-the-badge&logo=python&logoColor=white)
-![Fairlearn](https://img.shields.io/badge/Fairlearn-blue?style=for-the-badge)
-</details>
-
-
-
-<details>
-  <summary><strong>🌌 <a href="https://github.com/hamaylzahid/exoplanet-discovery-habitability-predictor" target="_blank">Exoplanet Discovery & Habitability Predictor</a></strong></summary>
-
-**Repo:** [`exoplanet-discovery-habitability-predictor`](https://github.com/hamaylzahid/exoplanet-discovery-habitability-predictor)  
-Performed EDA and built a custom machine learning model to classify potentially habitable exoplanets using real astrophysical data.
-Explored key features like orbital period, planet mass, and temperature to train predictive classifiers.
-The final model provides interpretable predictions and supports astrobiological research into Earth-like planet discovery.
-
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-blue?style=for-the-badge&logo=streamlit)](https://exoplanet-discovery-habitability-predictor-7vaq2zm4ann8wycylyn.streamlit.app/)
-
-**Key Features:**
-- NASA/Kaggle exoplanet dataset  
-- Random Forest, SVM classification  
-- Feature importance & habitability scoring  
-- Clean, interpretable model output
-
-**📌 Outcome:**  
-Supported astrobiology research by modeling real habitability indicators.
-
-**Tech Used:**  
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-2E2E2E?style=for-the-badge&logo=python&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-000000?style=for-the-badge&logo=matplotlib)
-
-</details>
-
-
-<details>
-  <summary><strong>🧠 <a href="https://github.com/hamaylzahid/bert-ner-visualized" target="_blank">Named Entity Recognition (NER) – BERT</a></strong></summary>
-
-**Repo:** [`bert-ner-visualized`](https://github.com/hamaylzahid/bert-ner-visualized)  
-Built a CPU-optimized Named Entity Recognition (NER) system using BERT and HuggingFace Transformers.
-The model extracts entities from raw text with high accuracy and displays results using an intuitive, color-coded visualization.
-Includes complete preprocessing, token alignment, and evaluation metrics like precision, recall, and F1-score — all without requiring GPU acceleration.
-
-**Key Features:**
-- HuggingFace Transformers  
-- Visualized entity highlights  
-- F1, precision, recall evaluation  
-- Robust preprocessing and token mapping
-
-**📌 Outcome:**  
-Delivered an efficient, visual-friendly solution for named entity recognition without GPU dependency.
-
-**Tech Used:**  
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Transformers](https://img.shields.io/badge/Transformers-HuggingFace-yellow?style=for-the-badge&logo=huggingface&logoColor=black)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-000000?style=for-the-badge&logo=matplotlib)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-</details>
-
-
-<details>
-  <summary><strong>🛍️ <a href="https://github.com/hamaylzahid/ecommerce-frontend-design" target="_blank">E-commerce Frontend Design</a></strong></summary>
-
-**Repo:** [`ecommerce-frontend-design`](https://github.com/hamaylzahid/ecommerce-frontend-design)  
-Developed a **modern, responsive frontend UI** for an e-commerce platform using clean HTML/CSS/JS.  
-Focused on user experience, layout consistency, and smooth interactivity to emulate a real-world online shopping interface.
-
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit-green?style=for-the-badge&logo=githubpages)](https://hamaylzahid.github.io/ecommerce-frontend-design/)
-
-**Project Highlights:**
-- Mobile-first responsive layout  
-- Interactive product grid & navbar  
-- Hover effects & cart logic  
-
-**📌 Outcome:**  
-A visually polished UI, ready for integration with any backend or API.
-
-**Tech Used:**  
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-</details>
-
-
-
----
-
-<h2 align="center">📈 GitHub Stats</h2>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=hamaylzahid&show_icons=true&theme=default&hide_border=true" width="400" />
-  <br><br>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hamaylzahid&layout=compact&hide_border=true&theme=default" width="330" />
-</p>
-
-
----
-<h2 align="center">📫 Let's Connect</h2>
-
-<p align="center">
-  Whether you want to talk about AI, collaborate on a project, or just say hi —<br>
-  I'm always open to meaningful conversations and new opportunities!
-</p>
-
-<p align="center">
-  <a href="mailto:maylzahid588@gmail.com">
-    <img src="https://img.shields.io/badge/Say%20Hi!-Email%20Me-red?style=flat-square&logo=gmail" alt="Email" />
+  <a href="https://github.com/hamaylzahid">
+    <img src="https://img.shields.io/badge/GitHub-hamaylzahid-181717?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
   &nbsp;
-  <a href="https://www.linkedin.com/in/hamaylzahid/" target="_blank">
-    <img src="https://img.shields.io/badge/Connect-LinkedIn-blue?style=flat-square&logo=linkedin" alt="LinkedIn" />
+  <a href="https://www.linkedin.com/in/hamaylzahid/">
+    <img src="https://img.shields.io/badge/LinkedIn-hamaylzahid-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  &nbsp;
+  <a href="mailto:hamaylzahid@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  &nbsp;
+  <a href="https://hamaylzahid.github.io/hamaylzahid/">
+    <img src="https://img.shields.io/badge/Portfolio-Visit%20Site-6e40c9?style=for-the-badge&logo=googlechrome&logoColor=white"/>
   </a>
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/github/stars/hamaylzahid?style=for-the-badge" />
+  <img src="https://img.shields.io/github/followers/hamaylzahid?style=for-the-badge" />
+  <img src="https://img.shields.io/github/commit-activity/m/hamaylzahid/hamaylzahid.github.io?style=for-the-badge" />
+</p>
+
+<br> 
+
+### Professional Profile
+
+AI/ML Engineer specializing in Computer Vision, Natural Language Processing (NLP), Retrieval-Augmented Generation (RAG), and Multimodal AI systems. I design and deploy end-to-end machine learning and LLM-powered pipelines, optimize models for production inference, and architect scalable solutions across domains including aerial defect detection, real-time analytics, and transformer-based document intelligence.
+<br>
+
+##  Technical Stack
+<br>
+
+###  Languages
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
+</p>
+
+<br>
+
+###  AI / Machine Learning
+<p>
+  <img src="https://img.shields.io/badge/Deep%20Learning-1f6feb?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Computer%20Vision-238636?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/NLP-8957e5?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Transformers-ff7b72?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/RAG%20Systems-2ea043?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Generative%20AI-f85149?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Multimodal%20AI-2ea043?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Reinforcement%20Learning-ff7b72?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Transfer%20Learning-0ea5e9?style=for-the-badge"/>
+</p>
+
+<br>
+
+###  Frameworks & Libraries
+<p>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/>
+  <img src="https://img.shields.io/badge/LangChain-000000?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/LlamaIndex-8A2BE2?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/FAISS-0467DF?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/ChromaDB-3DDC84?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/>
+  <img src="https://img.shields.io/badge/YOLOv8-00BFFF?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/BLIP-7c3aed?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
+</p>
+
+<br>
+
+###  Data & Automation
+<p>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/BeautifulSoup-ffb703?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/ETL%20Pipelines-3a86ff?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Data%20Augmentation-8338ec?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Feature%20Engineering-06d6a0?style=for-the-badge"/>
+</p>
+
+<br>
+
+###  Tools & Platforms
+<p>
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
+  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
+</p>
+
+<br>
 
 
+## Projects 
+
+### AI Drone Inspection — Infrastructure Defect Detection
+<details>
+<summary>
+YOLOv8 defect detection system for aerial infrastructure inspection
+<br>
+<img src="https://img.shields.io/badge/YOLOv8-Detection-00BFFF?style=flat"/>
+<img src="https://img.shields.io/badge/Impact-15--25%25%20Accuracy-2ea043?style=flat"/>
+<img src="https://img.shields.io/badge/PyTorch-CV-EE4C2C?style=flat"/>
+</summary>
+
+YOLOv8-based system for detecting infrastructure defects from drone imagery.
+
+**Impact:** Improved detection accuracy, reduced manual inspection, scalable pipeline.
+
+`Python` `YOLOv8` `PyTorch` `OpenCV`
+
+[Source Code](https://github.com/hamaylzahid/AIDroneInspection.git)
+</details>
+
+<br>
+
+### Real-Time Traffic Detection & Analytics
+<details>
+<summary>
+Live object detection system for real-time traffic monitoring
+<br>
+<img src="https://img.shields.io/badge/YOLOv8-Realtime-1f6feb?style=flat"/>
+<img src="https://img.shields.io/badge/Latency-Optimized-238636?style=flat"/>
+<img src="https://img.shields.io/badge/OpenCV-Stream-5C3EE8?style=flat"/>
+</summary>
+
+Live object detection system for continuous traffic monitoring.
+
+**Impact:** Stable real-time inference under continuous streams.
+
+`Python` `YOLOv8` `OpenCV`
+
+[Source Code](https://github.com/hamaylzahid/realtime_objdetection_and_analytics.git)
+</details>
+
+<br>
+
+### AI Customer Support Intelligence
+<details>
+<summary>
+Transformer-based NLP system for automated customer support
+<br>
+<img src="https://img.shields.io/badge/NLP-Transformers-8957e5?style=flat"/>
+<img src="https://img.shields.io/badge/BERT-Intent-f85149?style=flat"/>
+<img src="https://img.shields.io/badge/Automation-60%25-2ea043?style=flat"/>
+</summary>
+
+Transformer-based NLP system for intent classification and response generation.
+
+**Impact:** ~60% reduction in manual query handling.
+
+`Python` `HuggingFace` `BERT` `PyTorch`
+
+[Source Code](https://github.com/hamaylzahid/AI-Customer-Support-Intelligence-System.git)
+</details>
+
+<br>
+
+### OCR Document Intelligence System
+<details>
+<summary>
+OCR pipeline for converting unstructured documents into structured data
+<br>
+<img src="https://img.shields.io/badge/OCR-Extraction-ffb703?style=flat"/>
+<img src="https://img.shields.io/badge/ETL-Pipeline-3a86ff?style=flat"/>
+<img src="https://img.shields.io/badge/NLP-Structured-8338ec?style=flat"/>
+</summary>
+
+OCR pipeline converting unstructured documents into structured datasets.
+
+**Impact:** ~70% reduction in manual processing effort.
+
+`Python` `OCR` `NLP` `ETL`
+
+</details>
+
+<br>
+
+### ScholarXplore AI
+<details>
+<summary>
+Multi-threaded academic scraping and intelligence pipeline
+<br>
+<img src="https://img.shields.io/badge/Web-Scraping-ff7b00?style=flat"/>
+<img src="https://img.shields.io/badge/MultiThreaded-Performance-06d6a0?style=flat"/>
+<img src="https://img.shields.io/badge/ETL-Pipeline-3a86ff?style=flat"/>
+</summary>
+
+Multi-threaded academic scraping system for structured research data.
+
+**Impact:** +40–60% scraping performance improvement.
+
+`Python` `Selenium` `BeautifulSoup` `ETL`
+
+</details>
+
+<br>
+
+### BERT NER Visualized
+<details>
+<summary>
+CPU-based Named Entity Recognition with visualization layer
+<br>
+<img src="https://img.shields.io/badge/BERT-NER-7c3aed?style=flat"/>
+<img src="https://img.shields.io/badge/Visualization-Explainability-1f6feb?style=flat"/>
+<img src="https://img.shields.io/badge/CPU-Optimized-6e40c9?style=flat"/>
+</summary>
+
+NER system with full visualization and evaluation pipeline.
+
+**Impact:** GPU-free full NLP pipeline.
+
+`Python` `BERT` `HuggingFace` `Scikit-learn`
+
+</details>
+
+<br>
+
+## Certifications
+
+<summary><strong>Core AI & Deep Learning Certifications</strong></summary>
+
+### IBM
+- AI Engineering Professional Certificate (13 Courses)  
+- Deep Learning with PyTorch, Keras & TensorFlow (6 Courses)  
+- Generative AI: Foundational Models for NLP & Language Understanding  
+- Data Analysis & Visualization with Python  
+
+### DeepLearning.AI / Stanford University
+- Machine Learning Specialization (3 Courses)  
+- Deep Learning Specialization (5 Courses)  
+
+<br>
+
+## Activity
+
+<div align="center">
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=hamaylzahid&theme=github-dark-blue&hide_border=true"/>
+
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=hamaylzahid&bg_color=0d1117&color=58a6ff&line=1f6feb&point=79c0ff&area=true&hide_border=true"/>
+
+</div>
+<br>
+<div align="center">
 
 
----
+<a href="https://github.com/hamaylzahid"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+&nbsp;
+<a href="https://www.linkedin.com/in/hamaylzahid/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+&nbsp;
+<a href="mailto:hamaylzahid@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+&nbsp;
+<a href="https://hamaylzahid.github.io/hamaylzahid/"><img src="https://img.shields.io/badge/Portfolio-6e40c9?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
 
-<p align="center"><sub> Fueled by curiosity, built with code — <strong>Hamayl Zahid</strong> ❤️</sub></p>
+<br>
 
+<sub>Hamayl Zahid &nbsp;·&nbsp; AI / ML Engineer &nbsp;·&nbsp; Bahawalpur, Pakistan</sub>
 
+<br>
+
+</div>
