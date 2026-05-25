@@ -103,7 +103,6 @@ AI/ML Engineer focusing  in Computer Vision, Natural Language Processing (NLP), 
 ## Projects 
 
 ### ScholarXplore AI
-<details>
 <summary>
 Next-generation academic intelligence platform engineered to automate global scholarship discovery and transform fragmented web data into actionable insights for students.
 
@@ -122,13 +121,13 @@ The system combines multi-threaded web scraping, structured ETL processing, anal
 **Impact:** Improved scraping efficiency and transformed raw academic data into usable intelligence for opportunity discovery.
 
 <br>
-
+<p>
 <img src="https://img.shields.io/badge/Web-Scraping-ff7b00?style=flat"/>
 <img src="https://img.shields.io/badge/MultiThreaded-Performance-06d6a0?style=flat"/>
 <img src="https://img.shields.io/badge/Streamlit-Analytics-ff4b4b?style=flat"/>
 <img src="https://img.shields.io/badge/ETL-Pipeline-3a86ff?style=flat"/>
-
-</details>
+</p>
+<br>
 
 ### AI Drone Inspection — Infrastructure Defect Detection
 <details>
