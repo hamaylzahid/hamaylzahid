@@ -6,8 +6,6 @@
 </div>
 
 <br>
-
-
 <p align="center">
   <img src="https://img.shields.io/github/stars/hamaylzahid?style=for-the-badge" />
   <img src="https://img.shields.io/github/followers/hamaylzahid?style=for-the-badge" />
@@ -18,7 +16,7 @@
 
 ### Professional Profile
 
-AI/ML Engineer specializing in Computer Vision, Natural Language Processing (NLP), Retrieval-Augmented Generation (RAG), and Multimodal AI systems. I design and deploy end-to-end machine learning and LLM-powered pipelines, optimize models for production inference, and architect scalable solutions across domains including aerial defect detection, real-time analytics, and transformer-based document intelligence.
+AI/ML Engineer focusing  in Computer Vision, Natural Language Processing (NLP), Retrieval-Augmented Generation (RAG), and Multimodal AI systems. I design and deploy end-to-end machine learning and LLM-powered pipelines, optimize models for production inference, and architect scalable solutions across domains including aerial defect detection, real-time analytics, and transformer-based document intelligence.
 
 <p align="center">
   <a href="https://github.com/hamaylzahid">
@@ -41,7 +39,6 @@ AI/ML Engineer specializing in Computer Vision, Natural Language Processing (NLP
 <br>
 
 ##  Technical Stack
-<br>
 
 ###  Languages
 <p>
@@ -114,124 +111,183 @@ AI/ML Engineer specializing in Computer Vision, Natural Language Processing (NLP
 
 ## Projects 
 
+### ScholarXplore AI
+<details>
+<summary>
+Multi-threaded scholarship intelligence and academic analytics platform
+</summary>
+
+Next-generation academic intelligence platform engineered to automate global scholarship discovery and transform fragmented web data into actionable insights for students.
+
+The system combines multi-threaded web scraping, structured ETL processing, analytics generation, and an interactive Streamlit interface to create a complete decision-support ecosystem rather than a traditional scraping utility.
+
+**Key Highlights**
+- Multi-threaded scraping architecture
+- Scholarship intelligence aggregation
+- Structured ETL processing pipeline
+- Interactive Streamlit analytics dashboard
+- Trend & opportunity analysis
+- High-performance concurrent processing
+
+**Impact:** Improved scraping efficiency and transformed raw academic data into usable intelligence for opportunity discovery.
+
+<br>
+
+<img src="https://img.shields.io/badge/Web-Scraping-ff7b00?style=flat"/>
+<img src="https://img.shields.io/badge/MultiThreaded-Performance-06d6a0?style=flat"/>
+<img src="https://img.shields.io/badge/Streamlit-Analytics-ff4b4b?style=flat"/>
+<img src="https://img.shields.io/badge/ETL-Pipeline-3a86ff?style=flat"/>
+
+</details>
+
 ### AI Drone Inspection — Infrastructure Defect Detection
 <details>
 <summary>
-YOLOv8 defect detection system for aerial infrastructure inspection
-<br>
-<img src="https://img.shields.io/badge/YOLOv8-Detection-00BFFF?style=flat"/>
-<img src="https://img.shields.io/badge/Impact-15--25%25%20Accuracy-2ea043?style=flat"/>
-<img src="https://img.shields.io/badge/PyTorch-CV-EE4C2C?style=flat"/>
+Unified deep learning pipeline for automated aerial infrastructure inspection
 </summary>
 
-YOLOv8-based system for detecting infrastructure defects from drone imagery.
+Production-oriented computer vision system designed to automate infrastructure inspection using drone imagery. The platform integrates YOLOv8 detection models with a real-time Streamlit deployment layer to identify multiple defect classes including cracks, potholes, and corrosion within a single scalable inference pipeline.
 
-**Impact:** Improved detection accuracy, reduced manual inspection, scalable pipeline.
+Built with a focus on deployment efficiency, structured outputs, and real-world inspection workflows rather than isolated model experimentation.
 
-`Python` `YOLOv8` `PyTorch` `OpenCV`
+**Key Highlights**
+- Multi-class defect detection pipeline
+- Real-time image & video inference
+- Streamlit deployment interface
+- Structured detection analytics
+- Color-coded visual inspection outputs
+- Scalable YOLOv8 architecture
+
+**Impact:** Reduced manual inspection overhead while improving detection consistency and operational scalability.
+
+<br>
+
+<img src="https://img.shields.io/badge/YOLOv8-Detection-00BFFF?style=flat"/>
+<img src="https://img.shields.io/badge/Streamlit-Deployment-ff4b4b?style=flat"/>
+<img src="https://img.shields.io/badge/PyTorch-CV-EE4C2C?style=flat"/>
+<img src="https://img.shields.io/badge/MultiClass-Inference-2ea043?style=flat"/>
 
 [Source Code](https://github.com/hamaylzahid/AIDroneInspection.git)
 </details>
 
-<br>
-
 ### Real-Time Traffic Detection & Analytics
 <details>
 <summary>
-Live object detection system for real-time traffic monitoring
-<br>
-<img src="https://img.shields.io/badge/YOLOv8-Realtime-1f6feb?style=flat"/>
-<img src="https://img.shields.io/badge/Latency-Optimized-238636?style=flat"/>
-<img src="https://img.shields.io/badge/OpenCV-Stream-5C3EE8?style=flat"/>
+Production-ready traffic intelligence pipeline with detection, tracking, and analytics
 </summary>
 
-Live object detection system for continuous traffic monitoring.
+End-to-end real-time traffic analytics system combining YOLOv8 object detection with SORT-based multi-object tracking for continuous stream analysis. The platform generates intelligent traffic insights while maintaining stable inference performance on lightweight deployment environments.
 
-**Impact:** Stable real-time inference under continuous streams.
+Designed for execution across Google Colab, CPU-only systems, and edge-friendly environments with a clean Gradio analytics dashboard.
 
-`Python` `YOLOv8` `OpenCV`
+**Key Highlights**
+- Real-time object detection & tracking
+- SORT-based multi-object tracking
+- Visitor & traffic analytics generation
+- Lightweight deployment optimization
+- Continuous stream processing
+- Interactive Gradio dashboard
+
+**Impact:** Delivered stable real-time analytics with optimized latency for continuous monitoring systems.
+
+<br>
+
+<img src="https://img.shields.io/badge/YOLOv8-Realtime-1f6feb?style=flat"/>
+<img src="https://img.shields.io/badge/SORT-Tracking-9333ea?style=flat"/>
+<img src="https://img.shields.io/badge/OpenCV-Streaming-5C3EE8?style=flat"/>
+<img src="https://img.shields.io/badge/Analytics-Live-238636?style=flat"/>
 
 [Source Code](https://github.com/hamaylzahid/realtime_objdetection_and_analytics.git)
 </details>
 
-<br>
 
 ### AI Customer Support Intelligence
 <details>
 <summary>
-Transformer-based NLP system for automated customer support
-<br>
-<img src="https://img.shields.io/badge/NLP-Transformers-8957e5?style=flat"/>
-<img src="https://img.shields.io/badge/BERT-Intent-f85149?style=flat"/>
-<img src="https://img.shields.io/badge/Automation-60%25-2ea043?style=flat"/>
+Transformer-powered customer support intelligence with deterministic response architecture
 </summary>
 
-Transformer-based NLP system for intent classification and response generation.
+Enterprise-style NLP system designed to automate customer support workflows through transformer-based sentiment analysis, zero-shot intent classification, and deterministic response generation.
 
-**Impact:** ~60% reduction in manual query handling.
+Unlike hallucination-prone generative systems, the architecture combines transformer intelligence with rule-governed response logic to ensure reliable, controllable, and professional outputs.
 
-`Python` `HuggingFace` `BERT` `PyTorch`
+**System Architecture**
+- Sentiment Analysis Engine
+- Zero-shot Intent Classification
+- Deterministic Reply Generation
+- Modular NLP pipeline
+- Professional response orchestration
+- Controlled inference behavior
+
+**Impact:** Reduced manual support handling workload while maintaining predictable and production-safe responses.
+
+<br>
+
+<img src="https://img.shields.io/badge/NLP-Transformers-8957e5?style=flat"/>
+<img src="https://img.shields.io/badge/BERT-Intent-f85149?style=flat"/>
+<img src="https://img.shields.io/badge/ZeroShot-Classification-2563eb?style=flat"/>
+<img src="https://img.shields.io/badge/Automation-Intelligence-2ea043?style=flat"/>
 
 [Source Code](https://github.com/hamaylzahid/AI-Customer-Support-Intelligence-System.git)
 </details>
 
-<br>
 
 ### OCR Document Intelligence System
 <details>
 <summary>
-OCR pipeline for converting unstructured documents into structured data
+Intelligent document understanding pipeline for structured information extraction
+</summary>
+
+Advanced OCR and document intelligence system built to transform unstructured PDFs and scanned documents into structured, machine-readable datasets. The platform integrates adaptive OCR fallback mechanisms, document parsing, summarization, and information extraction into a unified workflow.
+
+Designed for fast real-time analysis through an interactive Gradio interface with JSON-ready outputs for downstream integration.
+
+**Key Highlights**
+- OCR extraction from PDFs & images
+- Tesseract → EasyOCR fallback pipeline
+- Adaptive preprocessing workflows
+- Table extraction using Camelot
+- Contact & metadata extraction
+- Keyword-aware summarization engine
+- Structured JSON output generation
+
+**Impact:** Significantly reduced manual document processing effort while improving extraction reliability across mixed document layouts.
+
 <br>
+
 <img src="https://img.shields.io/badge/OCR-Extraction-ffb703?style=flat"/>
-<img src="https://img.shields.io/badge/ETL-Pipeline-3a86ff?style=flat"/>
-<img src="https://img.shields.io/badge/NLP-Structured-8338ec?style=flat"/>
-</summary>
-
-OCR pipeline converting unstructured documents into structured datasets.
-
-**Impact:** ~70% reduction in manual processing effort.
-
-`Python` `OCR` `NLP` `ETL`
+<img src="https://img.shields.io/badge/EasyOCR-Adaptive-8338ec?style=flat"/>
+<img src="https://img.shields.io/badge/Camelot-Tables-3a86ff?style=flat"/>
+<img src="https://img.shields.io/badge/Gradio-Interactive-f72585?style=flat"/>
 
 </details>
-
-<br>
-
-### ScholarXplore AI
-<details>
-<summary>
-Multi-threaded academic scraping and intelligence pipeline
-<br>
-<img src="https://img.shields.io/badge/Web-Scraping-ff7b00?style=flat"/>
-<img src="https://img.shields.io/badge/MultiThreaded-Performance-06d6a0?style=flat"/>
-<img src="https://img.shields.io/badge/ETL-Pipeline-3a86ff?style=flat"/>
-</summary>
-
-Multi-threaded academic scraping system for structured research data.
-
-**Impact:** +40–60% scraping performance improvement.
-
-`Python` `Selenium` `BeautifulSoup` `ETL`
-
-</details>
-
-<br>
 
 ### BERT NER Visualized
 <details>
 <summary>
-CPU-based Named Entity Recognition with visualization layer
+Explainable Named Entity Recognition system with visualization pipeline
+</summary>
+
+Lightweight NLP pipeline for Named Entity Recognition built around transformer-based inference and visual explainability. The system focuses on efficient CPU-based execution while maintaining clear entity visualization and structured evaluation workflows.
+
+Designed to demonstrate interpretable NLP inference without GPU dependency.
+
+**Key Highlights**
+- Transformer-based NER inference
+- Interactive entity visualization
+- Explainable NLP outputs
+- CPU-optimized execution
+- Structured evaluation pipeline
+- Lightweight deployment design
+
+**Impact:** Enabled fully local transformer inference and explainable NLP workflows without GPU acceleration requirements.
+
 <br>
+
 <img src="https://img.shields.io/badge/BERT-NER-7c3aed?style=flat"/>
 <img src="https://img.shields.io/badge/Visualization-Explainability-1f6feb?style=flat"/>
 <img src="https://img.shields.io/badge/CPU-Optimized-6e40c9?style=flat"/>
-</summary>
-
-NER system with full visualization and evaluation pipeline.
-
-**Impact:** GPU-free full NLP pipeline.
-
-`Python` `BERT` `HuggingFace` `Scikit-learn`
+<img src="https://img.shields.io/badge/NLP-Transformers-f43f5e?style=flat"/>
 
 </details>
 
