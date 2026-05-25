@@ -5,6 +5,8 @@
 
 </div>
 
+</div>
+
 <br>
 <p align="center">
   <img src="https://img.shields.io/github/stars/hamaylzahid?style=for-the-badge" />
@@ -37,6 +39,7 @@ AI/ML Engineer focusing  in Computer Vision, Natural Language Processing (NLP), 
 </p>
 
 <br>
+
 ## Technical Stack
 
 ### Languages
@@ -102,12 +105,11 @@ AI/ML Engineer focusing  in Computer Vision, Natural Language Processing (NLP), 
 ### ScholarXplore AI
 <details>
 <summary>
-Multi-threaded scholarship intelligence and academic analytics platform
-</summary>
-
 Next-generation academic intelligence platform engineered to automate global scholarship discovery and transform fragmented web data into actionable insights for students.
 
 The system combines multi-threaded web scraping, structured ETL processing, analytics generation, and an interactive Streamlit interface to create a complete decision-support ecosystem rather than a traditional scraping utility.
+</summary>
+
 
 **Key Highlights**
 - Multi-threaded scraping architecture
@@ -131,7 +133,7 @@ The system combines multi-threaded web scraping, structured ETL processing, anal
 ### AI Drone Inspection — Infrastructure Defect Detection
 <details>
 <summary>
-Unified deep learning pipeline for automated aerial infrastructure inspection
+Production-oriented computer vision system designed to automate infrastructure inspection using drone imagery. The platform integrates YOLOv8 detection models with a real-time Streamlit deployment layer to identify multiple defect classes including cracks, potholes, and corrosion within a single scalable inference pipeline.
 </summary>
 
 Production-oriented computer vision system designed to automate infrastructure inspection using drone imagery. The platform integrates YOLOv8 detection models with a real-time Streamlit deployment layer to identify multiple defect classes including cracks, potholes, and corrosion within a single scalable inference pipeline.
@@ -161,10 +163,8 @@ Built with a focus on deployment efficiency, structured outputs, and real-world 
 ### Real-Time Traffic Detection & Analytics
 <details>
 <summary>
-Production-ready traffic intelligence pipeline with detection, tracking, and analytics
+Production-ready traffic intelligence pipeline with detection, tracking, and analytics.End-to-end real-time traffic analytics system combining YOLOv8 object detection with SORT-based multi-object tracking for continuous stream analysis. The platform generates intelligent traffic insights while maintaining stable inference performance on lightweight deployment environments.
 </summary>
-
-End-to-end real-time traffic analytics system combining YOLOv8 object detection with SORT-based multi-object tracking for continuous stream analysis. The platform generates intelligent traffic insights while maintaining stable inference performance on lightweight deployment environments.
 
 Designed for execution across Google Colab, CPU-only systems, and edge-friendly environments with a clean Gradio analytics dashboard.
 
@@ -192,12 +192,11 @@ Designed for execution across Google Colab, CPU-only systems, and edge-friendly 
 ### AI Customer Support Intelligence
 <details>
 <summary>
-Transformer-powered customer support intelligence with deterministic response architecture
-</summary>
-
-Enterprise-style NLP system designed to automate customer support workflows through transformer-based sentiment analysis, zero-shot intent classification, and deterministic response generation.
+Transformer-powered customer support intelligence with deterministic response architecture. Enterprise-style NLP system designed to automate customer support workflows through transformer-based sentiment analysis, zero-shot intent classification, and deterministic response generation.
 
 Unlike hallucination-prone generative systems, the architecture combines transformer intelligence with rule-governed response logic to ensure reliable, controllable, and professional outputs.
+</summary>
+
 
 **System Architecture**
 - Sentiment Analysis Engine
@@ -223,10 +222,9 @@ Unlike hallucination-prone generative systems, the architecture combines transfo
 ### OCR Document Intelligence System
 <details>
 <summary>
-Intelligent document understanding pipeline for structured information extraction
+Intelligent document understanding pipeline for structured information extraction. Advanced OCR and document intelligence system built to transform unstructured PDFs and scanned documents into structured, machine-readable datasets. The platform integrates adaptive OCR fallback mechanisms, document parsing, summarization, and information extraction into a unified workflow.
 </summary>
 
-Advanced OCR and document intelligence system built to transform unstructured PDFs and scanned documents into structured, machine-readable datasets. The platform integrates adaptive OCR fallback mechanisms, document parsing, summarization, and information extraction into a unified workflow.
 
 Designed for fast real-time analysis through an interactive Gradio interface with JSON-ready outputs for downstream integration.
 
@@ -253,10 +251,8 @@ Designed for fast real-time analysis through an interactive Gradio interface wit
 ### BERT NER Visualized
 <details>
 <summary>
-Explainable Named Entity Recognition system with visualization pipeline
-</summary>
-
 Lightweight NLP pipeline for Named Entity Recognition built around transformer-based inference and visual explainability. The system focuses on efficient CPU-based execution while maintaining clear entity visualization and structured evaluation workflows.
+</summary>
 
 Designed to demonstrate interpretable NLP inference without GPU dependency.
 
