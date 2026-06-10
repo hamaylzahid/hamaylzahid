@@ -1,483 +1,713 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Hamayl Zahid's AI/ML Portfolio Website">
-  <meta name="keywords" content="Hamayl Zahid, Portfolio, AI, ML, Deep Learning, Web Development">
-  <meta name="author" content="Hamayl Zahid">
-  
-  <title>Hamayl Zahid | AI Engineer Portfolio</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-  <!-- AOS Animation Library -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<!-- CSS -->
-<link rel="stylesheet" href="css/style.css?v=3" />
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hamayl Zahid — AI/ML Engineer specializing in Computer Vision, NLP, Deep Learning, RAG, and Transformers. View projects, experience, and certifications.">
+<meta name="keywords" content="AI Engineer, Machine Learning, NLP, Computer Vision, RAG, Transformers, LangChain, YOLO, Deep Learning, PyTorch, Pakistan">
+<meta property="og:title" content="Hamayl Zahid — AI/ML Engineer">
+<meta property="og:description" content="AI/ML Engineer building intelligent systems at the intersection of Computer Vision, NLP, and Multimodal AI.">
+<title>Hamayl Zahid — AI/ML Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <body>
-  <!-- Theme Toggle Button -->
-  <div class="theme-toggle" title="Toggle Light/Dark Mode">
-    <i class="fas fa-moon"></i>
-  </div>
 
-  <!-- Hero Section (Split Layout) -->
-  <section class="hero" id="home">
-    <div class="hero-text" data-aos="fade-right">
-      <h1>Hamayl Zahid</h1>
-      <h2>AI Engineer | ML Researcher | IBM, Harvard, Stanford Certified</h2>
-      <blockquote>
-        <em>"Building cognitive AI that thinks beyond code."</em><br>
-      </blockquote>
-      <div class="hero-cta">
-        <a href="#projects" class="cta-btn">View Projects</a>
-        <a href="#maylbot-info" class="cta-btn">Chat with MaylBot</a>
-        <a href="assets/Hamayl Zahid_Resume_CV.pdf" class="cta-btn" download>Download Résumé</a>
-      </div>
+<!-- Particle canvas -->
+<canvas id="particles-canvas"></canvas>
 
+<!-- Floating Chatbot -->
+<!-- Floating Button -->
+<button class="float-chat-btn" id="floatChatBtn" title="MaylBot — AI Twin">
+  <i class="fas fa-robot"></i>
+</button>
+
+<div class="float-chat-label">MaylBot — AI Twin</div>
+
+<!-- Right Side Chat Panel -->
+<div class="float-modal" id="floatModal">
+
+  <div class="float-modal-header">
+    <div class="float-modal-title">
+      <i class="fas fa-robot"></i> MaylBot — AI Twin
     </div>
-    <div class="hero-image" data-aos="fade-left">
-  <div class="avatar-wrapper">
-    <img src="assets/hamaylavatar.png?v=3" alt="Hamayl Zahid Avatar" class="avatar-img" />
 
+    <button class="float-modal-close" id="floatModalClose">
+      <i class="fas fa-times"></i>
+    </button>
   </div>
+
+  <iframe src="https://hamaylza-bot.hf.space" title="MaylBot"></iframe>
+
 </div>
 
-  </section>
-  
+<!-- Contrib tooltip -->
+<div class="contrib-tooltip" id="contribTooltip"></div>
 
-  <!-- Navigation -->
-  <nav id="navbar">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-
-   <!-- SVG Divider with Gradient -->
-<svg class="divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-    <defs>
-      <linearGradient id="gradient" x1="0%" y1="0%" x2="200%" y2="0%">
-        <stop offset="0%" stop-color="#00c6ff">
-          <animate attributeName="offset" values="0%;1" dur="3s" repeatCount="indefinite" />
-        </stop>
-        <stop offset="100%" stop-color="#0072ff">
-          <animate attributeName="offset" values="1;0%" dur="3s" repeatCount="indefinite" />
-        </stop>
-      </linearGradient>
-    </defs>
-    <path d="M0,96L1440,160L1440,320L0,320Z" fill="url(#gradient)"></path>
-  </svg>
-  
-  
-  
- <!-- About Section -->
-<section id="about" class="section-light about-section" data-aos="fade-up">
-    <br><h2>About Me</h2><br>
-    <div class="about-content">
-      <p>
-        I'm <strong>Hamayl Zahid</strong> — an AI Engineer with a sharp mind for innovation and a grounded sense of purpose. Currently pursuing a Bachelor's in Artificial Intelligence from Pakistan, I’ve already built systems that demonstrate not only technical fluency but real-world impact.
-      </p>
-      <p>
-        My strengths lie in <strong>Machine Learning</strong>, <strong>Natural Language Processing</strong>, <strong>Reinforcement Learning</strong>, and <strong>intuitive AI dashboards</strong>. I don’t just follow the latest in AI. I create solutions that are explainable, ethical, and forward-looking.
-      </p>
-      <p>
-        From detecting algorithmic bias to predicting planetary habitability, I push boundaries while ensuring clarity and usability. If you're seeking someone who brings both engineering discipline and visionary problem-solving ,<br>I’m exactly who you’re looking for.
-      </p>
-    </div>
-  </section>
-  
-  
-
-  <!-- Skills Section -->
-<section id="skills" class="section-dark" data-aos="fade-up">
-  <h2 style="text-align:center;">⚙️ Technical Skills</h2>
-
-  <div class="skill-box-container">
-
-    <!-- Box 1 -->
-    <div class="skill-box-wrapper">
-      <h3 class="box-title">🧠 Machine Learning / AI</h3>
-      <div class="skill-badges">
-        <span class="skill-pill">TensorFlow</span>
-        <span class="skill-pill">PyTorch</span>
-        <span class="skill-pill">Keras</span>
-        <span class="skill-pill">Scikit-learn</span>
-        <span class="skill-pill">YOLO</span>
-        <span class="skill-pill">RNNs</span>
-      </div>
-    </div>
-
-    <!-- Box 2 -->
-    <div class="skill-box-wrapper">
-      <h3 class="box-title">💻 Programming Languages</h3>
-      <div class="skill-badges">
-        <span class="skill-pill">Python</span>
-        <span class="skill-pill">JavaScript</span>
-        <span class="skill-pill">HTML</span>
-        <span class="skill-pill">CSS</span>
-      </div>
-    </div>
-
-    <!-- Box 3 -->
-    <div class="skill-box-wrapper">
-      <h3 class="box-title">🧰 Tools & Libraries</h3>
-      <div class="skill-badges">
-        <span class="skill-pill">NumPy</span>
-        <span class="skill-pill">Pandas</span>
-        <span class="skill-pill">Matplotlib</span>
-        <span class="skill-pill">Seaborn</span>
-        <span class="skill-pill">Streamlit</span>
-        <span class="skill-pill">Flask</span>
-      </div>
-    </div>
-
-    <!-- Box 4 -->
-    <div class="skill-box-wrapper">
-      <h3 class="box-title">🚀 Deployment & AI Tools</h3>
-      <div class="skill-badges">
-        <span class="skill-pill">Google Colab</span>
-        <span class="skill-pill">FastAPI</span>
-        <span class="skill-pill">Chatbase</span>
-      </div>
-    </div>
-
-    <!-- Box 5 -->
-    <div class="skill-box-wrapper">
-      <h3 class="box-title">🎨 Design & IDEs</h3>
-      <div class="skill-badges">
-        <span class="skill-pill">Figma</span>
-        <span class="skill-pill">VS Code</span>
-        <span class="skill-pill">PyCharm</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-  <!-- Projects Section -->
-<section id="projects" class="section">
-  <h2 class="section-title" data-aos="fade-up">Projects</h2>
-
-  <!-- Correct project grid wrapper -->
-  <div class="project-grid">
-
-    <!-- Project 1 -->
-    <div class="flip-card" data-aos="fade-up" data-aos-delay="100">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="assets/animacore banner.png" alt="AnimaCore HumanOS" />
-          <h3>AnimaCore – HumanOS</h3>
-          <p class="tagline">Neuro-symbolic AI OS simulating human cognition & emotion.</p>
-          <a class="github-btn" href="https://github.com/hamaylzahid/AnimaCore-HumanOS" target="_blank">View on GitHub</a>
-        </div>
-        <div class="flip-card-back">
-          <br><h3>Project Overview</h3><br>
-          <p>Simulates human-like decision-making using emotion-aware transformers. Integrates symbolic reasoning with adaptive neural processing for advanced cognition.</p>
-          <div class="tech-tags">
-            <span class="badge">PyTorch</span>
-            <span class="badge">Transformers</span>
-            <span class="badge">NLP</span>
-            <span class="badge">HuggingFace</span>
-          </div>
-          <a class="github-btn" href="https://github.com/hamaylzahid/AnimaCore-HumanOS" target="_blank">View on GitHub</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="flip-card" data-aos="fade-up" data-aos-delay="200">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="assets/AI ETHICS BANNER.png" alt="Bias Evaluation" />
-          <h3>Bias Evaluation in AI Models</h3>
-          <p class="tagline">Streamlit app to detect, visualize, and mitigate gender bias in NLP datasets.</p>
-          <a href="https://responsibleaibiascheck-h6p9vyyjmsmyemycpsidaz.streamlit.app/" class="demo-btn" target="_blank">Live Demo</a>
-        </div>
-        <div class="flip-card-back">
-         <br> <h3>Project Overview</h3><br>
-           <p>This project uses <strong>Fairlearn</strong> to detect and mitigate bias in a logistic regression model trained on the <strong>UCI Adult dataset</strong>. It demonstrates ethical trade-offs, explores demographic parity, and provides an interactive Streamlit dashboard.</p>
-
-          <br><br><br><div class="tech-tags">
-            <span class="badge">Python</span>
-            <span class="badge">Pandas</span>
-            <span class="badge">Streamlit</span>
-          </div>
-          <div class="card-links" style="margin-top: auto;">
-            <a  class="github-btn" href="https://github.com/hamaylzahid/ResponsibleAI_BiasCheck" target="_blank">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="flip-card" data-aos="fade-up" data-aos-delay="300">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="assets/banner-exodiscovery.png" alt="Exoplanet Predictor" />
-          <h3>Exoplanet Habitability Predictor</h3>
-          <p class="tagline">ML-powered tool analyzing NASA datasets to classify and assess exoplanet habitability.</p>
-          <a href="https://exoplanet-discovery-habitability-predictor-7vaq2zm4ann8wycylyn.streamlit.app/" class="demo-btn" target="_blank">Live Demo</a>
-        </div>
-        <div class="flip-card-back">
-          <br><h3>Project Overview</h3><br>
-               <p>This project uses <strong>machine learning</strong> to predict the <strong>habitability of exoplanets</strong> by analyzing features like mass, orbit, star type, and discovery method from real astronomical data.</p>
-
-
-          <br><br><div class="tech-tags">
-            <span class="badge">Scikit-learn</span>
-            <span class="badge">Python</span>
-            <span class="badge">Matplotlib</span>
-            <span class="badge">Pandas</span>
-          </div><br>
-          <div class="card-links" style="margin-top: auto;">
-            <a href="https://github.com/hamaylzahid/exoplanet-discovery-habitability-predictor" class="github-btn" target="_blank">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 4 -->
-    <div class="flip-card" data-aos="fade-up" data-aos-delay="400">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="assets/banner_bert.png" alt="BERT NER Visualized" />
-          <h3>BERT NER Visualized</h3>
-          <p class="tagline">BERT-powered NER system with visualized predictions and real-time evaluation metrics.</p>
-          <a href="https://github.com/hamaylzahid/bert-ner-visualized" class="demo-btn" target="_blank">View GitHub</a>
-        </div>
-        <div class="flip-card-back">
-          <h3>Tech Stack</h3>
-          <div class="tech-tags">
-            <span class="badge">BERT</span>
-            <span class="badge">Transformers</span>
-            <span class="badge">Matplotlib</span>
-            <span class="badge">Seaborn</span>
-          </div>
-          <p class="back-desc">Focused on enhancing NLP interpretability using deep learning and visual insights.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 5 -->
-    <div class="flip-card" data-aos="fade-up" data-aos-delay="500">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src=https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/08abae927aa28aa2aa696530d8cc882168aab5b0 alt="E-commerce Frontend" />
-          <h3>Modern E-commerce UI Design</h3>
-          <p class="tagline">Sleek, responsive UI template with advanced UX flows and interactivity.</p>
-          <a href="https://hamaylzahid.github.io/ecommerce-frontend-design/" class="demo-btn" target="_blank">Live Demo</a>
-        </div>
-        <div class="flip-card-back">
-          <h3>Tech Stack</h3>
-          <div class="tech-tags">
-            <span class="badge">HTML</span>
-            <span class="badge">CSS</span>
-            <span class="badge">JavaScript</span>
-          </div>
-          <p class="back-desc">A fully responsive e-commerce layout designed for smooth customer experience and modern aesthetics.</p>
-          <a href="https://github.com/hamaylzahid/ecommerce-frontend-design" class="demo-btn" target="_blank">GitHub</a>
-        </div>
-      </div>
-    </div>
-
-  </div> <!-- End of .project-grid -->
-</section>
-
-
-
-
-  <!-- GitHub Stats -->
-  <section class="section-dark"id="github" data-aos="zoom-in">
-    <h2 >GitHub Stats</h2>
-    <img id="github-stats-img"
-    src="https://github-readme-stats.vercel.app/api?username=hamaylzahid&show_icons=true&theme=radical"
-    alt="GitHub Stats" />
-
-  </section>
-
-  
-<!-- Certifications -->
-<section id="certifications" class="section-light" data-aos="fade-up">
-  <h2>Certifications</h2>
-  <ul class="cert-list">
-    <li class="cert-item">
-      <div class="cert-text">
-        <strong>Machine Learning Specialization</strong> – Stanford & DeepLearning.AI (Coursera)<br />
-        <em>By Andrew Ng | Supervised ML (99.83%), Advanced Algorithms (100%), Unsupervised & RL (98.80%)</em>
-      </div>
-      <div class="cert-badge">
-        <img src="https://img.shields.io/badge/Coursera-ML%20Specialization-blue?style=flat-square&logo=coursera" alt="ML Specialization Badge" />
-      </div>
-    </li>
-
-    <li class="cert-item">
-      <div class="cert-text">
-        <strong>Deep Learning Specialization</strong> – DeepLearning.AI (In Progress)<br />
-        <em>Neural Networks, Hyperparameter Tuning, CNNs, and Sequence Models with TensorFlow</em>
-      </div>
-      <div class="cert-badge">
-        <img src="https://img.shields.io/badge/DeepLearning.AI-In%20Progress-yellow?style=flat-square&logo=tensorflow" alt="Deep Learning Badge" />
-      </div>
-    </li>
-
-    <li class="cert-item">
-      <div class="cert-text">
-        <strong>IBM Data Science & Machine Learning</strong> – IBM (Coursera)<br />
-        <em>Python, Pandas, Matplotlib, Scikit-learn – Practical projects & real-world applications</em>
-      </div>
-      <div class="cert-badge">
-        <img src="https://img.shields.io/badge/IBM-Data%20Science%20%26%20ML-blue?style=flat-square&logo=ibm" alt="IBM Data Science Badge" />
-      </div>
-    </li>
-
-    <li class="cert-item">
-      <div class="cert-text">
-        <strong>Python Developer Certificate</strong> – Sololearn<br />
-        <em>Core Python, OOP, file handling, and backend development basics</em>
-      </div>
-      <div class="cert-badge">
-        <img src="https://img.shields.io/badge/Sololearn-Python%20Developer-brightgreen?style=flat-square&logo=python" alt="Python Badge" />
-      </div>
-    </li>
-
-    <li class="cert-item">
-      <div class="cert-text">
-        <strong>CS50x: Introduction to Computer Science</strong> – Harvard University (edX)<br />
-        <em>Algorithms, C, Python, SQL, Web Development – Project-based foundations in CS</em>
-      </div>
-      <div class="cert-badge">
-        <img src="https://img.shields.io/badge/Harvard-CS50x-red?style=flat-square&logo=edx" alt="CS50x Badge" />
-      </div>
-    </li>
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">Hamayl<span>Zahid</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#github">GitHub</a></li>
+    <li><a href="#chatbot">AI Twin</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
   </ul>
+  <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+</nav>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="#skills" onclick="closeMobileNav()">Skills</a>
+  <a href="#projects" onclick="closeMobileNav()">Projects</a>
+  <a href="#experience" onclick="closeMobileNav()">Experience</a>
+  <a href="#certifications" onclick="closeMobileNav()">Certifications</a>
+  <a href="#github" onclick="closeMobileNav()">GitHub</a>
+  <a href="#chatbot" onclick="closeMobileNav()">AI Twin</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge">Available for AI/ML Roles</div>
+      <h1 class="hero-name">Hamayl<br><span class="accent">Zahid</span></h1>
+      <div class="hero-typed"><span id="typed-text"></span><span class="cursor"></span></div>
+      <p class="hero-tagline">Building intelligent systems at the intersection of Computer Vision, NLP, and Multimodal AI. Turning research into production-grade solutions that scale.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary"><i class="fas fa-layer-group" style="margin-right:6px"></i>View Projects</a>
+        <a href="#contact" class="btn-ghost"><i class="fas fa-paper-plane" style="margin-right:6px"></i>Get in Touch</a>
+      </div>
+      <div class="hero-socials" style="margin-top:2rem">
+        <a href="mailto:hamaylzahid@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/hamaylzahid/" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/hamaylzahid" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-stats">
+        <div class="stat-card reveal">
+          <div class="stat-num">3.95</div>
+          <div class="stat-label">CGPA / 4.0</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-num">29+</div>
+          <div class="stat-label">GitHub Repos</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-num">25+</div>
+          <div class="stat-label">Certifications</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Internships</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-  
-
-  <section id="maylbot-info" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
-   <div class="maylbot-container">
-    <h2>🤖 Meet MaylBot</h2>
-    <p>Your friendly AI assistant — here to guide you through my projects, skills, and more. Ask anything!</p>
-   </div>
+<!-- ═══ ABOUT ═══ -->
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label" data-aos="fade-right">01 / About</div>
+      <div class="about-grid">
+        <div class="about-text" data-aos="fade-right" data-aos-delay="100">
+          <h2 class="section-title">About<br><span class="accent"><Meta:redirect></Meta:redirect></span></h2>
+          <p>
+            I don't just train models — I architect end-to-end AI systems that solve real problems at production scale. From real-time drone inspection pipelines to multimodal clinical reasoning agents, every system I build is designed with deployment in mind, not just benchmarks.
+          </p>
+          <p>
+            My work spans the full stack of modern AI: from low-level YOLOv8 optimization and OCR pipelines, to high-level RAG architectures with LLM orchestration. I obsess over the 15% efficiency gains and the 70% automation improvements that move projects from prototype to product.
+          </p>
+          <div class="about-links">
+            <a href="https://github.com/hamaylzahid" target="_blank" class="about-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/hamaylzahid/" target="_blank" class="about-link"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:hamaylzahid@gmail.com" class="about-link"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="about-visual" data-aos="fade-left" data-aos-delay="200">
+          <div class="av-card">
+            <div class="av-icon-row">
+              <div class="av-icon"><i class="fas fa-brain"></i><span>Deep Learning</span></div>
+              <div class="av-icon"><i class="fas fa-eye"></i><span>Computer Vision</span></div>
+              <div class="av-icon"><i class="fas fa-comment-dots"></i><span>NLP / LLMs</span></div>
+              <div class="av-icon"><i class="fas fa-robot"></i><span>Generative AI</span></div>
+              <div class="av-icon"><i class="fas fa-database"></i><span>Data Pipelines</span></div>
+              <div class="av-icon"><i class="fas fa-satellite-dish"></i><span>Real-time Inference</span></div>
+            </div>
+            <div class="av-quote">
+              "Engineering systems that don't just predict — they <em>perform</em>."
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-<!-- Typing Dots -->
-<div class="typing-indicator" id="typing-indicator">
-  <span></span><span></span><span></span>
-</div>
-
-<!-- Tagline Message -->
-<div class="maylbot-tagline" data-aos="fade-up"> 👋Hi, I’m MaylBot — Hamayl’s AI twin!</div>
-
-<!-- Enhanced Glow -->
-<div class="maylbot-glow"></div>
-
-
-     <!-- Contact Section -->
-  <section id="contact" class="section-dark" data-aos="fade-up">
-    <h2>Contact Me</h2><br><br><br>
-   <p class="contact-intro">Let's build something amazing together — reach out for collaborations, questions, or just to say hi!</p>
-
-    <form id="contactForm" action="https://formspree.io/f/xdkdlnyg" method="POST" class="contact-form">
-  <div class="input-group">
-    <i class="fas fa-user"></i>
-    <input type="text" name="name" placeholder="Your Name" required />
-  </div>
-  <div class="input-group">
-    <i class="fas fa-envelope"></i>
-    <input type="email" name="email" placeholder="Your Email" required 
-       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
-       title="Enter a valid email (e.g. yourname@example.com)" />
-
-  </div>
-  <div class="input-group">
-    <i class="fas fa-comment"></i>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-  </div>
-  <button type="submit">Send Message</button>
-</form>
-
-    <div id="formFeedback" class="form-feedback"></div>
-
-    <div class="socials">
-  <a href="https://linkedin.com/in/hamaylzahid" target="_blank" aria-label="LinkedIn">
-    <i class="fab fa-linkedin"></i>
-    <span>LinkedIn</span>
-  </a>
-  <a href="https://github.com/hamaylzahid" target="_blank" aria-label="GitHub">
-    <i class="fab fa-github"></i>
-    <span>GitHub</span>
-  </a>
-  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=maylzahid588@gmail.com" target="_blank" aria-label="Email">
-  <i class="fas fa-envelope"></i>
-  <span>Email</span>
-</a>
-
-
-  <a href="https://www.coursera.org/learner/hamayl-zahid-7142" target="_blank" aria-label="Certificates">
-    <i class="fas fa-certificate"></i>
-    <span>Certificates</span>
-  </a>
-</div>
-
-      
+<!-- ═══ SKILLS ═══ -->
+<section id="skills">
+    <div class="container">
+      <div class="section-label" data-aos="fade-right">02 / Skills</div>
+      <h2 class="section-title centered" data-aos="fade-up">Technical Arsenal</h2>
+      <p class="section-sub centered" data-aos="fade-up" data-aos-delay="100">A production-tested toolkit across the full AI engineering stack.</p>
+ 
+      <div class="skills-grid">
+ 
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="sc-header">
+            <i class="fas fa-code sc-icon"></i>
+            <span>Languages</span>
+          </div>
+          <div class="sc-tags">
+            <span>Python</span><span>C++</span><span>JavaScript</span><span>SQL</span><span>HTML/CSS</span>
+          </div>
+        </div>
+ 
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="sc-header">
+            <i class="fas fa-brain sc-icon"></i>
+            <span>AI / ML</span>
+          </div>
+          <div class="sc-tags">
+            <span>Machine Learning</span><span>Deep Learning</span><span>NLP</span><span>Computer Vision</span><span>Reinforcement Learning</span><span>Generative AI</span>
+          </div>
+        </div>
+ 
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="sc-header">
+            <i class="fas fa-layer-group sc-icon"></i>
+            <span>LLM / RAG Stack</span>
+          </div>
+          <div class="sc-tags">
+            <span>Transformers</span><span>RAG</span><span>LangChain</span><span>LangGraph</span><span>LLM Apps</span><span>Multimodal AI</span>
+          </div>
+        </div>
+ 
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="sc-header">
+            <i class="fas fa-fire sc-icon"></i>
+            <span>Frameworks</span>
+          </div>
+          <div class="sc-tags">
+            <span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span><span>OpenCV</span><span>HuggingFace</span><span>BLIP</span>
+          </div>
+        </div>
+ 
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="sc-header">
+            <i class="fas fa-crosshairs sc-icon"></i>
+            <span>Object Detection</span>
+          </div>
+          <div class="sc-tags">
+            <span>YOLOv8</span><span>Instance Segmentation</span><span>Real-time Detection</span><span>Image Classification</span>
+          </div>
+        </div>
+ 
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="sc-header">
+            <i class="fas fa-database sc-icon"></i>
+            <span>Data Engineering</span>
+          </div>
+          <div class="sc-tags">
+            <span>ETL Pipelines</span><span>Pandas</span><span>NumPy</span><span>Feature Engineering</span><span>Data Augmentation</span>
+          </div>
+        </div>
+ 
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="sc-header">
+            <i class="fas fa-spider sc-icon"></i>
+            <span>Automation</span>
+          </div>
+          <div class="sc-tags">
+            <span>Selenium</span><span>BeautifulSoup</span><span>Multithreading</span>
+          </div>
+        </div>
+ 
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="sc-header">
+            <i class="fas fa-tools sc-icon"></i>
+            <span>Tools & Platforms</span>
+          </div>
+          <div class="sc-tags">
+            <span>Git</span><span>GitHub</span><span>VS Code</span><span>Jupyter</span><span>Google Colab</span><span>PyCharm</span>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Hamayl Zahid. All rights reserved.</p>
-    <!-- Optionally add visitor counter or analytics script here -->
-  </footer>
+<!-- ═══ PROJECTS ═══ -->
+ <section id="projects">
+    <div class="container">
+      <div class="section-label" data-aos="fade-right">03 / Projects</div>
+      <h2 class="section-title centered" data-aos="fade-up">Production Systems</h2>
+      <p class="section-sub centered" data-aos="fade-up" data-aos-delay="100">Each system engineered for real-world deployment, not academic benchmarks.</p>
+ 
+      <!-- Featured: TabeebAI -->
+      <div class="project-featured" data-aos="fade-up" data-aos-delay="150">
+        <div class="pf-badge"><i class="fas fa-trophy"></i> Hackathon project</div>
+        <div class="pf-content">
+          <div class="pf-left">
+            <div class="pf-label">Featured Project</div>
+            <h3>TabeebAI</h3>
+            <p class="pf-tagline">Clinical Reasoning AI with RAG-Powered Medical Intelligence</p>
+            <p class="pf-desc">
+              A production-grade medical AI assistant built for a national hackathon. Combines retrieval-augmented generation with GPT/LLaMA reasoning to provide evidence-based clinical insights. Features an emergency detection module, risk scoring system, and a multi-source medical knowledge base — turning unstructured clinical queries into structured, actionable guidance.
+            </p>
+            <div class="pf-stack">
+              <span>RAG</span><span>ChromaDB</span><span>GPT / LLaMA</span><span>FastAPI</span><span>Streamlit</span><span>LangChain</span>
+            </div>
+            <div class="pf-metrics">
+              <div class="metric"><i class="fas fa-bolt"></i> Emergency detection logic</div>
+              <div class="metric"><i class="fas fa-shield-alt"></i> Risk scoring system</div>
+              <div class="metric"><i class="fas fa-database"></i> ChromaDB vector store</div>
+              <div class="metric"><i class="fas fa-server"></i> FastAPI backend</div>
+            </div>
+            <a href="https://github.com/hamaylzahid" target="_blank" class="btn-primary sm">View on GitHub <i class="fab fa-github"></i></a>
+          </div>
+          <div class="pf-right">
+            <div class="pf-arch">
+              <div class="arch-box top">User Query</div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-box mid">LangChain Orchestration</div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-row">
+                <div class="arch-box side">ChromaDB<br><small>RAG Retrieval</small></div>
+                <div class="arch-box side">GPT/LLaMA<br><small>Reasoning</small></div>
+              </div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-box mid risk">Risk Score + Emergency Flag</div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-box top">Streamlit UI / FastAPI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Project Grid -->
+      <div class="projects-grid">
+ 
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="pc-top">
+            <div class="pc-icon"><i class="fas fa-helicopter"></i></div>
+            <div class="pc-links">
+              <a href="https://github.com/hamaylzahid/AIDroneInspection" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h4>AIDroneInspection</h4>
+          <p class="pc-problem"><strong>Problem:</strong> Manual infrastructure inspections are slow, expensive, and error-prone at scale.</p>
+          <p>YOLOv8 + PyTorch + OpenCV pipeline for automated defect detection from drone imagery. Custom augmentation strategy and optimized inference engine for large-scale deployment.</p>
+          <div class="pc-stack"><span>YOLOv8</span><span>PyTorch</span><span>OpenCV</span></div>
+          <div class="pc-impact"><i class="fas fa-chart-line"></i> ~15–25% accuracy gain · Eliminated manual inspection bottlenecks</div>
+        </div>
+ 
+        <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="pc-top">
+            <div class="pc-icon"><i class="fas fa-traffic-light"></i></div>
+            <div class="pc-links">
+              <a href="https://github.com/hamaylzahid/realtime_objdetection_and_analytics" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h4>Real-Time Traffic Detection</h4>
+          <p class="pc-problem"><strong>Problem:</strong> Live surveillance demands detection at full stream throughput with zero lag tolerance.</p>
+          <p>Built a real-time object detection and analytics engine using YOLOv8 and OpenCV, optimized for latency-throughput balance under continuous data streams.</p>
+          <div class="pc-stack"><span>YOLOv8</span><span>OpenCV</span><span>Python</span></div>
+          <div class="pc-impact"><i class="fas fa-chart-line"></i> Near real-time performance · Stable under continuous stream conditions</div>
+        </div>
+ 
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="pc-top">
+            <div class="pc-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="pc-links">
+              <a href="https://github.com/hamaylzahid/ScholarXplore_-AI-" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h4>ScholarXplore AI</h4>
+          <p class="pc-problem"><strong>Problem:</strong> Scholarship data is fragmented across hundreds of sources — manual tracking is unscalable.</p>
+          <p>AI-powered academic intelligence platform using Selenium + BeautifulSoup + multi-threading to automate research data extraction at scale.</p>
+          <div class="pc-stack"><span>Selenium</span><span>BeautifulSoup</span><span>Multithreading</span></div>
+          <div class="pc-impact"><i class="fas fa-chart-line"></i> 40–60% scraping speed improvement · Fully automated pipeline</div>
+        </div>
+ 
+        <div class="project-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="pc-top">
+            <div class="pc-icon"><i class="fas fa-file-alt"></i></div>
+            <div class="pc-links">
+              <a href="https://github.com/hamaylzahid/IntelligentDocumentProcessor" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h4>Intelligent Document Processing</h4>
+          <p class="pc-problem"><strong>Problem:</strong> Unstructured documents block downstream AI systems — manual digitization doesn't scale.</p>
+          <p>OCR-powered document AI pipeline that extracts, parses, and normalizes unstructured data into machine-readable structured datasets for AI ingestion.</p>
+          <div class="pc-stack"><span>OCR</span><span>Python</span><span>ETL</span></div>
+          <div class="pc-impact"><i class="fas fa-chart-line"></i> ~70% reduction in manual processing effort</div>
+        </div>
+ 
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="pc-top">
+            <div class="pc-icon"><i class="fas fa-headset"></i></div>
+            <div class="pc-links">
+              <a href="https://github.com/hamaylzahid/AI-Customer-Support-Intelligence-System" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h4>AI Customer Support Intelligence</h4>
+          <p class="pc-problem"><strong>Problem:</strong> High-volume support queues overwhelm teams — manual triage at scale is impossible.</p>
+          <p>Transformer-based NLP system for intent classification and context-aware response generation. Production pipeline with optimized tokenization and preprocessing.</p>
+          <div class="pc-stack"><span>HuggingFace</span><span>Transformers</span><span>NLP</span></div>
+          <div class="pc-impact"><i class="fas fa-chart-line"></i> ~60% reduction in manual query handling</div>
+        </div>
+ 
+        <div class="project-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="pc-top">
+            <div class="pc-icon"><i class="fas fa-image"></i></div>
+            <div class="pc-links">
+              <a href="https://github.com/hamaylzahid/Visual-Question-Answering-BLIP" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h4>Multimodal VQA (BLIP)</h4>
+          <p class="pc-problem"><strong>Problem:</strong> Cross-modal reasoning between vision and language remains a key bottleneck in AI systems.</p>
+          <p>BLIP-based vision-language model enabling joint image-text embeddings for multimodal inference, document understanding, and scalable VQA tasks.</p>
+          <div class="pc-stack"><span>BLIP</span><span>PyTorch</span><span>Multimodal AI</span></div>
+          <div class="pc-impact"><i class="fas fa-chart-line"></i> Improved cross-modal inference consistency · Scalable VQA architecture</div>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
 
+<!-- ═══ EXPERIENCE ═══ -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-label" data-aos="fade-right">04 / Experience</div>
+      <h2 class="section-title centered" data-aos="fade-up">Professional Track</h2>
+ 
+      <div class="timeline">
+ 
+        <div class="tl-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div>
+                <h4>AI & Computer Vision Intern</h4>
+                <span class="tl-company">IT Solera Pvt Ltd</span>
+              </div>
+              <span class="tl-date">2025 – Present · Remote</span>
+            </div>
+            <ul>
+              <li>Developed production-grade ML pipelines for automation and image processing in client-facing solutions.</li>
+              <li>Built data preprocessing and augmentation workflows, improving model generalization and training stability across multiple domains.</li>
+              <li>Integrated object detection and image classification modules into scalable AI architectures for end-to-end automation.</li>
+              <li>Performed model evaluation, benchmarking, and deployment for computer vision systems.</li>
+            </ul>
+            <div class="tl-tags"><span>Computer Vision</span><span>PyTorch</span><span>YOLOv8</span><span>Data Augmentation</span></div>
+          </div>
+        </div>
+ 
+        <div class="tl-item" data-aos="fade-up" data-aos-delay="150">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div>
+                <h4>Computer Vision Engineer Intern</h4>
+                <span class="tl-company">Nexus AI</span>
+              </div>
+              <span class="tl-date">Oct 2025 – Dec 2025 · Remote</span>
+            </div>
+            <ul>
+              <li>Engineered deep learning pipelines for image classification and object detection with systematic preprocessing.</li>
+              <li>Implemented augmentation pipelines that enhanced generalization and reduced overfitting on benchmark datasets.</li>
+              <li>Optimized inference performance and model throughput, achieving measurable improvement in real-time processing stability.</li>
+            </ul>
+            <div class="tl-tags"><span>Deep Learning</span><span>OpenCV</span><span>Model Optimization</span><span>Inference</span></div>
+          </div>
+        </div>
+ 
+        <div class="tl-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div>
+                <h4>Machine Learning Researcher</h4>
+                <span class="tl-company">AI Cadmey</span>
+              </div>
+              <span class="tl-date">Mar 2025 – Present · Remote</span>
+            </div>
+            <ul>
+              <li>Optimized ML models for research prototypes, improving algorithm efficiency by <strong>15%</strong> through architectural tuning and pipeline refactoring.</li>
+              <li>Investigated AI applications in Evolutionary Biology and theoretical simulation domains using Generative AI and RL.</li>
+              <li>Designed NLP and multimodal experiments to assess model behavior across advanced AI problem spaces.</li>
+            </ul>
+            <div class="tl-tags"><span>Generative AI</span><span>Reinforcement Learning</span><span>NLP</span><span>Multimodal AI</span></div>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+
+<!-- ═══ EDUCATION ═══ -->
+ <section id="education">
+    <div class="container">
+      <div class="section-label" data-aos="fade-right">05 / Education</div>
+      <h2 class="section-title centered" data-aos="fade-up">Academic Foundation</h2>
+      <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="edu-left">
+          <div class="edu-degree">Bachelor of Science</div>
+          <div class="edu-field">Artificial Intelligence</div>
+          <div class="edu-school">The Islamia University of Bahawalpur</div>
+          <div class="edu-cgpa"><span class="cgpa-num">3.95</span> <span class="cgpa-denom">/ 4.00 CGPA</span></div>
+        </div>
+        <div class="edu-right">
+          <div class="edu-course-title">Relevant Coursework</div>
+          <div class="edu-courses">
+            <span>Machine Learning</span>
+            <span>Deep Learning</span>
+            <span>Natural Language Processing</span>
+            <span>Computer Vision</span>
+            <span>Data Structures & Algorithms</span>
+            <span>Probability & Statistics</span>
+            <span>Feature Engineering</span>
+            <span>Transfer Learning</span>
+            <span>Generative AI</span>
+            <span>Data Preprocessing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
  
 
+<!-- ═══ CERTIFICATIONS ═══ -->
+<!-- ── CERTIFICATIONS ── -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-label" data-aos="fade-right">06 / Certifications</div>
+      <h2 class="section-title centered" data-aos="fade-up">Credentials</h2>
+      <p class="section-sub centered" data-aos="fade-up" data-aos-delay="100">Industry-recognized credentials from top-tier AI institutions.</p>
+ 
+      <div class="certs-grid">
+ 
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="cert-logo ibm">IBM</div>
+          <div class="cert-body">
+            <h4>IBM AI Engineering Professional Certificate</h4>
+            <p>Complete 13-course specialization covering the full AI engineering pipeline</p>
+            <div class="cert-meta"><span class="cert-count">13 Courses</span><span class="cert-issuer">IBM</span></div>
+          </div>
+        </div>
+ 
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="cert-logo dai">dAI</div>
+          <div class="cert-body">
+            <h4>Machine Learning Specialization</h4>
+            <p>Supervised, unsupervised learning, and advanced ML systems</p>
+            <div class="cert-meta"><span class="cert-count">3 Courses</span><span class="cert-issuer">DeepLearning.AI / Stanford</span></div>
+          </div>
+        </div>
+ 
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="cert-logo dai">dAI</div>
+          <div class="cert-body">
+            <h4>Deep Learning Specialization</h4>
+            <p>Neural networks, CNNs, RNNs, sequence models, and hyperparameter tuning</p>
+            <div class="cert-meta"><span class="cert-count">5 Courses</span><span class="cert-issuer">DeepLearning.AI</span></div>
+          </div>
+        </div>
+ 
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="cert-logo ibm">IBM</div>
+          <div class="cert-body">
+            <h4>Deep Learning with PyTorch, Keras & TensorFlow</h4>
+            <p>Practical deep learning with the three leading frameworks</p>
+            <div class="cert-meta"><span class="cert-count">6 Courses</span><span class="cert-issuer">IBM / DeepLearning.AI</span></div>
+          </div>
+        </div>
+ 
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="cert-logo ibm">IBM</div>
+          <div class="cert-body">
+            <h4>Generative AI: Foundational Models for NLP & Language Understanding</h4>
+            <p>LLMs, transformers, and generative architectures for NLP applications</p>
+            <div class="cert-meta"><span class="cert-issuer">IBM</span></div>
+          </div>
+        </div>
+ 
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="cert-logo ibm">IBM</div>
+          <div class="cert-body">
+            <h4>Data Analysis & Visualization with Python</h4>
+            <p>End-to-end data analysis pipelines, visualization, and statistical insight</p>
+            <div class="cert-meta"><span class="cert-issuer">IBM</span></div>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
 
-  <!-- JavaScript & AOS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
-  <script src="js/script.js"></script>
+<!-- ═══ GITHUB ═══ -->
+<section id="github">
+  <div class="section-inner">
+    <div class="section-label reveal">// GitHub Engineering</div>
+    <h2 class="section-title reveal">Open Source Activity</h2>
+    <p class="section-sub reveal">24+ repositories spanning Computer Vision, NLP, Generative AI, and Agentic systems — built with production-grade standards.</p>
+    <div class="divider reveal"></div>
 
-  <!-- FAKE BOT BUBBLE -->
+    <div class="github-stats reveal">
+      <div class="gh-stat-card">
+        <div class="gh-stat-num">30+</div>
+        <div class="gh-stat-label">Repositories</div>
+      </div>
+      <div class="gh-stat-card">
+        <div class="gh-stat-num">690</div>
+        <div class="gh-stat-label">Total Commits</div>
+      </div>
+      <div class="gh-stat-card">
+        <div class="gh-stat-num">30</div>
+        <div class="gh-stat-label">Public Stars</div>
+      </div>
+      <div class="gh-stat-card">
+        <div class="gh-stat-num">5</div>
+        <div class="gh-stat-label">Forks</div>
+      </div>
+    </div>
 
-<div id="maylbot-fake-btn" title="MaylBot">
-  <img src="https://img.icons8.com/ios-filled/50/ffffff/chat--v1.png" alt="Chatbot" />
+    <!-- Streak -->
+    <!-- REAL GITHUB ANALYTICS -->
+<div class="github-graphs reveal">
+
+  <div class="github-graph-card">
+    <div class="contrib-label">CONTRIBUTION STREAK</div>
+
+    <img
+      src="https://github-readme-streak-stats.herokuapp.com/?user=hamaylzahid&theme=github-dark-blue&hide_border=true"
+      alt="GitHub Streak"
+      loading="lazy"
+    />
+  </div>
+
+  <div class="github-graph-card">
+    <div class="contrib-label">CONTRIBUTION ACTIVITY</div>
+
+    <img
+      src="https://github-readme-activity-graph.vercel.app/graph?username=hamaylzahid&bg_color=0d1117&color=58a6ff&line=1f6feb&point=79c0ff&area=true&hide_border=true"
+      alt="GitHub Activity Graph"
+      loading="lazy"
+    />
+  </div>
+  
+
 </div>
 
-<div id="maylbot-popup">
-  ⚙️ MaylBot v2.0 is loading... Hang tight for a smarter, faster AI assistant!
+    <div style="text-align:center;margin-top:2rem" class="reveal">
+      <a href="https://github.com/hamaylzahid" target="_blank" class="btn-ghost">
+        <i class="fab fa-github" style="margin-right:8px"></i>View All Repositories on GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CHATBOT SECTION ═══ -->
+<section id="chatbot">
+  <div class="section-inner">
+    <div class="section-label reveal">// AI Twin</div>
+    <h2 class="section-title reveal">Meet MaylBot</h2>
+    <div class="divider reveal"></div>
+    </div>
+    <div class="chatbot-frame-wrap reveal">
+      <iframe src="https://hamaylza-bot.hf.space" title="MaylBot AI Twin" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-label reveal">// Contact</div>
+    <h2 class="section-title reveal">Let's Build Something</h2>
+    <p class="section-sub reveal">Open to AI/ML engineering roles, research collaborations, and interesting problems. Let's talk.</p>
+    <div class="divider reveal"></div>
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <a href="mailto:hamaylzahid@gmail.com" class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div class="contact-item-text"><strong>Email</strong>hamaylzahid@gmail.com</div>
+        </a>
+        <a href="https://www.linkedin.com/in/hamaylzahid/" target="_blank" class="contact-item">
+          <i class="fab fa-linkedin-in"></i>
+          <div class="contact-item-text"><strong>LinkedIn</strong>linkedin.com/in/hamaylzahid</div>
+        </a>
+        <a href="https://github.com/hamaylzahid" target="_blank" class="contact-item">
+          <i class="fab fa-github"></i>
+          <div class="contact-item-text"><strong>GitHub</strong>github.com/hamaylzahid</div>
+        </a>
+        <div class="contact-item" style="cursor:default">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="contact-item-text"><strong>Location</strong>Bahawalpur, Punjab, Pakistan</div>
+        </div>
+      </div>
+      <div class="reveal-right">
+  <form class="contact-form" id="contactForm"
+        action="https://formspree.io/f/xykvakyg"
+        method="POST">
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" id="formName" name="name" placeholder="Your name">
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="formEmail" name="email" placeholder="your@email.com" required>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Subject</label>
+      <input type="text" id="formSubject" name="subject" placeholder="What's this about?">
+    </div>
+
+    <div class="form-group">
+      <label>Message</label>
+      <textarea id="formMessage" name="message"
+        placeholder="Tell me about the opportunity or project…"></textarea>
+    </div>
+
+    <button class="btn-primary" type="submit" style="width:fit-content">
+      <i class="fas fa-paper-plane" style="margin-right:6px"></i>
+      Send Message
+    </button>
+
+    <div class="form-status" id="formStatus"></div>
+
+  </form>
 </div>
+    </div>
+  </div>
+</section>
 
-
-<script>
-  const botBtn = document.getElementById("maylbot-fake-btn");
-  const popup = document.getElementById("maylbot-popup");
-
-  botBtn.addEventListener("click", () => {
-    popup.style.display = "block";
-    setTimeout(() => {
-      popup.style.display = "none";
-    }, 5000);
-  });
-</script>
-
-
-
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">Hamayl<span style="color:var(--text2)">Zahid</span></div>
+  <div class="footer-copy">© 2025 Hamayl Zahid </div>
+  <div class="footer-links">
+    <a href="https://github.com/hamaylzahid" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/hamaylzahid/" target="_blank">LinkedIn</a>
+    <a href="mailto:hamaylzahid@gmail.com">Email</a>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
- 
- 
