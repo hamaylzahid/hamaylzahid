@@ -3,710 +3,418 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Hamayl Zahid — AI/ML Engineer specializing in Computer Vision, NLP, Deep Learning, RAG, and Transformers. View projects, experience, and certifications.">
-<meta name="keywords" content="AI Engineer, Machine Learning, NLP, Computer Vision, RAG, Transformers, LangChain, YOLO, Deep Learning, PyTorch, Pakistan">
-<meta property="og:title" content="Hamayl Zahid — AI/ML Engineer">
-<meta property="og:description" content="AI/ML Engineer building intelligent systems at the intersection of Computer Vision, NLP, and Multimodal AI.">
-<title>Hamayl Zahid — AI/ML Engineer</title>
+<title>Hamayl Zahid — AI Engineer</title>
+<meta name="description" content="Hamayl Zahid, AI Engineer building computer vision, RAG, and LLM systems.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 <body>
 
-<!-- Particle canvas -->
-<canvas id="particles-canvas"></canvas>
-
-<!-- Floating Chatbot -->
-<!-- Floating Button -->
-<button class="float-chat-btn" id="floatChatBtn" title="MaylBot — AI Twin">
-  <i class="fas fa-robot"></i>
-</button>
-
-<div class="float-chat-label">MaylBot — AI Twin</div>
-
-<!-- Right Side Chat Panel -->
-<div class="float-modal" id="floatModal">
-
-  <div class="float-modal-header">
-    <div class="float-modal-title">
-      <i class="fas fa-robot"></i> MaylBot — AI Twin
-    </div>
-
-    <button class="float-modal-close" id="floatModalClose">
-      <i class="fas fa-times"></i>
-    </button>
+<div id="preloader">
+  <div class="preload-logo">
+    <div class="preload-bg">Hamayl<span class="dot">.</span></div>
+    <div class="preload-fg">Hamayl<span class="dot">.</span></div>
   </div>
-
-  <iframe src="https://hamaylza-bot.hf.space" title="MaylBot"></iframe>
-
 </div>
 
-<!-- Contrib tooltip -->
-<div class="contrib-tooltip" id="contribTooltip"></div>
-
-<!-- NAV -->
-<nav id="navbar">
-  <div class="nav-logo">Hamayl<span>Zahid</span></div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#certifications">Certs</a></li>
-    <li><a href="#github">GitHub</a></li>
-    <li><a href="#chatbot">AI Twin</a></li>
-    <li><a href="#contact" class="nav-cta">Contact</a></li>
-  </ul>
-  <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
-</nav>
-<nav class="mobile-nav" id="mobileNav">
-  <a href="#about" onclick="closeMobileNav()">About</a>
-  <a href="#skills" onclick="closeMobileNav()">Skills</a>
-  <a href="#projects" onclick="closeMobileNav()">Projects</a>
-  <a href="#experience" onclick="closeMobileNav()">Experience</a>
-  <a href="#certifications" onclick="closeMobileNav()">Certifications</a>
-  <a href="#github" onclick="closeMobileNav()">GitHub</a>
-  <a href="#chatbot" onclick="closeMobileNav()">AI Twin</a>
-  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+<nav class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#home" class="nav-brand">Hamayl<span class="dot">.</span></a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#systems">Systems</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+    <button class="nav-burger" id="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+      <svg id="burger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div class="nav-mobile" id="nav-mobile">
+    <div class="nav-mobile-inner">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#systems">Systems</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="nav-mobile-cta">Hire Me</a>
+    </div>
+  </div>
 </nav>
 
-<!-- ═══ HERO ═══ -->
-<section id="hero">
-  <div class="hero-inner">
-    <div class="hero-left">
-      <div class="hero-badge">Available for AI/ML Roles</div>
-      <h1 class="hero-name">Hamayl<br><span class="accent">Zahid</span></h1>
-      <div class="hero-typed"><span id="typed-text"></span><span class="cursor"></span></div>
-      <p class="hero-tagline">Building intelligent systems at the intersection of Computer Vision, NLP, and Multimodal AI. Turning research into production-grade solutions that scale.</p>
-      <div class="hero-btns">
-        <a href="#projects" class="btn-primary"><i class="fas fa-layer-group" style="margin-right:6px"></i>View Projects</a>
-        <a href="#contact" class="btn-ghost"><i class="fas fa-paper-plane" style="margin-right:6px"></i>Get in Touch</a>
-      </div>
-      <div class="hero-socials" style="margin-top:2rem">
-        <a href="mailto:hamaylzahid@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/hamaylzahid/" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/hamaylzahid" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+<section class="hero" id="home">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 data-reveal>Hi, I'm an <br><span class="stroke">AI System Engineer</h1>
+      <p data-reveal>
+I build production AI systems, RAG pipelines, and LLM apps <span class="highlight">trained by IBM, Stanford & DeepLearning.AI</span>.
+</p>
+      <div class="hero-actions" data-reveal>
+        <a href="#systems" class="btn-solid">View My Work</a>
+        <a href="#contact" class="btn-glass">Contact Me</a>
       </div>
     </div>
-    <div class="hero-right">
-      <div class="hero-stats">
-        <div class="stat-card reveal">
-          <div class="stat-num">3.95</div>
-          <div class="stat-label">CGPA / 4.0</div>
-        </div>
-        <div class="stat-card reveal">
-          <div class="stat-num">29+</div>
-          <div class="stat-label">GitHub Repos</div>
-        </div>
-        <div class="stat-card reveal">
-          <div class="stat-num">25+</div>
-          <div class="stat-label">Certifications</div>
-        </div>
-        <div class="stat-card reveal">
-          <div class="stat-num">3</div>
-          <div class="stat-label">Internships</div>
-        </div>
+
+  </div>
+  <div class="hero-scroll" data-reveal>
+    <svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+  </div>
+</section>
+
+<section class="stats" id="stats">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat-item" data-reveal="zoom">
+        <div class="stat-num"><span class="stat-count" data-target="35">0</span><span class="plus">+</span></div>
+        <div class="stat-label">AI Projects Built</div>
+      </div>
+      <div class="stat-item" data-reveal="zoom">
+        <div class="stat-num"><span class="stat-count" data-target="30">0</span><span class="plus">+</span></div>
+        <div class="stat-label">GitHub Repositories</div>
+      </div>
+      <div class="stat-item" data-reveal="zoom">
+        <div class="stat-num"><span class="stat-count" data-target="3">0</span><span class="plus">+</span></div>
+        <div class="stat-label">Internships Completed</div>
+      </div>
+      <div class="stat-item" data-reveal="zoom">
+        <div class="stat-num"><span class="stat-count" data-target="100">0</span><span class="plus">%</span></div>
+        <div class="stat-label">Real-World AI Solutions Delivered</div>
+      </div>
+      <div class="stat-item" data-reveal="zoom">
+        <div class="stat-num"><span class="stat-count" data-target="9">0</span><span class="plus">+</span></div>
+        <div class="stat-label">End-to-End ML Deployments</div>
+      </div>
+      <div class="stat-item" data-reveal="zoom">
+        <div class="stat-num"><span class="stat-count" data-target="5">0</span><span class="plus">+</span></div>
+        <div class="stat-label">AI Agents Developed</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ ABOUT ═══ -->
-  <!-- ── ABOUT ── -->
-  <section id="about">
-    <div class="container">
-      <div class="section-label" data-aos="fade-right">01 / About</div>
-      <div class="about-grid">
-        <div class="about-text" data-aos="fade-right" data-aos-delay="100">
-          <h2 class="section-title">About<br><span class="accent"><Meta:redirect></Meta:redirect></span></h2>
-          <p>
-            I don't just train models — I architect end-to-end AI systems that solve real problems at production scale. From real-time drone inspection pipelines to multimodal clinical reasoning agents, every system I build is designed with deployment in mind, not just benchmarks.
-          </p>
-          <p>
-            My work spans the full stack of modern AI: from low-level YOLOv8 optimization and OCR pipelines, to high-level RAG architectures with LLM orchestration. I obsess over the 15% efficiency gains and the 70% automation improvements that move projects from prototype to product.
-          </p>
-          <div class="about-links">
-            <a href="https://github.com/hamaylzahid" target="_blank" class="about-link"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/hamaylzahid/" target="_blank" class="about-link"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:hamaylzahid@gmail.com" class="about-link"><i class="fas fa-envelope"></i></a>
-          </div>
-        </div>
-        <div class="about-visual" data-aos="fade-left" data-aos-delay="200">
-          <div class="av-card">
-            <div class="av-icon-row">
-              <div class="av-icon"><i class="fas fa-brain"></i><span>Deep Learning</span></div>
-              <div class="av-icon"><i class="fas fa-eye"></i><span>Computer Vision</span></div>
-              <div class="av-icon"><i class="fas fa-comment-dots"></i><span>NLP / LLMs</span></div>
-              <div class="av-icon"><i class="fas fa-robot"></i><span>Generative AI</span></div>
-              <div class="av-icon"><i class="fas fa-database"></i><span>Data Pipelines</span></div>
-              <div class="av-icon"><i class="fas fa-satellite-dish"></i><span>Real-time Inference</span></div>
-            </div>
-            <div class="av-quote">
-              "Engineering systems that don't just predict — they <em>perform</em>."
-            </div>
-          </div>
+<section class="about" id="about">
+  <div class="star s1"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.5 8.5L23 12l-8.5 2.5L12 23l-2.5-8.5L1 12l8.5-2.5z"/></svg></div>
+  <div class="star s2"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.5 8.5L23 12l-8.5 2.5L12 23l-2.5-8.5L1 12l8.5-2.5z"/></svg></div>
+
+  <div class="wrap about-inner">
+    <div class="about-badge-col">
+      <div class="badge-rig" data-reveal="drop">
+        <div class="lanyard-string"></div>
+        <div class="lanyard-clip"></div>
+        <div class="badge-card">
+          <div class="badge-cutout"><div class="badge-cutout-hole"></div></div>
+          <div class="badge-photo"><span class="mono">HZ</span></div>
+          <div class="badge-meta"><b>HAMAYL ZAHID</b>AI / ML ENGINEER · PK</div>
         </div>
       </div>
     </div>
-  </section>
 
-<!-- ═══ SKILLS ═══ -->
-<section id="skills">
-    <div class="container">
-      <div class="section-label" data-aos="fade-right">02 / Skills</div>
-      <h2 class="section-title centered" data-aos="fade-up">Technical Arsenal</h2>
-      <p class="section-sub centered" data-aos="fade-up" data-aos-delay="100">A production-tested toolkit across the full AI engineering stack.</p>
- 
-      <div class="skills-grid">
- 
-        <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
-          <div class="sc-header">
-            <i class="fas fa-code sc-icon"></i>
-            <span>Languages</span>
-          </div>
-          <div class="sc-tags">
-            <span>Python</span><span>C++</span><span>JavaScript</span><span>SQL</span><span>HTML/CSS</span>
-          </div>
-        </div>
- 
-        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="sc-header">
-            <i class="fas fa-brain sc-icon"></i>
-            <span>AI / ML</span>
-          </div>
-          <div class="sc-tags">
-            <span>Machine Learning</span><span>Deep Learning</span><span>NLP</span><span>Computer Vision</span><span>Reinforcement Learning</span><span>Generative AI</span>
-          </div>
-        </div>
- 
-        <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
-          <div class="sc-header">
-            <i class="fas fa-layer-group sc-icon"></i>
-            <span>LLM / RAG Stack</span>
-          </div>
-          <div class="sc-tags">
-            <span>Transformers</span><span>RAG</span><span>LangChain</span><span>LangGraph</span><span>LLM Apps</span><span>Multimodal AI</span>
-          </div>
-        </div>
- 
-        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="sc-header">
-            <i class="fas fa-fire sc-icon"></i>
-            <span>Frameworks</span>
-          </div>
-          <div class="sc-tags">
-            <span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span><span>OpenCV</span><span>HuggingFace</span><span>BLIP</span>
-          </div>
-        </div>
- 
-        <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
-          <div class="sc-header">
-            <i class="fas fa-crosshairs sc-icon"></i>
-            <span>Object Detection</span>
-          </div>
-          <div class="sc-tags">
-            <span>YOLOv8</span><span>Instance Segmentation</span><span>Real-time Detection</span><span>Image Classification</span>
-          </div>
-        </div>
- 
-        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="sc-header">
-            <i class="fas fa-database sc-icon"></i>
-            <span>Data Engineering</span>
-          </div>
-          <div class="sc-tags">
-            <span>ETL Pipelines</span><span>Pandas</span><span>NumPy</span><span>Feature Engineering</span><span>Data Augmentation</span>
-          </div>
-        </div>
- 
-        <div class="skill-card" data-aos="fade-up" data-aos-delay="350">
-          <div class="sc-header">
-            <i class="fas fa-spider sc-icon"></i>
-            <span>Automation</span>
-          </div>
-          <div class="sc-tags">
-            <span>Selenium</span><span>BeautifulSoup</span><span>Multithreading</span>
-          </div>
-        </div>
- 
-        <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="sc-header">
-            <i class="fas fa-tools sc-icon"></i>
-            <span>Tools & Platforms</span>
-          </div>
-          <div class="sc-tags">
-            <span>Git</span><span>GitHub</span><span>VS Code</span><span>Jupyter</span><span>Google Colab</span><span>PyCharm</span>
-          </div>
-        </div>
- 
-      </div>
-    </div>
-  </section>
+    <div class="about-info" data-reveal="right">
+      <h2>Hello!</h2>
+      <p>
+  I'm <span class="name">Hamayl</span>, an AI Engineer focused on building intelligent systems 
+  that combine computer vision, large language models, and modern AI architectures.
+  My work centers on transforming AI research into reliable, production-ready solutions.
+</p>
+      <div class="skill-row">
 
-<!-- ═══ PROJECTS ═══ -->
- <section id="projects">
-    <div class="container">
-      <div class="section-label" data-aos="fade-right">03 / Projects</div>
-      <h2 class="section-title centered" data-aos="fade-up">Production Systems</h2>
-      <p class="section-sub centered" data-aos="fade-up" data-aos-delay="100">Each system engineered for real-world deployment, not academic benchmarks.</p>
- 
-      <!-- Featured: TabeebAI -->
-      <div class="project-featured" data-aos="fade-up" data-aos-delay="150">
-        <div class="pf-badge"><i class="fas fa-trophy"></i> Hackathon project</div>
-        <div class="pf-content">
-          <div class="pf-left">
-            <div class="pf-label">Featured Project</div>
-            <h3>TabeebAI</h3>
-            <p class="pf-tagline">Clinical Reasoning AI with RAG-Powered Medical Intelligence</p>
-            <p class="pf-desc">
-              A production-grade medical AI assistant built for a national hackathon. Combines retrieval-augmented generation with GPT/LLaMA reasoning to provide evidence-based clinical insights. Features an emergency detection module, risk scoring system, and a multi-source medical knowledge base — turning unstructured clinical queries into structured, actionable guidance.
-            </p>
-            <div class="pf-stack">
-              <span>RAG</span><span>ChromaDB</span><span>GPT / LLaMA</span><span>FastAPI</span><span>Streamlit</span><span>LangChain</span>
-            </div>
-            <div class="pf-metrics">
-              <div class="metric"><i class="fas fa-bolt"></i> Emergency detection logic</div>
-              <div class="metric"><i class="fas fa-shield-alt"></i> Risk scoring system</div>
-              <div class="metric"><i class="fas fa-database"></i> ChromaDB vector store</div>
-              <div class="metric"><i class="fas fa-server"></i> FastAPI backend</div>
-            </div>
-            <a href="https://github.com/hamaylzahid" target="_blank" class="btn-primary sm">View on GitHub <i class="fab fa-github"></i></a>
-          </div>
-          <div class="pf-right">
-            <div class="pf-arch">
-              <div class="arch-box top">User Query</div>
-              <div class="arch-arrow">↓</div>
-              <div class="arch-box mid">LangChain Orchestration</div>
-              <div class="arch-arrow">↓</div>
-              <div class="arch-row">
-                <div class="arch-box side">ChromaDB<br><small>RAG Retrieval</small></div>
-                <div class="arch-box side">GPT/LLaMA<br><small>Reasoning</small></div>
-              </div>
-              <div class="arch-arrow">↓</div>
-              <div class="arch-box mid risk">Risk Score + Emergency Flag</div>
-              <div class="arch-arrow">↓</div>
-              <div class="arch-box top">Streamlit UI / FastAPI</div>
-            </div>
-          </div>
-        </div>
-      </div>
- 
-      <!-- Project Grid -->
-      <div class="projects-grid">
- 
-        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="pc-top">
-            <div class="pc-icon"><i class="fas fa-helicopter"></i></div>
-            <div class="pc-links">
-              <a href="https://github.com/hamaylzahid/AIDroneInspection" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <h4>AIDroneInspection</h4>
-          <p class="pc-problem"><strong>Problem:</strong> Manual infrastructure inspections are slow, expensive, and error-prone at scale.</p>
-          <p>YOLOv8 + PyTorch + OpenCV pipeline for automated defect detection from drone imagery. Custom augmentation strategy and optimized inference engine for large-scale deployment.</p>
-          <div class="pc-stack"><span>YOLOv8</span><span>PyTorch</span><span>OpenCV</span></div>
-          <div class="pc-impact"><i class="fas fa-chart-line"></i> ~15–25% accuracy gain · Eliminated manual inspection bottlenecks</div>
-        </div>
- 
-        <div class="project-card" data-aos="fade-up" data-aos-delay="150">
-          <div class="pc-top">
-            <div class="pc-icon"><i class="fas fa-traffic-light"></i></div>
-            <div class="pc-links">
-              <a href="https://github.com/hamaylzahid/realtime_objdetection_and_analytics" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <h4>Real-Time Traffic Detection</h4>
-          <p class="pc-problem"><strong>Problem:</strong> Live surveillance demands detection at full stream throughput with zero lag tolerance.</p>
-          <p>Built a real-time object detection and analytics engine using YOLOv8 and OpenCV, optimized for latency-throughput balance under continuous data streams.</p>
-          <div class="pc-stack"><span>YOLOv8</span><span>OpenCV</span><span>Python</span></div>
-          <div class="pc-impact"><i class="fas fa-chart-line"></i> Near real-time performance · Stable under continuous stream conditions</div>
-        </div>
- 
-        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="pc-top">
-            <div class="pc-icon"><i class="fas fa-graduation-cap"></i></div>
-            <div class="pc-links">
-              <a href="https://github.com/hamaylzahid/ScholarXplore_-AI-" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <h4>ScholarXplore AI</h4>
-          <p class="pc-problem"><strong>Problem:</strong> Scholarship data is fragmented across hundreds of sources — manual tracking is unscalable.</p>
-          <p>AI-powered academic intelligence platform using Selenium + BeautifulSoup + multi-threading to automate research data extraction at scale.</p>
-          <div class="pc-stack"><span>Selenium</span><span>BeautifulSoup</span><span>Multithreading</span></div>
-          <div class="pc-impact"><i class="fas fa-chart-line"></i> 40–60% scraping speed improvement · Fully automated pipeline</div>
-        </div>
- 
-        <div class="project-card" data-aos="fade-up" data-aos-delay="250">
-          <div class="pc-top">
-            <div class="pc-icon"><i class="fas fa-file-alt"></i></div>
-            <div class="pc-links">
-              <a href="https://github.com/hamaylzahid/IntelligentDocumentProcessor" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <h4>Intelligent Document Processing</h4>
-          <p class="pc-problem"><strong>Problem:</strong> Unstructured documents block downstream AI systems — manual digitization doesn't scale.</p>
-          <p>OCR-powered document AI pipeline that extracts, parses, and normalizes unstructured data into machine-readable structured datasets for AI ingestion.</p>
-          <div class="pc-stack"><span>OCR</span><span>Python</span><span>ETL</span></div>
-          <div class="pc-impact"><i class="fas fa-chart-line"></i> ~70% reduction in manual processing effort</div>
-        </div>
- 
-        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="pc-top">
-            <div class="pc-icon"><i class="fas fa-headset"></i></div>
-            <div class="pc-links">
-              <a href="https://github.com/hamaylzahid/AI-Customer-Support-Intelligence-System" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <h4>AI Customer Support Intelligence</h4>
-          <p class="pc-problem"><strong>Problem:</strong> High-volume support queues overwhelm teams — manual triage at scale is impossible.</p>
-          <p>Transformer-based NLP system for intent classification and context-aware response generation. Production pipeline with optimized tokenization and preprocessing.</p>
-          <div class="pc-stack"><span>HuggingFace</span><span>Transformers</span><span>NLP</span></div>
-          <div class="pc-impact"><i class="fas fa-chart-line"></i> ~60% reduction in manual query handling</div>
-        </div>
- 
-        <div class="project-card" data-aos="fade-up" data-aos-delay="350">
-          <div class="pc-top">
-            <div class="pc-icon"><i class="fas fa-image"></i></div>
-            <div class="pc-links">
-              <a href="https://github.com/hamaylzahid/Visual-Question-Answering-BLIP" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <h4>Multimodal VQA (BLIP)</h4>
-          <p class="pc-problem"><strong>Problem:</strong> Cross-modal reasoning between vision and language remains a key bottleneck in AI systems.</p>
-          <p>BLIP-based vision-language model enabling joint image-text embeddings for multimodal inference, document understanding, and scalable VQA tasks.</p>
-          <div class="pc-stack"><span>BLIP</span><span>PyTorch</span><span>Multimodal AI</span></div>
-          <div class="pc-impact"><i class="fas fa-chart-line"></i> Improved cross-modal inference consistency · Scalable VQA architecture</div>
-        </div>
- 
-      </div>
-    </div>
-  </section>
-
-<!-- ═══ EXPERIENCE ═══ -->
-  <section id="experience">
-    <div class="container">
-      <div class="section-label" data-aos="fade-right">04 / Experience</div>
-      <h2 class="section-title centered" data-aos="fade-up">Professional Track</h2>
- 
-      <div class="timeline">
- 
-        <div class="tl-item" data-aos="fade-up" data-aos-delay="100">
-          <div class="tl-dot"></div>
-          <div class="tl-card">
-            <div class="tl-header">
-              <div>
-                <h4>AI & Computer Vision Intern</h4>
-                <span class="tl-company">IT Solera Pvt Ltd</span>
-              </div>
-              <span class="tl-date">2025 – Present · Remote</span>
-            </div>
-            <ul>
-              <li>Developed production-grade ML pipelines for automation and image processing in client-facing solutions.</li>
-              <li>Built data preprocessing and augmentation workflows, improving model generalization and training stability across multiple domains.</li>
-              <li>Integrated object detection and image classification modules into scalable AI architectures for end-to-end automation.</li>
-              <li>Performed model evaluation, benchmarking, and deployment for computer vision systems.</li>
-            </ul>
-            <div class="tl-tags"><span>Computer Vision</span><span>PyTorch</span><span>YOLOv8</span><span>Data Augmentation</span></div>
-          </div>
-        </div>
- 
-        <div class="tl-item" data-aos="fade-up" data-aos-delay="150">
-          <div class="tl-dot"></div>
-          <div class="tl-card">
-            <div class="tl-header">
-              <div>
-                <h4>Computer Vision Engineer Intern</h4>
-                <span class="tl-company">Nexus AI</span>
-              </div>
-              <span class="tl-date">Oct 2025 – Dec 2025 · Remote</span>
-            </div>
-            <ul>
-              <li>Engineered deep learning pipelines for image classification and object detection with systematic preprocessing.</li>
-              <li>Implemented augmentation pipelines that enhanced generalization and reduced overfitting on benchmark datasets.</li>
-              <li>Optimized inference performance and model throughput, achieving measurable improvement in real-time processing stability.</li>
-            </ul>
-            <div class="tl-tags"><span>Deep Learning</span><span>OpenCV</span><span>Model Optimization</span><span>Inference</span></div>
-          </div>
-        </div>
- 
-        <div class="tl-item" data-aos="fade-up" data-aos-delay="200">
-          <div class="tl-dot"></div>
-          <div class="tl-card">
-            <div class="tl-header">
-              <div>
-                <h4>Machine Learning Researcher</h4>
-                <span class="tl-company">AI Cadmey</span>
-              </div>
-              <span class="tl-date">Mar 2025 – Present · Remote</span>
-            </div>
-            <ul>
-              <li>Optimized ML models for research prototypes, improving algorithm efficiency by <strong>15%</strong> through architectural tuning and pipeline refactoring.</li>
-              <li>Investigated AI applications in Evolutionary Biology and theoretical simulation domains using Generative AI and RL.</li>
-              <li>Designed NLP and multimodal experiments to assess model behavior across advanced AI problem spaces.</li>
-            </ul>
-            <div class="tl-tags"><span>Generative AI</span><span>Reinforcement Learning</span><span>NLP</span><span>Multimodal AI</span></div>
-          </div>
-        </div>
- 
-      </div>
-    </div>
-  </section>
-
-<!-- ═══ EDUCATION ═══ -->
- <section id="education">
-    <div class="container">
-      <div class="section-label" data-aos="fade-right">05 / Education</div>
-      <h2 class="section-title centered" data-aos="fade-up">Academic Foundation</h2>
-      <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="edu-left">
-          <div class="edu-degree">Bachelor of Science</div>
-          <div class="edu-field">Artificial Intelligence</div>
-          <div class="edu-school">The Islamia University of Bahawalpur</div>
-          <div class="edu-cgpa"><span class="cgpa-num">3.95</span> <span class="cgpa-denom">/ 4.00 CGPA</span></div>
-        </div>
-        <div class="edu-right">
-          <div class="edu-course-title">Relevant Coursework</div>
-          <div class="edu-courses">
-            <span>Machine Learning</span>
-            <span>Deep Learning</span>
-            <span>Natural Language Processing</span>
-            <span>Computer Vision</span>
-            <span>Data Structures & Algorithms</span>
-            <span>Probability & Statistics</span>
-            <span>Feature Engineering</span>
-            <span>Transfer Learning</span>
-            <span>Generative AI</span>
-            <span>Data Preprocessing</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
- 
-
-<!-- ═══ CERTIFICATIONS ═══ -->
-<!-- ── CERTIFICATIONS ── -->
-  <section id="certifications">
-    <div class="container">
-      <div class="section-label" data-aos="fade-right">06 / Certifications</div>
-      <h2 class="section-title centered" data-aos="fade-up">Credentials</h2>
-      <p class="section-sub centered" data-aos="fade-up" data-aos-delay="100">Industry-recognized credentials from top-tier AI institutions.</p>
- 
-      <div class="certs-grid">
- 
-        <div class="cert-card" data-aos="fade-up" data-aos-delay="50">
-          <div class="cert-logo ibm">IBM</div>
-          <div class="cert-body">
-            <h4>IBM AI Engineering Professional Certificate</h4>
-            <p>Complete 13-course specialization covering the full AI engineering pipeline</p>
-            <div class="cert-meta"><span class="cert-count">13 Courses</span><span class="cert-issuer">IBM</span></div>
-          </div>
-        </div>
- 
-        <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="cert-logo dai">dAI</div>
-          <div class="cert-body">
-            <h4>Machine Learning Specialization</h4>
-            <p>Supervised, unsupervised learning, and advanced ML systems</p>
-            <div class="cert-meta"><span class="cert-count">3 Courses</span><span class="cert-issuer">DeepLearning.AI / Stanford</span></div>
-          </div>
-        </div>
- 
-        <div class="cert-card" data-aos="fade-up" data-aos-delay="150">
-          <div class="cert-logo dai">dAI</div>
-          <div class="cert-body">
-            <h4>Deep Learning Specialization</h4>
-            <p>Neural networks, CNNs, RNNs, sequence models, and hyperparameter tuning</p>
-            <div class="cert-meta"><span class="cert-count">5 Courses</span><span class="cert-issuer">DeepLearning.AI</span></div>
-          </div>
-        </div>
- 
-        <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="cert-logo ibm">IBM</div>
-          <div class="cert-body">
-            <h4>Deep Learning with PyTorch, Keras & TensorFlow</h4>
-            <p>Practical deep learning with the three leading frameworks</p>
-            <div class="cert-meta"><span class="cert-count">6 Courses</span><span class="cert-issuer">IBM / DeepLearning.AI</span></div>
-          </div>
-        </div>
- 
-        <div class="cert-card" data-aos="fade-up" data-aos-delay="250">
-          <div class="cert-logo ibm">IBM</div>
-          <div class="cert-body">
-            <h4>Generative AI: Foundational Models for NLP & Language Understanding</h4>
-            <p>LLMs, transformers, and generative architectures for NLP applications</p>
-            <div class="cert-meta"><span class="cert-issuer">IBM</span></div>
-          </div>
-        </div>
- 
-        <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="cert-logo ibm">IBM</div>
-          <div class="cert-body">
-            <h4>Data Analysis & Visualization with Python</h4>
-            <p>End-to-end data analysis pipelines, visualization, and statistical insight</p>
-            <div class="cert-meta"><span class="cert-issuer">IBM</span></div>
-          </div>
-        </div>
- 
-      </div>
-    </div>
-  </section>
-
-<!-- ═══ GITHUB ═══ -->
-<section id="github">
-  <div class="section-inner">
-    <div class="section-label reveal">// GitHub Engineering</div>
-    <h2 class="section-title reveal">Open Source Activity</h2>
-    <p class="section-sub reveal">24+ repositories spanning Computer Vision, NLP, Generative AI, and Agentic systems — built with production-grade standards.</p>
-    <div class="divider reveal"></div>
-
-    <div class="github-stats reveal">
-      <div class="gh-stat-card">
-        <div class="gh-stat-num">30+</div>
-        <div class="gh-stat-label">Repositories</div>
-      </div>
-      <div class="gh-stat-card">
-        <div class="gh-stat-num">690</div>
-        <div class="gh-stat-label">Total Commits</div>
-      </div>
-      <div class="gh-stat-card">
-        <div class="gh-stat-num">30</div>
-        <div class="gh-stat-label">Public Stars</div>
-      </div>
-      <div class="gh-stat-card">
-        <div class="gh-stat-num">5</div>
-        <div class="gh-stat-label">Forks</div>
-      </div>
-    </div>
-
-    <!-- Streak -->
-    <!-- REAL GITHUB ANALYTICS -->
-<div class="github-graphs reveal">
-
-  <div class="github-graph-card">
-    <div class="contrib-label">CONTRIBUTION STREAK</div>
-
-    <img
-      src="https://github-readme-streak-stats.herokuapp.com/?user=hamaylzahid&theme=github-dark-blue&hide_border=true"
-      alt="GitHub Streak"
-      loading="lazy"
-    />
+  <div class="skill-icon" data-reveal="zoom">
+    <span>Python</span>
   </div>
 
-  <div class="github-graph-card">
-    <div class="contrib-label">CONTRIBUTION ACTIVITY</div>
-
-    <img
-      src="https://github-readme-activity-graph.vercel.app/graph?username=hamaylzahid&bg_color=0d1117&color=58a6ff&line=1f6feb&point=79c0ff&area=true&hide_border=true"
-      alt="GitHub Activity Graph"
-      loading="lazy"
-    />
+  <div class="skill-icon" data-reveal="zoom">
+    <span>PyTorch</span>
   </div>
-  
+
+  <div class="skill-icon" data-reveal="zoom">
+    <span>Computer Vision</span>
+  </div>
+
+
+  <div class="skill-icon" data-reveal="zoom">
+    <span>RAG Systems</span>
+  </div>
+
+  <div class="skill-icon" data-reveal="zoom">
+    <span>LangChain</span>
+  </div>
+
+  <div class="skill-icon" data-reveal="zoom">
+    <span>AI Agents</span>
+  </div>
+
+  <div class="skill-icon" data-reveal="zoom">
+    <span>Transformers</span>
+  </div>
+
+
+  <div class="skill-icon" data-reveal="zoom">
+    <span>FastAPI</span>
+  </div>
+
+
+  <div class="skill-icon" data-reveal="zoom">
+    <span>Docker</span>
+  </div>
 
 </div>
+    </div>
+  </div>
 
-    <div style="text-align:center;margin-top:2rem" class="reveal">
-      <a href="https://github.com/hamaylzahid" target="_blank" class="btn-ghost">
-        <i class="fab fa-github" style="margin-right:8px"></i>View All Repositories on GitHub
+  <div class="torn-divider">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,119.62,189.5,99.8,242.79,81.82,282.88,63.6,321.39,56.44Z"/></svg>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap process-stage" id="process-stage">
+
+    <div class="process-head" data-reveal>
+      <div class="process-eyebrow">How I build</div>
+      <h2>Let me show you how I take a model from idea to inference.
+        <svg class="hand-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 4 Q 10 10 15 15 M 15 15 L 10 15 M 15 15 L 15 10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </h2>
+      <p>A structured, technical process for turning a research idea into a deployed, monitored AI system.</p>
+    </div>
+
+    <svg class="process-path-svg desktop" viewBox="0 0 1000 1350" preserveAspectRatio="none">
+      <path class="path-guide" d="M 650,200 C 400,300 200,400 300,600 C 400,800 750,750 700,950 C 650,1150 400,1150 300,1200"/>
+      <path class="path-fill" id="path-fill-desktop" d="M 650,200 C 400,300 200,400 300,600 C 400,800 750,750 700,950 C 650,1150 400,1150 300,1200"/>
+    </svg>
+    <svg class="process-path-svg mobile" viewBox="0 0 4 100" preserveAspectRatio="none">
+      <path class="path-guide" d="M 2,0 L 2,100" stroke-width="4" vector-effect="non-scaling-stroke"/>
+      <path class="path-fill" id="path-fill-mobile" d="M 2,0 L 2,100" stroke-width="4" vector-effect="non-scaling-stroke"/>
+    </svg>
+
+    <div class="process-cards">
+      <div class="tag-card tc-1" data-reveal="left" data-trigger="60">
+        <div class="hole"></div>
+        <div class="tag-card-inner"><span class="num">01</span><h3>Define</h3><p>Scope the problem, the data available, and the constraints, latency, hardware, accuracy bar, before writing any model code.</p></div>
+      </div>
+      <div class="tag-card tc-2" data-reveal="right" data-trigger="500">
+        <div class="hole"></div>
+        <div class="tag-card-inner"><span class="num">02</span><h3>Design</h3><p>Architect the pipeline, preprocessing, model choice, retrieval layer if needed, as a system, not a single notebook cell.</p></div>
+      </div>
+      <div class="tag-card tc-3" data-reveal="left" data-trigger="750">
+        <div class="hole"></div>
+        <div class="tag-card-inner"><span class="num">03</span><h3>Build</h3><p>Train, fine-tune, and optimize for inference, augmentation, hyperparameter sweeps, and benchmarking against the constraint.</p></div>
+      </div>
+      <div class="tag-card tc-4" data-reveal="right" data-trigger="1100">
+        <div class="hole"></div>
+        <div class="tag-card-inner"><span class="num">04</span><h3>Launch</h3><p>Ship to Streamlit, Gradio, or an API, then monitor, gather feedback, and iterate on the live system.</p></div>
+      </div>
+      <div class="process-note" data-reveal>Ready to deploy!</div>
+    </div>
+
+  </div>
+</section>
+
+<section class="systems" id="systems">
+  <div class="wrap">
+    <div class="systems-head" data-reveal>
+      <div class="systems-eyebrow">Selected Work</div>
+      <h2>Six systems, <span class="stroke">shipped and deployed.</span></h2>
+      <p>From real-time object detection to retrieval-augmented generation, each one built end-to-end, not a tutorial clone.</p>
+    </div>
+
+    <div class="sys-grid">
+      <div class="sys-card" data-reveal>
+        <span class="sys-num">01</span>
+        <div class="sys-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <h3>AI Drone Inspection</h3>
+        <p>Computer-vision pipeline for autonomous drone-based infrastructure inspection, detecting defects and anomalies from aerial footage.</p>
+        <div class="sys-tags"><span class="sys-tag">PyTorch</span><span class="sys-tag">Computer Vision</span><span class="sys-tag">YOLO</span></div>
+        <a href="https://github.com/hamaylzahid/AIDroneInspection" target="_blank" rel="noopener noreferrer" class="sys-link">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+
+      <div class="sys-card" data-reveal>
+        <span class="sys-num">02</span>
+        <div class="sys-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+        <h3>AI Customer Support Intelligence System</h3>
+        <p>An LLM-driven support intelligence layer that classifies, prioritizes, and drafts responses to incoming customer queries automatically.</p>
+        <div class="sys-tags"><span class="sys-tag">LangChain</span><span class="sys-tag">NLP</span><span class="sys-tag">LLM</span></div>
+        <a href="https://github.com/hamaylzahid/AI-Customer-Support-Intelligence-System" target="_blank" rel="noopener noreferrer" class="sys-link">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+
+      <div class="sys-card" data-reveal>
+        <span class="sys-num">03</span>
+        <div class="sys-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></div>
+        <h3>Intelligent Document Processor</h3>
+        <p>Automated document understanding system, extracts, classifies, and structures information from unstructured PDFs and scans.</p>
+        <div class="sys-tags"><span class="sys-tag">OCR</span><span class="sys-tag">RAG</span><span class="sys-tag">Python</span></div>
+        <a href="https://github.com/hamaylzahid/IntelligentDocumentProcessor" target="_blank" rel="noopener noreferrer" class="sys-link">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+
+      <div class="sys-card" data-reveal>
+        <span class="sys-num">04</span>
+        <div class="sys-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4.5c-7 0-10 7.5-10 7.5s3 7.5 10 7.5 10-7.5 10-7.5-3-7.5-10-7.5z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3>ScholarXplore AI</h3>
+        <p>A multilingual research-discovery assistant that helps users search, summarize, and explore academic literature through RAG.</p>
+        <div class="sys-tags"><span class="sys-tag">RAG</span><span class="sys-tag">LLM</span><span class="sys-tag">Multilingual</span></div>
+        <a href="https://github.com/hamaylzahid/ScholarXplore_-AI-" target="_blank" rel="noopener noreferrer" class="sys-link">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+
+      <div class="sys-card" data-reveal>
+        <span class="sys-num">05</span>
+        <div class="sys-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg></div>
+        <h3>Real-Time Traffic Detection &amp; Analytics</h3>
+        <p>Live video analytics system combining real-time traffic detection with downstream dashboards for tracking and insights.</p>
+        <div class="sys-tags"><span class="sys-tag">YOLOv8</span><span class="sys-tag">OpenCV</span><span class="sys-tag">Analytics</span></div>
+        <a href="https://github.com/hamaylzahid/realtime_objdetection_and_analytics" target="_blank" rel="noopener noreferrer" class="sys-link">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+
+      <div class="sys-card" data-reveal>
+        <span class="sys-num">06</span>
+        <div class="sys-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/><circle cx="9" cy="10" r="1"/><circle cx="13" cy="10" r="1"/></svg></div>
+        <h3>Visual Question Answering (BLIP)</h3>
+        <p>A vision-language system built on BLIP that answers natural-language questions about the contents of an image.</p>
+        <div class="sys-tags"><span class="sys-tag">BLIP</span><span class="sys-tag">Vision-Language</span><span class="sys-tag">Transformers</span></div>
+        <a href="https://github.com/hamaylzahid/Visual-Question-Answering-BLIP" target="_blank" rel="noopener noreferrer" class="sys-link">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+      </div>
+    </div>
+
+    <div class="sys-grid-extra" id="sys-grid-extra">
+      <!--
+        Add more project cards here following the same .sys-card markup pattern used above.
+        This block is hidden until "Show More Projects" is clicked, so the layout
+        and styling stay consistent no matter how many projects are added.
+
+        Example template to duplicate:
+
+        <div class="sys-card" data-reveal>
+          <span class="sys-num">07</span>
+          <div class="sys-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/></svg></div>
+          <h3>Project Title</h3>
+          <p>Short one or two sentence description of the project.</p>
+          <div class="sys-tags"><span class="sys-tag">Tag One</span><span class="sys-tag">Tag Two</span></div>
+          <a href="https://github.com/hamaylzahid/REPO" target="_blank" rel="noopener noreferrer" class="sys-link">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+        </div>
+      -->
+    </div>
+
+    <div class="sys-more-wrap">
+      <a href="https://github.com/hamaylzahid?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn-more">
+        View All Repositories on GitHub
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ═══ CHATBOT SECTION ═══ -->
-<section id="chatbot">
-  <div class="section-inner">
-    <div class="section-label reveal">// AI Twin</div>
-    <h2 class="section-title reveal">Meet MaylBot</h2>
-    <div class="divider reveal"></div>
-    </div>
-    <div class="chatbot-frame-wrap reveal">
-      <iframe src="https://hamaylza-bot.hf.space" title="MaylBot AI Twin" loading="lazy"></iframe>
+<section class="bot" id="mayl-bot">
+  <div class="wrap bot-inner">
+    <div class="bot-eyebrow" data-reveal><span class="bot-dot"></span> Live &amp; Deployed</div>
+    <h2 data-reveal>Meet MAYL BOT, my AI twin.</h2>
+    <p data-reveal>A real, working RAG-powered assistant trained on my own work and experience. Ask it anything about my projects, skills, or background, it's live right now.</p>
+    <div class="bot-frame-wrap" data-reveal="zoom">
+      <div class="bot-frame-inner">
+        <iframe src="https://hamaylza-bot.hf.space" frameborder="0" width="850" height="450" title="MAYL BOT — Hamayl's AI Twin" loading="lazy"></iframe>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ CONTACT ═══ -->
-<section id="contact">
-  <div class="section-inner">
-    <div class="section-label reveal">// Contact</div>
-    <h2 class="section-title reveal">Let's Build Something</h2>
-    <p class="section-sub reveal">Open to AI/ML engineering roles, research collaborations, and interesting problems. Let's talk.</p>
-    <div class="divider reveal"></div>
+<section class="contact" id="contact">
+  <div class="contact-bigtext" aria-hidden="true">Contact</div>
+  <div class="wrap">
     <div class="contact-grid">
-      <div class="contact-info reveal-left">
-        <a href="mailto:hamaylzahid@gmail.com" class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <div class="contact-item-text"><strong>Email</strong>hamaylzahid@gmail.com</div>
-        </a>
-        <a href="https://www.linkedin.com/in/hamaylzahid/" target="_blank" class="contact-item">
-          <i class="fab fa-linkedin-in"></i>
-          <div class="contact-item-text"><strong>LinkedIn</strong>linkedin.com/in/hamaylzahid</div>
-        </a>
-        <a href="https://github.com/hamaylzahid" target="_blank" class="contact-item">
-          <i class="fab fa-github"></i>
-          <div class="contact-item-text"><strong>GitHub</strong>github.com/hamaylzahid</div>
-        </a>
-        <div class="contact-item" style="cursor:default">
-          <i class="fas fa-map-marker-alt"></i>
-          <div class="contact-item-text"><strong>Location</strong>Bahawalpur, Punjab, Pakistan</div>
+      <div class="contact-info" data-reveal="left">
+        <div class="contact-eyebrow">Get In Touch</div>
+        <h2>Let's build something real.</h2>
+        <p>Open to AI/ML engineering roles, freelance computer-vision and LLM work, or just a conversation about an idea you want to turn into a deployed system.</p>
+        <div class="contact-links">
+          <a href="mailto:hamaylzahid@gmail.com" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+            hamaylzahid@gmail.com
+          </a>
+          <a href="https://github.com/hamaylzahid" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.1c-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 015.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.24 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.08.78 2.18v3.24c0 .3.2.66.79.55C20.21 21.38 23.5 17.07 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+            github.com/hamaylzahid
+          </a>
+          <a href="https://www.linkedin.com/in/hamaylzahid" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 11.02-4.12 2.06 2.06 0 01-.02 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            linkedin.com/in/hamaylzahid
+          </a>
+          <a href="#mayl-bot" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4M8 16v0M16 16v0"/></svg>
+            Talk to MAYL BOT instead
+          </a>
         </div>
       </div>
-      <div class="reveal-right">
-  <form class="contact-form" id="contactForm"
-        action="https://formspree.io/f/xykvakyg"
+
+      <form class="contact-panel" id="contact-form" data-reveal="right" action="https://formspree.io/f/xykvakyg"
         method="POST">
-
-    <div class="form-row">
-      <div class="form-group">
-        <label>Name</label>
-        <input type="text" id="formName" name="name" placeholder="Your name">
-      </div>
-
-      <div class="form-group">
-        <label>Email</label>
-        <input type="email" id="formEmail" name="email" placeholder="your@email.com" required>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label>Subject</label>
-      <input type="text" id="formSubject" name="subject" placeholder="What's this about?">
-    </div>
-
-    <div class="form-group">
-      <label>Message</label>
-      <textarea id="formMessage" name="message"
-        placeholder="Tell me about the opportunity or project…"></textarea>
-    </div>
-
-    <button class="btn-primary" type="submit" style="width:fit-content">
-      <i class="fas fa-paper-plane" style="margin-right:6px"></i>
-      Send Message
-    </button>
-
-    <div class="form-status" id="formStatus"></div>
-
-  </form>
-</div>
+        <div id="form-fields">
+          <div class="field">
+            <input type="text" id="cf-name" name="name" placeholder=" " required>
+            <label for="cf-name">Your Name</label>
+          </div>
+          <div class="field">
+            <input type="email" id="cf-email" name="email" placeholder=" " required>
+            <label for="cf-email">Your Email</label>
+          </div>
+          <div class="field">
+            <textarea id="cf-message" name="message" placeholder=" " required></textarea>
+            <label for="cf-message">Message</label>
+          </div>
+          <button type="submit" class="btn-send">Send Message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      
+        </div>
+        <div class="form-success" id="form-success">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
+          <h4>Ready to send!</h4>
+          <p>Your email client should now be open with the message pre-filled.</p>
+        </div>
+      </form>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-brand">Hamayl<span style="color:var(--text2)">Zahid</span></div>
-  <div class="footer-copy">© 2025 Hamayl Zahid </div>
-  <div class="footer-links">
-    <a href="https://github.com/hamaylzahid" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/hamaylzahid/" target="_blank">LinkedIn</a>
-    <a href="mailto:hamaylzahid@gmail.com">Email</a>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-word">hamayl<span class="dot">.</span></div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+        <a href="#systems">Systems</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <a href="https://github.com/hamaylzahid" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/hamaylzahid" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:hamaylzahid@gmail.com">Email</a>
+        <a href="#mayl-bot">MAYL BOT</a>
+      </div>
+      <div class="footer-col">
+        <h5>Based In</h5>
+        <p>Bahawalpur, Pakistan</p>
+        <p>Available worldwide</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Hamayl Zahid.</span>
+    </div>
   </div>
 </footer>
+
+<button id="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<div class="chatbot-tooltip" id="chatbot-tooltip">Chat with MAYL BOT</div>
+<a id="chatbot-fab" href="https://hamaylza-bot.hf.space" target="main" rel="noopener noreferrer" aria-label="Open chatbot">
+  <span class="fab-ping"></span>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4M8 16v0M16 16v0"/></svg>
+</a>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="script.js"></script>
 </body>
