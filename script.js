@@ -1,255 +1,332 @@
-// ─── PARTICLES ───
 (function(){
-  const canvas = document.getElementById('particles-canvas');
-  const ctx = canvas.getContext('2d');
-  let W, H, particles = [];
-  function resize(){ W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
-  resize();
-  window.addEventListener('resize', resize);
-  for(let i=0;i<55;i++) particles.push({
-    x: Math.random()*window.innerWidth,
-    y: Math.random()*window.innerHeight,
-    r: Math.random()*1.8+0.4,
-    vx: (Math.random()-0.5)*0.25,
-    vy: (Math.random()-0.5)*0.25,
-    o: Math.random()*0.35+0.07
+  "use strict";
+
+  /* ---------- Preloader ---------- */
+  window.addEventListener('load', function(){
+    var pre = document.getElementById('preloader');
+    setTimeout(function(){
+      pre.classList.add('hide');
+      setTimeout(function(){ pre.style.display = 'none'; }, 1300);
+    }, 2200);
   });
-  function draw(){
-    ctx.clearRect(0,0,W,H);
-    particles.forEach(p => {
-      p.x += p.vx; p.y += p.vy;
-      if(p.x<0)p.x=W; if(p.x>W)p.x=0;
-      if(p.y<0)p.y=H; if(p.y>H)p.y=0;
-      ctx.beginPath();
-      ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
-      ctx.fillStyle = `rgba(99,200,230,${p.o})`;
-      ctx.fill();
+
+  /* ---------- Navbar: scroll state + mobile menu ---------- */
+  var nav = document.getElementById('nav');
+  var burger = document.getElementById('nav-burger');
+  var mobileMenu = document.getElementById('nav-mobile');
+  var burgerIcon = document.getElementById('burger-icon');
+  var menuOpen = false;
+
+  function setBurgerIcon(open){
+    burgerIcon.innerHTML = open
+      ? '<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>'
+      : '<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>';
+  }
+
+  burger.addEventListener('click', function(){
+    menuOpen = !menuOpen;
+    mobileMenu.classList.toggle('open', menuOpen);
+    nav.classList.toggle('menu-open', menuOpen);
+    burger.setAttribute('aria-expanded', String(menuOpen));
+    setBurgerIcon(menuOpen);
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      menuOpen = false;
+      mobileMenu.classList.remove('open');
+      nav.classList.remove('menu-open');
+      burger.setAttribute('aria-expanded', 'false');
+      setBurgerIcon(false);
     });
-    // draw connections
-    for(let i=0;i<particles.length;i++){
-      for(let j=i+1;j<particles.length;j++){
-        const dx=particles[i].x-particles[j].x, dy=particles[i].y-particles[j].y;
-        const dist=Math.sqrt(dx*dx+dy*dy);
-        if(dist<120){
+  });
+
+  function onScroll(){
+    var y = window.scrollY || window.pageYOffset;
+    nav.classList.toggle('scrolled', y > 40);
+
+    var btt = document.getElementById('back-to-top');
+    var showBtt = y > 600;
+    btt.classList.toggle('show', showBtt);
+
+    var fab = document.getElementById('chatbot-fab');
+    var tooltip = document.getElementById('chatbot-tooltip');
+    fab.classList.toggle('shift-up', showBtt);
+    tooltip.classList.toggle('shift-up', showBtt);
+  }
+  window.addEventListener('scroll', onScroll, { passive:true });
+  onScroll();
+
+  document.getElementById('back-to-top').addEventListener('click', function(){
+    window.scrollTo({ top:0, behavior:'smooth' });
+  });
+
+  /* ---------- Floating chatbot button tooltip ---------- */
+  var fab = document.getElementById('chatbot-fab');
+  var tooltip = document.getElementById('chatbot-tooltip');
+  fab.addEventListener('mouseenter', function(){ tooltip.classList.add('show'); });
+  fab.addEventListener('mouseleave', function(){ tooltip.classList.remove('show'); });
+  setTimeout(function(){
+    tooltip.classList.add('show');
+    setTimeout(function(){ tooltip.classList.remove('show'); }, 3000);
+  }, 3000);
+
+  /* ---------- Scroll reveal (IntersectionObserver) ---------- */
+  var revealEls = document.querySelectorAll('[data-reveal]');
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){
+          var delay = entry.target.getAttribute('data-trigger');
+          if (delay){
+            setTimeout(function(){ entry.target.classList.add('in'); }, Math.min(parseInt(delay,10) / 4, 400));
+          } else {
+            entry.target.classList.add('in');
+          }
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold:0.15, rootMargin:'0px 0px -60px 0px' });
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* ---------- Hero rotating keyword effect ---------- */
+  var rotatorWords = ['intelligent systems.', 'computer vision.', 'RAG pipelines.', 'LLM applications.', 'production AI.'];
+  var rotatorEl = document.getElementById('hero-rotator-word');
+  var reduceMotionRotator = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (rotatorEl){
+    if (reduceMotionRotator){
+      rotatorEl.textContent = rotatorWords[0];
+    } else {
+      var wIndex = 0, charIndex = 0, typing = true;
+      function typeLoop(){
+        var word = rotatorWords[wIndex];
+        if (typing){
+          charIndex++;
+          rotatorEl.textContent = word.slice(0, charIndex);
+          if (charIndex >= word.length){
+            typing = false;
+            setTimeout(typeLoop, 1500);
+            return;
+          }
+          setTimeout(typeLoop, 55);
+        } else {
+          charIndex--;
+          rotatorEl.textContent = word.slice(0, charIndex);
+          if (charIndex <= 0){
+            typing = true;
+            wIndex = (wIndex + 1) % rotatorWords.length;
+            setTimeout(typeLoop, 300);
+            return;
+          }
+          setTimeout(typeLoop, 28);
+        }
+      }
+      typeLoop();
+    }
+  }
+
+  /* ---------- Stats counter animation ---------- */
+  var statEls = document.querySelectorAll('.stat-count');
+  if (statEls.length){
+    var statObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){
+          animateCount(entry.target);
+          statObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold:0.4 });
+    statEls.forEach(function(el){ statObserver.observe(el); });
+  }
+
+  function animateCount(el){
+    var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+    var duration = 1400;
+    var startTime = null;
+
+    function step(timestamp){
+      if (!startTime) startTime = timestamp;
+      var progress = Math.min((timestamp - startTime) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.floor(eased * target);
+      if (progress < 1){
+        requestAnimationFrame(step);
+      } else {
+        el.textContent = target;
+      }
+    }
+    requestAnimationFrame(step);
+  }
+
+  /* ---------- Show more projects ---------- */
+  var moreBtn = document.getElementById('sys-more-btn');
+  if (moreBtn){
+    var extraGrid = document.getElementById('sys-grid-extra');
+    moreBtn.addEventListener('click', function(){
+      var isShown = extraGrid.classList.toggle('show');
+      moreBtn.classList.toggle('expanded', isShown);
+      moreBtn.querySelector('span') && (moreBtn.querySelector('span').textContent = isShown ? 'Show Fewer Projects' : 'Show More Projects');
+    });
+  }
+
+  /* ---------- Hero canvas: lightweight particle field (video replacement) ---------- */
+  var canvas = document.getElementById('hero-canvas');
+  var ctx = canvas.getContext('2d');
+  var particles = [];
+  var dpr = Math.min(window.devicePixelRatio || 1, 2);
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function resizeCanvas(){
+    var hero = document.querySelector('.hero');
+    var w = hero.clientWidth, h = hero.clientHeight;
+    canvas.width = w * dpr;
+    canvas.height = h * dpr;
+    canvas.style.width = w + 'px';
+    canvas.style.height = h + 'px';
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+  }
+
+  function initParticles(){
+    var hero = document.querySelector('.hero');
+    var count = Math.max(28, Math.floor((hero.clientWidth * hero.clientHeight) / 28000));
+    particles = [];
+    for (var i=0; i<count; i++){
+      particles.push({
+        x: Math.random() * hero.clientWidth,
+        y: Math.random() * hero.clientHeight,
+        r: Math.random() * 1.6 + 0.6,
+        vx: (Math.random() - 0.5) * 0.18,
+        vy: (Math.random() - 0.5) * 0.18,
+        a: Math.random() * 0.5 + 0.15
+      });
+    }
+  }
+
+  function drawFrame(){
+    var hero = document.querySelector('.hero');
+    var w = hero.clientWidth, h = hero.clientHeight;
+    ctx.clearRect(0,0,w,h);
+
+    // subtle vignette gradient base
+    var grad = ctx.createLinearGradient(0,0,0,h);
+    grad.addColorStop(0, 'rgba(20,0,0,0.5)');
+    grad.addColorStop(1, 'rgba(0,0,0,0.85)');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0,0,w,h);
+
+    for (var i=0; i<particles.length; i++){
+      var p = particles[i];
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0) p.x = w; if (p.x > w) p.x = 0;
+      if (p.y < 0) p.y = h; if (p.y > h) p.y = 0;
+
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+      ctx.fillStyle = 'rgba(255,255,255,' + p.a + ')';
+      ctx.fill();
+    }
+
+    // connecting lines for nearby particles (subtle network feel)
+    for (var i=0; i<particles.length; i++){
+      for (var j=i+1; j<particles.length; j++){
+        var dx = particles[i].x - particles[j].x;
+        var dy = particles[i].y - particles[j].y;
+        var dist = Math.sqrt(dx*dx + dy*dy);
+        if (dist < 120){
           ctx.beginPath();
-          ctx.strokeStyle=`rgba(99,200,230,${0.06*(1-dist/120)})`;
-          ctx.lineWidth=0.6;
-          ctx.moveTo(particles[i].x,particles[i].y);
-          ctx.lineTo(particles[j].x,particles[j].y);
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.strokeStyle = 'rgba(255,42,42,' + (0.12 * (1 - dist/120)) + ')';
+          ctx.lineWidth = 1;
           ctx.stroke();
         }
       }
     }
-    requestAnimationFrame(draw);
-  }
-  draw();
-})();
 
-// ─── TYPED ───
-(function(){
-  const el = document.getElementById('typed-text');
-  const strings = ['AI/ML Engineer','Computer Vision Specialist','NLP Systems Builder','Deep Learning Researcher','Production AI Developer'];
-  let si=0, ci=0, deleting=false;
-  function type(){
-    const s = strings[si];
-    el.textContent = deleting ? s.substring(0,ci--) : s.substring(0,ci++);
-    if(!deleting && ci===s.length+1){ setTimeout(()=>{deleting=true;},1400); setTimeout(type,100); return; }
-    if(deleting && ci===0){ deleting=false; si=(si+1)%strings.length; setTimeout(type,300); return; }
-    setTimeout(type, deleting?45:75);
-  }
-  setTimeout(type, 600);
-})();
-
-// ─── SCROLL REVEAL ───
-(function(){
-  const els = document.querySelectorAll('.reveal,.reveal-left,.reveal-right');
-  const obs = new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
-  },{threshold:0.12});
-  els.forEach(e=>obs.observe(e));
-})();
-
-// ─── NAV SCROLL ───
-window.addEventListener('scroll',()=>{
-  const n=document.getElementById('navbar');
-  n.style.background = window.scrollY>20 ? 'rgba(13,31,45,0.97)' : 'rgba(13,31,45,0.85)';
-});
-
-// ─── HAMBURGER ───
-document.getElementById('hamburger').addEventListener('click',()=>{
-  document.getElementById('mobileNav').classList.toggle('open');
-});
-function closeMobileNav(){ document.getElementById('mobileNav').classList.remove('open'); }
-
-// ─── FLOATING CHAT ───
-const floatBtn = document.getElementById('floatChatBtn');
-const floatModal = document.getElementById('floatModal');
-document.getElementById('floatModalClose').addEventListener('click',()=>floatModal.classList.remove('open'));
-floatBtn.addEventListener('click',()=>floatModal.classList.toggle('open'));
-
-// ─── VIEW ALL PROJECTS ───
-let expanded = false;
-function toggleExtraProjects(){
-  expanded = !expanded;
-  const extras = document.getElementById('extraProjects');
-  const btn = document.getElementById('viewAllText');
-  const icon = document.getElementById('viewAllIcon');
-  if(expanded){
-    extras.classList.add('visible');
-    btn.textContent = 'Show Less';
-    icon.className = 'fas fa-chevron-up';
-    icon.style.marginLeft = '6px';
-  } else {
-    extras.classList.remove('visible');
-    btn.textContent = 'View All 24 Projects';
-    icon.className = 'fas fa-chevron-down';
-    icon.style.marginLeft = '6px';
-  }
-  // trigger reveal for newly visible cards
-  setTimeout(()=>{
-    document.querySelectorAll('#extraProjects .reveal').forEach(el=>{
-      el.classList.add('visible');
-    });
-  }, 50);
-}
-
-// ─── CONTRIBUTION GRAPH ───
-(function(){
-  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  const days = ['','Mon','','Wed','','Fri',''];
-  const grid = document.getElementById('contribGrid');
-  const monthsEl = document.getElementById('contribMonths');
-
-  // Generate 52 weeks of data
-  const seed = [0,0,0,1,1,2,0,1,0,0,1,2,3,1,0,0,1,2,2,4,3,2,1,0,0,1,3,4,3,2,1,0,1,2,3,2,1,0,0,1,2,3,4,3,2,1,0,1,2,3,4,3];
-  
-  // months row
-  const now = new Date();
-  for(let m=0;m<12;m++){
-    const d = document.createElement('div');
-    d.className = 'contrib-month';
-    const mIdx = (now.getMonth() - 11 + m + 12) % 12;
-    d.textContent = months[mIdx];
-    monthsEl.appendChild(d);
+    if (!reduceMotion) requestAnimationFrame(drawFrame);
   }
 
-  for(let row=0;row<7;row++){
-    const rowEl = document.createElement('div');
-    rowEl.className = 'contrib-row';
-    const lbl = document.createElement('div');
-    lbl.className = 'contrib-day-label';
-    lbl.textContent = days[row];
-    rowEl.appendChild(lbl);
-    const cells = document.createElement('div');
-    cells.className = 'contrib-cells';
-    for(let col=0;col<53;col++){
-      const cell = document.createElement('div');
-      cell.className = 'contrib-cell';
-      const v = seed[(col+row)%seed.length];
-      if(v===1)cell.classList.add('l1');
-      else if(v===2)cell.classList.add('l2');
-      else if(v===3)cell.classList.add('l3');
-      else if(v===4)cell.classList.add('l4');
-      const weekDate = new Date(now); weekDate.setDate(now.getDate()-(52-col)*7+row);
-      const label = `${weekDate.toDateString()}: ${v} contribution${v!==1?'s':''}`;
-      cell.addEventListener('mousemove',(e)=>{
-        const tip = document.getElementById('contribTooltip');
-        tip.textContent = label;
-        tip.style.left = (e.clientX+12)+'px';
-        tip.style.top = (e.clientY-28)+'px';
-        tip.classList.add('show');
-      });
-      cell.addEventListener('mouseleave',()=>{
-        document.getElementById('contribTooltip').classList.remove('show');
-      });
-      cells.appendChild(cell);
-    }
-    rowEl.appendChild(cells);
-    grid.appendChild(rowEl);
-  }
-})();
-
-// ─── STREAK COUNTER ANIMATION ───
-(function(){
-  const el = document.getElementById('streakCounter');
-  const target = 14;
-  const obs = new IntersectionObserver((entries)=>{
-    if(entries[0].isIntersecting){
-      let v=0;
-      const t = setInterval(()=>{
-        v += 1; el.textContent = v;
-        if(v>=target){ clearInterval(t); }
-      }, 60);
-      obs.disconnect();
-    }
-  },{threshold:0.5});
-  obs.observe(el);
-})();
-
-// ─── CONTACT FORM ───
-const form = document.getElementById("contactForm");
-const status = document.getElementById("formStatus");
-
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  const name = document.getElementById("formName").value.trim();
-  const email = document.getElementById("formEmail").value.trim();
-  const subject = document.getElementById("formSubject").value.trim();
-  const message = document.getElementById("formMessage").value.trim();
-
-  // reset status
-  status.style.display = "block";
-
-  // validation
-  if (!name || !email || !subject || !message) {
-    status.innerText = "⚠ Please fill all fields properly.";
-    status.style.color = "#ff6b6b";
-    return;
+  resizeCanvas();
+  initParticles();
+  drawFrame();
+  if (reduceMotion){
+    // draw a single static frame, no loop
+    drawFrame();
   }
 
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  if (!emailPattern.test(email)) {
-    status.innerText = "⚠ Enter a valid email address.";
-    status.style.color = "#ff6b6b";
-    return;
-  }
-
-  status.innerText = "Sending message...";
-  status.style.color = "#58a6ff";
-
-  const formData = new FormData(form);
-
-  try {
-    const res = await fetch(form.action, {
-      method: "POST",
-      body: formData,
-      headers: {
-        Accept: "application/json"
-      }
-    });
-
-    if (res.ok) {
-      status.innerText = "✓ Message sent successfully!";
-      status.style.color = "#4ade80";
-      form.reset();
-    } else {
-      status.innerText = "⚠ Failed to send. Try again.";
-      status.style.color = "#ff6b6b";
-    }
-
-  } catch (err) {
-    status.innerText = "⚠ Network error. Check connection.";
-    status.style.color = "#ff6b6b";
-  }
-});
-
-// ─── SMOOTH SCROLL ───
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-  a.addEventListener('click',e=>{
-    const t = document.querySelector(a.getAttribute('href'));
-    if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth',block:'start'}); closeMobileNav(); }
+  var resizeTimer;
+  window.addEventListener('resize', function(){
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function(){
+      resizeCanvas();
+      initParticles();
+      if (reduceMotion) drawFrame();
+    }, 150);
   });
-});
 
+  /* ---------- Process: scroll-driven dashed path fill + active card ---------- */
+  var stage = document.getElementById('process-stage');
+  var fillDesktop = document.getElementById('path-fill-desktop');
+  var fillMobile = document.getElementById('path-fill-mobile');
+  var lenDesktop = fillDesktop.getTotalLength();
+  var lenMobile = fillMobile.getTotalLength();
+
+  [fillDesktop, fillMobile].forEach(function(path, idx){
+    var len = idx === 0 ? lenDesktop : lenMobile;
+    path.style.strokeDasharray = len + ' ' + len;
+    path.style.strokeDashoffset = len;
+  });
+
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.tag-card'));
+
+  function updateProcessScroll(){
+    var rect = stage.getBoundingClientRect();
+    var vh = window.innerHeight;
+    var total = rect.height + vh;
+    var progressed = vh - rect.top;
+    var progress = Math.max(0, Math.min(1, progressed / total));
+
+    var offD = lenDesktop * (1 - progress);
+    var offM = lenMobile * (1 - progress);
+    fillDesktop.style.strokeDashoffset = offD;
+    fillMobile.style.strokeDashoffset = offM;
+
+    cards.forEach(function(card){
+      var trig = parseInt(card.getAttribute('data-trigger') || '0', 10);
+      var threshold = trig / 1350;
+      card.classList.toggle('is-active', progress >= threshold && progress < threshold + 0.22);
+    });
+  }
+
+  window.addEventListener('scroll', updateProcessScroll, { passive:true });
+  window.addEventListener('resize', updateProcessScroll);
+  updateProcessScroll();
+
+  /* ---------- Contact form: mailto handoff ---------- */
+  var form = document.getElementById('contact-form');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('cf-name').value.trim();
+    var email = document.getElementById('cf-email').value.trim();
+    var message = document.getElementById('cf-message').value.trim();
+
+    var subject = encodeURIComponent('Portfolio inquiry from ' + (name || 'website visitor'));
+    var body = encodeURIComponent(
+      'Name: ' + name + '\n' +
+      'Email: ' + email + '\n\n' +
+      'Message:\n' + message
+    );
+    window.location.href = 'mailto:hamaylzahid@gmail.com?subject=' + subject + '&body=' + body;
+
+    document.getElementById('form-fields').style.display = 'none';
+    document.getElementById('form-success').classList.add('show');
+  });
+
+  /* ---------- Footer year ---------- */
+  document.getElementById('year').textContent = '2026';
+
+})();
