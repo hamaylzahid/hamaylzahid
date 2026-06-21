@@ -49,10 +49,8 @@
     var showBtt = y > 600;
     btt.classList.toggle('show', showBtt);
 
-    var fab = document.getElementById('chatbot-fab');
-    var tooltip = document.getElementById('chatbot-tooltip');
-    fab.classList.toggle('shift-up', showBtt);
-    tooltip.classList.toggle('shift-up', showBtt);
+    var tooltipEl = document.getElementById('chatbot-tooltip');
+    tooltipEl.classList.toggle('beside-btt', showBtt);
   }
   window.addEventListener('scroll', onScroll, { passive:true });
   onScroll();
@@ -72,7 +70,10 @@
   }, 3000);
 
   /* ---------- Scroll reveal (IntersectionObserver) ---------- */
-  var revealEls = document.querySelectorAll('[data-reveal]');
+  /* Watches both [data-reveal] (hero/about/process/contact/credentials fade-ups) and
+     [data-card-reveal] (Systems project cards) so every reveal-style element
+     in the page is covered by one observer. */
+  var revealEls = document.querySelectorAll('[data-reveal], [data-card-reveal]');
   if ('IntersectionObserver' in window){
     var io = new IntersectionObserver(function(entries){
       entries.forEach(function(entry){
@@ -130,6 +131,8 @@
   }
 
   /* ---------- Stats counter animation ---------- */
+  /* Selects every .stat-count on the page — covers both the top Stats section
+     and the Credentials summary strip, since both reuse this same class. */
   var statEls = document.querySelectorAll('.stat-count');
   if (statEls.length){
     var statObserver = new IntersectionObserver(function(entries){
@@ -163,13 +166,22 @@
   }
 
   /* ---------- Show more projects ---------- */
-  var moreBtn = document.getElementById('sys-more-btn');
-  if (moreBtn){
-    var extraGrid = document.getElementById('sys-grid-extra');
+  var moreBtn = document.getElementById('btn-show-more');
+  var extraGrid = document.getElementById('sys-grid-extra');
+  if (moreBtn && extraGrid && extraGrid.children.length > 0){
+    moreBtn.hidden = false;
+    var extraCards = extraGrid.querySelectorAll('[data-card-reveal]');
     moreBtn.addEventListener('click', function(){
       var isShown = extraGrid.classList.toggle('show');
       moreBtn.classList.toggle('expanded', isShown);
-      moreBtn.querySelector('span') && (moreBtn.querySelector('span').textContent = isShown ? 'Show Fewer Projects' : 'Show More Projects');
+      var label = moreBtn.querySelector('.btn-more-label');
+      if (label) label.textContent = isShown ? 'Show Less' : 'Show More Projects';
+      if (isShown){
+        extraCards.forEach(function(el){
+          if ('IntersectionObserver' in window) io.observe(el);
+          else el.classList.add('in');
+        });
+      }
     });
   }
 
